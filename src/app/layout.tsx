@@ -16,7 +16,7 @@ export const metadata: Metadata = {
   title: "Kampung Inggris LC",
   description: "Kursus Bahasa Inggris Terfavorit di Kampung Inggris",
   verification: {
-    google: "pJSSNr7c7GrVMaehrA7LejEp8cVycLWFrcQpBztDdW8"
+    google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA"
   },
 }
 
