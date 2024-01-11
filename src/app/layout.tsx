@@ -5,6 +5,10 @@ import ClientThemeWrapper from "@/context/ClientThemeWrapper";
 import NavBar from "@/components/NavBar";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
+import Head from "next/head";
+import Script from "next/script";
+import { Suspense } from "react";
+import Analytics from "@/components/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,7 +16,7 @@ export const metadata: Metadata = {
   title: "Kampung Inggris LC",
   description: "Kursus Bahasa Inggris Terfavorit di Kampung Inggris",
   verification: {
-    google: "PCJgKqf7_1krHwDsc0pe7uor_J0dEHz-Xv1HEbBw_m0"
+    google: "pJSSNr7c7GrVMaehrA7LejEp8cVycLWFrcQpBztDdW8"
   },
 }
 
@@ -23,6 +27,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Suspense>
+        <Analytics />
+      </Suspense>
       <body className={inter.className}>
         <ThemeProvider>
           <ClientThemeWrapper>
