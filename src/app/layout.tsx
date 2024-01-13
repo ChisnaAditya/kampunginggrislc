@@ -34,7 +34,7 @@ export default function RootLayout({
         <ThemeProvider>
           <ClientThemeWrapper>
             <div className="flex flex-col justify-between h-screen">
-              <NavBar />
+              {/* <NavBar /> */}
               {children}
               <Footer />
             </div>

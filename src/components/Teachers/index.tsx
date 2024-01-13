@@ -58,7 +58,7 @@ export default function Teachers() {
         },
     ]
     return (
-        <div className="flex flex-col py-10 bg-base-content">
+        <div className="flex flex-col py-10 bg-base-content min-h-screen items-center justify-center">
             <article className="container prose flex flex-col w-full text-center">
                 <h1 className='text-base-100'>Yuk Kenalan Sama Teacher Kampung Inggris LC</h1>
             </article>
