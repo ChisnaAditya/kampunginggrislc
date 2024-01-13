@@ -58,7 +58,7 @@ export default function benefits() {
                     <figure className="px-10">
                         <Image
                             alt="kampung inggris lc benefits"
-                            className="w-12 h-12 bg-center bg-cover rounded-full"
+                            className="w-10 h-10 bg-center bg-cover rounded-full"
                             src={item.icon}
                         />
                     </figure>

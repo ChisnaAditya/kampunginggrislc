@@ -97,7 +97,7 @@ export default function Intensive() {
     ]
 
     return (
-        <div>
+        <div className="scroll-smooth">
             <Program />
             <div className="container grid lg:grid-cols-2 p-10">
                 <div className="flex">
@@ -119,8 +119,9 @@ export default function Intensive() {
                 </div>
                 <button className="btn lg:hidden w-full mt-5 bg-primary text-primary-content">Daftar Sekarang</button>
             </div>
-            <div className="container flex">
-                <div className="hidden lg:flex justify-center basis-2/6">
+            {/* Start Content */}
+            <div className="container grid grid-cols-7">
+                <div className="hidden lg:grid sticky self-start top-0 lg:col-span-2">
                     <article className="prose">
                         <h1></h1>
                         <h3>Intensive English Program</h3>
@@ -130,8 +131,11 @@ export default function Intensive() {
                             <li><p>Benefits</p></li>
                         </ul>
                     </article>
+                    <Link href="#tabel-program">
+                        <button className="btn bg-error text-error-content">Daftar Program</button>
+                    </Link>
                 </div>
-                <div className="flex flex-col items-center basis-5/6">
+                <div className="col-span-7 lg:col-span-5">
                     <div className="overview">
                         <article className="prose">
                             <h1 id="overview"></h1>
@@ -162,12 +166,13 @@ export default function Intensive() {
                     </div>
                 </div>
             </div>
+            {/* End Content */}
             <div className="hidden container lg:flex flex-col  items-center min-h-screen">
                 <article className="prose text-center">
                     <h1></h1>
                     <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium, accusantium!</h2>
                 </article>
-                <table className="table-auto mt-20">
+                <table id="tabel-program" className="table-auto mt-20">
                     <thead className="p-10">
                         <tr>
                             <th></th>
