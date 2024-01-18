@@ -8,7 +8,6 @@ import Fasilitas from '@/components/Fasilitas'
 import Company from '@/components/Company'
 import Program from '@/components/Program'
 import Keseruan from '@/components/Keseruan'
-import Timeline from '@/components/Timeline'
 import Script from 'next/script'
 import Testimonials from '@/components/Testimonials'
 import NavBar from '@/components/NavBar'
@@ -28,7 +27,7 @@ export default function Home() {
         `}
       </Script>
 
-      <NavBar />
+      {/* <NavBar /> */}
       <Hero />
       <CTA />
       <Testimonials />

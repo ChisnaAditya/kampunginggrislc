@@ -31,15 +31,11 @@ export default function RootLayout({
         <Analytics />
       </Suspense>
       <body className={inter.className}>
-        <ThemeProvider>
-          <ClientThemeWrapper>
-            <div className="flex flex-col justify-between h-screen">
-              {/* <NavBar /> */}
-              {children}
-              <Footer />
-            </div>
-          </ClientThemeWrapper>
-        </ThemeProvider>
+        <div className="flex flex-col justify-between h-screen">
+          {/* <NavBar /> */}
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );
