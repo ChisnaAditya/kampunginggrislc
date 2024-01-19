@@ -42,10 +42,10 @@ export default function Faq() {
             <div onClick={handleOpen} className="border-[2px] w-[1140px] border-[#232323] p-5 rounded-2xl">
                 <div className="flex items-center justify-start gap-4 px-16 cursor-pointer">
                     <IconPlus />
-                    <h1 className="text-[32px] font-bold">{prop.title}</h1>
+                    <h1 className="text-[32px] font-bold ">{prop.title}</h1>
                 </div>
                 {isActive &&
-                    <div className="px-40 text-[18px]">
+                    <div className="px-32 text-[18px]">
                         <p>{prop.content}</p>
                     </div>
                 }
@@ -53,14 +53,14 @@ export default function Faq() {
         )
     }
     return (
-        <div className="flex flex-col gap-4">
+        <div className="flex flex-col gap-10">
             <div onClick={() => setIsOpenSatu(!isOpenSatu)} className="border-[2px] w-[1140px] border-[#232323] p-5 rounded-2xl">
                 <div className="flex items-center justify-start gap-4 px-16 cursor-pointer">
                     <IconPlus />
-                    <h1 className="text-[32px] font-bold">Apa beda main class dan camp class?</h1>
+                    <h1 className="text-[32px] font-bold ">Apa beda main class dan camp class?</h1>
                 </div>
                 {isOpenSatu &&
-                    <div className="px-40 text-[18px]">
+                    <div className="px-32 text-[18px]">
                         <p>Main Class</p>
                         <ul className="list-disc list-inside">
                             <li>Lokasi : Gedung kelas</li>
@@ -77,10 +77,10 @@ export default function Faq() {
             <div onClick={() => setIsOpenDua(!isOpenDua)} className="border-[2px] w-[1140px] border-[#232323] p-5 rounded-2xl">
                 <div className="flex items-center justify-start gap-4 px-16 cursor-pointer">
                     <IconPlus />
-                    <h1 className="text-[32px] font-bold">Apa aja fasilitas asrama?</h1>
+                    <h1 className="text-[32px] font-bold ">Apa aja fasilitas asrama?</h1>
                 </div>
                 {isOpenDua &&
-                    <div className="px-40 text-[18px]">
+                    <div className="px-32 text-[18px]">
                         <p>Fasilitas asrama reguler</p>
                         <ul className="list-disc list-inside">
                             <li>1 kamar berisi maksimal 4 peserta</li>

@@ -68,57 +68,54 @@ export default function tabels() {
             col_3: checkLogo(),
             col_4: checkLogo(),
         },
-        {
-            head: "Harga Program",
-            col_1: "Rp950.000,-",
-            col_2: "Rp1.600.000,-",
-            col_3: "Rp2.975.000,-",
-            col_4: "Rp4.200.000,-",
-        },
     ]
     return (
-        <div>
-            <table id="tabel-program" className="table-fixed mt-20">
-                <thead className={`p-10 ${lalezar.className}`}>
-                    <tr>
-                        <th></th>
-                        <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 2 Minggu</th>
-                        <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 1 Bulan</th>
-                        <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 2 Bulan</th>
-                        <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 3 Bulan</th>
-                    </tr>
-                </thead>
+        <table id="tabel-program" className="table-fixed mt-20">
+            <thead className={`p-10 ${lalezar.className}`}>
+                <tr>
+                    <th></th>
+                    <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 2 Minggu</th>
+                    <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 1 Bulan</th>
+                    <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 2 Bulan</th>
+                    <th className="font-normal text-[32px] text-primaryLC leading-tight">IEP <br /> 3 Bulan</th>
+                </tr>
+            </thead>
 
-                <tbody>
-                    <tr className="border-b-[1px] border-b-[#D9D9D9]">
-                        <td className="pe-20 py-5 font-bold text-[18px]">Jumlah Pertemuan</td>
-                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
-                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
-                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
-                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
-                    </tr>
-                    {
-                        contentTable.map((item, index) => (
-                            <tr key={index} className="border-b-[1px] border-b-[#D9D9D9]">
-                                <td className="pe-20 py-5 font-bold text-[18px]">{item.head}</td>
-                                <td className="px-10 py-5 text-center">{item.col_1}</td>
-                                <td className="px-10 py-5 text-center">{item.col_2}</td>
-                                <td className="px-10 py-5 text-center">{item.col_3}</td>
-                                <td className="px-10 py-5 text-center">{item.col_4}</td>
-                            </tr>
-                        ))
-                    }
+            <tbody>
+                <tr className="border-b-[1px] border-b-[#D9D9D9]">
+                    <td className="pe-20 py-5 font-bold text-[18px]">Jumlah Pertemuan</td>
+                    <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                    <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                    <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                    <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                </tr>
+                {
+                    contentTable.map((item, index) => (
+                        <tr key={index} className="border-b-[1px] border-b-[#D9D9D9]">
+                            <td className="pe-20 py-5 font-bold text-[18px]">{item.head}</td>
+                            <td className="px-10 py-5 text-center">{item.col_1}</td>
+                            <td className="px-10 py-5 text-center">{item.col_2}</td>
+                            <td className="px-10 py-5 text-center">{item.col_3}</td>
+                            <td className="px-10 py-5 text-center">{item.col_4}</td>
+                        </tr>
+                    ))
+                }
+                <tr>
+                    <td className="pe-20 py-5 font-bold text-[18px]">Harga Program</td>
+                    <td className="px-10 py-5 text-center">Rp950.000,-</td>
+                    <td className="px-10 py-5 text-center">Rp1.600.000,-</td>
+                    <td className="px-10 py-5 text-center">Rp2.975.000,-</td>
+                    <td className="px-10 py-5 text-center">Rp4.200.000,-</td>
+                </tr>
+                <tr>
+                    <td className="py-5"></td>
+                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                </tr>
 
-                    <tr>
-                        <td className="py-5"></td>
-                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                    </tr>
-
-                </tbody>
-            </table>
-        </div>
+            </tbody>
+        </table>
     )
 }

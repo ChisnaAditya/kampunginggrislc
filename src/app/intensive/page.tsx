@@ -1,11 +1,10 @@
-import Program from "@/components/Hero/Program";
 import Swipper from "./swipper";
+import ListContent from "./listcontent"
 import Benefits from "./benefits";
 import Goals from "./goals";
 import Tabels from "./tabels";
 import FAQ from "./faq";
 import { Metadata } from "next";
-import Image from "next/image";
 import Link from "next/link";
 
 export const metadata: Metadata = {
@@ -20,46 +19,22 @@ export default function Intensive() {
     return (
         <div>
             {/* Start Hero */}
-            <div className="bg-jumbotron bg-secondaryLC w-full h-[676px]">
-                {/* <div className="col-span-3 bg-red-400">
-                    <article className="flex flex-col items-center justify-center">
-                        <h1 className="text-[48px] font-extrabold ">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
-                        <p className="text-[32px]">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
-                        <button className="hidden lg:btn lg:bg-primaryLC lg:text-white rounded-full">JOIN NOW</button>
-                    </article>
-                </div> */}
-                <div className="col-span-3 bg-red-400">
+            <div className="flex bg-jumbotron bg-secondaryLC w-full h-[676px]">
+                <div className="flex flex-col justify-center basis-1/2 pl-[150px]">
+                    <h1 className="text-[48px] text-black font-extrabold leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
+                    <p className="text-[32px] text-black font-light leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
+                    <button className="hidden lg:btn lg:bg-primaryLC lg:text-white lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
+                </div>
+                <div className="basis-1/2">
 
                 </div>
-                <button className="btn lg:hidden w-full mt-5 bg-primary text-primary-content">JOIN NOW</button>
             </div>
             {/* End Hero */}
 
             {/* Start Content */}
             <div className="px-[150px] mt-[91px] grid grid-cols-6">
                 <div className="sticky self-start top-0 col-span-2">
-                    <aside>
-                        <h1></h1>
-                        <h3 className="text-[24px] font-bold">Intensive English Program</h3>
-                        <ul>
-                            <li><p>Overview</p></li>
-                            <li><p>Benefits</p></li>
-                            <li><p>Gallery</p></li>
-                            <li><p>Alumni Kami</p></li>
-                            <li><p>Tutor Kami</p></li>
-                            <li><p>Goals Kami</p></li>
-                            <li>
-                                <Link href="#tabel-program">
-                                    <button className="btn bg-primaryLC text-white w-40">Daftar Program</button>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link href="#faq">
-                                    <button className="btn border-none shadow-none bg-transparent w-40">FAQ</button>
-                                </Link>
-                            </li>
-                        </ul>
-                    </aside>
+                    <ListContent />
                 </div>
                 <div className="col-span-4">
                     <div className="overview">
@@ -138,7 +113,7 @@ export default function Intensive() {
                     <h1>Frequently Asked Questions (FAQ) </h1>
                 </article>
                 <FAQ />
-                <Link href='/tanyacs' ><button className="btn bg-primary text-primary-content mt-10">Hubungi CS Kami</button></Link>
+                <Link href='/tanyacs' ><button className="btn bg-primaryLC text-white mt-10">Hubungi CS Kami</button></Link>
             </div>
         </div >
     )
