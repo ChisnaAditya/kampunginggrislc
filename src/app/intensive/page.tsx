@@ -1,6 +1,7 @@
 import Program from "@/components/Hero/Program";
 import Swipper from "./swipper";
 import Benefits from "./benefits";
+import Goals from "./goals";
 import Tabels from "./tabels";
 import FAQ from "./faq";
 import { Metadata } from "next";
@@ -20,13 +21,13 @@ export default function Intensive() {
         <div>
             {/* Start Hero */}
             <div className="bg-jumbotron bg-secondaryLC w-full h-[676px]">
-                <div className="col-span-3 bg-red-400">
+                {/* <div className="col-span-3 bg-red-400">
                     <article className="flex flex-col items-center justify-center">
                         <h1 className="text-[48px] font-extrabold ">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                         <p className="text-[32px]">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
                         <button className="hidden lg:btn lg:bg-primaryLC lg:text-white rounded-full">JOIN NOW</button>
                     </article>
-                </div>
+                </div> */}
                 <div className="col-span-3 bg-red-400">
 
                 </div>
@@ -112,15 +113,15 @@ export default function Intensive() {
                             <h2></h2>
                             <p></p>
                         </article>
-                        <div className="flex max-w-xl">
-                            <Swipper />
+                        <div className="w-full">
+                            <Goals />
                         </div>
                     </div>
                 </div>
             </div>
             {/* End Content */}
 
-            <div className="px-[150px]">
+            <div className="px-16 mt-10">
                 <article className="text-center">
                     <h1></h1>
                     <h2 className="text-[32px] font-bold">
@@ -132,20 +133,12 @@ export default function Intensive() {
                 <Tabels />
             </div>
             <div className="container flex flex-col items-center justify-center py-20">
-                <Image
-                    alt="Intensive English Program - Kampung Inggris LC"
-                    src="/background.webp"
-                    width="300"
-                    height="300"
-                    className="rounded"
-                // layout="responsive"
-                />
-                <article className="prose text-center">
+                <article className="prose text-center mb-20">
                     <h1 id="faq"></h1>
-                    <h1>Frequently Asked Questions</h1>
-                    <Link href='/tanyacs' ><button className="btn bg-primary text-primary-content">Hubungi CS Kami</button></Link>
+                    <h1>Frequently Asked Questions (FAQ) </h1>
                 </article>
                 <FAQ />
+                <Link href='/tanyacs' ><button className="btn bg-primary text-primary-content mt-10">Hubungi CS Kami</button></Link>
             </div>
         </div >
     )

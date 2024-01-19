@@ -20,13 +20,6 @@ export default function tabels() {
     }
     const contentTable = [
         {
-            head: "Jumlah Pertemuan",
-            col_1: "4 Main Class + 2 Camp Class",
-            col_2: "4 Main Class + 2 Camp Class",
-            col_3: "4 Main Class + 2 Camp Class",
-            col_4: "4 Main Class + 2 Camp Class",
-        },
-        {
             head: "Camp English Area",
             col_1: checkLogo(),
             col_2: checkLogo(),
@@ -85,7 +78,7 @@ export default function tabels() {
     ]
     return (
         <div>
-            <table id="tabel-program" className="table-auto mt-20">
+            <table id="tabel-program" className="table-fixed mt-20">
                 <thead className={`p-10 ${lalezar.className}`}>
                     <tr>
                         <th></th>
@@ -97,24 +90,31 @@ export default function tabels() {
                 </thead>
 
                 <tbody>
+                    <tr className="border-b-[1px] border-b-[#D9D9D9]">
+                        <td className="pe-20 py-5 font-bold text-[18px]">Jumlah Pertemuan</td>
+                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                        <td className="px-10 py-5 italic text-center">4 Main Class <br /> + 2 Camp Class</td>
+                    </tr>
                     {
                         contentTable.map((item, index) => (
-                            <tr key={index} className="border-b-[1px] border-b-neutral">
-                                <td className="pe-10 py-5 font-bold">{item.head}</td>
-                                <td className="px-10 py-5">{item.col_1}</td>
-                                <td className="px-10 py-5">{item.col_2}</td>
-                                <td className="px-10 py-5">{item.col_3}</td>
-                                <td className="px-10 py-5">{item.col_4}</td>
+                            <tr key={index} className="border-b-[1px] border-b-[#D9D9D9]">
+                                <td className="pe-20 py-5 font-bold text-[18px]">{item.head}</td>
+                                <td className="px-10 py-5 text-center">{item.col_1}</td>
+                                <td className="px-10 py-5 text-center">{item.col_2}</td>
+                                <td className="px-10 py-5 text-center">{item.col_3}</td>
+                                <td className="px-10 py-5 text-center">{item.col_4}</td>
                             </tr>
                         ))
                     }
 
                     <tr>
                         <td className="py-5"></td>
-                        <td className="px-10 py-5"><button className="btn bg-primaryLC text-white rounded-xl">JOIN NOW</button></td>
-                        <td className="px-10 py-5"><button className="btn bg-primaryLC text-white rounded-xl">JOIN NOW</button></td>
-                        <td className="px-10 py-5"><button className="btn bg-primaryLC text-white rounded-xl">JOIN NOW</button></td>
-                        <td className="px-10 py-5"><button className="btn bg-primaryLC text-white rounded-xl">JOIN NOW</button></td>
+                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                        <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
                     </tr>
 
                 </tbody>
