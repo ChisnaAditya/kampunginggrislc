@@ -126,7 +126,7 @@ export default function Alumni() {
                                     <br />
                                     <span
                                         className='font-bold text-warning cursor-pointer hover:text-warning/80'
-                                        onClick={() => document.getElementById(`${item.name}`)?.showModal()}>
+                                        onClick={() => (document.getElementById(`${item.name}`) as HTMLFormElement).showModal()}>
                                         Read more
                                     </span>
                                 </p>
