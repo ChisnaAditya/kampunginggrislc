@@ -6,6 +6,7 @@ import Tabels from "./tabels";
 import FAQ from "./faq";
 import { Metadata } from "next";
 import Link from "next/link";
+import Alumni from "./alumni";
 
 export const metadata: Metadata = {
     title: "Intensive English Program - Kampung Inggris LC",
@@ -33,7 +34,7 @@ export default function Intensive() {
 
             {/* Start Content */}
             <div className="px-[150px] mt-[91px] grid grid-cols-6">
-                <div className="sticky self-start top-0 col-span-2">
+                <div className="sticky self-start top-5 col-span-2">
                     <ListContent />
                 </div>
                 <div className="col-span-4">
@@ -67,7 +68,8 @@ export default function Intensive() {
                             <p></p>
                         </article>
                         <div className="flex max-w-xl">
-                            <Swipper />
+                            {/* <Swipper /> */}
+                            <Alumni />
                         </div>
                     </div>
                     <div className="Tutor">
@@ -78,7 +80,8 @@ export default function Intensive() {
                             <p></p>
                         </article>
                         <div className="flex max-w-xl">
-                            <Swipper />
+                            {/* <Swipper /> */}
+                            <Alumni />
                         </div>
                     </div>
                     <div className="Goals">
