@@ -1,4 +1,3 @@
-import Swipper from "./swipper";
 import ListContent from "./listcontent"
 import Benefits from "./benefits";
 import Goals from "./goals";
@@ -68,7 +67,6 @@ export default function Intensive() {
                             <p></p>
                         </article>
                         <div className="flex max-w-xl">
-                            {/* <Swipper /> */}
                             <Alumni />
                         </div>
                     </div>
@@ -80,7 +78,6 @@ export default function Intensive() {
                             <p></p>
                         </article>
                         <div className="flex max-w-xl">
-                            {/* <Swipper /> */}
                             <Alumni />
                         </div>
                     </div>
