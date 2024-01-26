@@ -101,13 +101,23 @@ export default function Alumni() {
     ]
 
     return (
-        <div className='py-10 w-[720px]'>
+        <div className='py-10 w-full lg:w-[720px]'>
             <Swiper
                 loop={true}
-                slidesPerView={3}
+                slidesPerView={1}
                 modules={[Navigation]}
                 onBeforeInit={(swiper: any) => {
                     swiperRef.current = swiper;
+                }}
+                breakpoints={{
+                    640: {
+                        slidesPerView: 1,
+                        spaceBetween: 20,
+                    },
+                    1024: {
+                        slidesPerView: 3,
+                        spaceBetween: 50,
+                    },
                 }}
 
             >
@@ -152,7 +162,7 @@ export default function Alumni() {
                 }
             </Swiper>
 
-            <div className="flex gap-4 pt-[48px]">
+            <div className="flex gap-4 justify-center lg:justify-start lg:pt-[48px]">
                 <button onClick={() => (swiperRef.current as any).slidePrev()} >
                     <svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M1.04907e-06 24C4.70579e-07 10.7656 10.7656 -4.70579e-07 24 -1.04907e-06C37.2344 -1.62757e-06 48 10.7656 48 24C48 37.2344 37.2325 48 24 48C10.7675 48 1.62757e-06 37.2344 1.04907e-06 24ZM44.282 24C44.282 12.818 35.1839 3.71803 24 3.71803C12.8161 3.71803 3.71803 12.818 3.71803 24C3.71803 35.1839 12.8161 44.282 24 44.282C35.1839 44.282 44.282 35.182 44.282 24Z" fill="#ABABAB" />

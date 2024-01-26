@@ -16,7 +16,7 @@ export default function Hero() {
                             <button className="btn btn-warning">Daftar Sekarang</button>
                         </Link>
 
-                        <Link href="https://kampunginggrislc.com/tanyacspare?utm_source=LP&utm_medium=buttontanyacs&utm_campaign=Organik" passHref={true}>
+                        <Link href="https://kampunginggrislc.com/tanyacspare?utm_source=lp_program&utm_medium=buttontanyacs&utm_campaign=organik" passHref={true}>
                             <button className="btn btn-accent">Konsultasi CS</button>
                         </Link>
                     </div>

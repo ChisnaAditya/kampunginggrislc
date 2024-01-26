@@ -1,11 +1,15 @@
 import ListContent from "./listcontent"
 import Benefits from "./benefits";
+import Keseruan from "./keseruan";
+import Alumni from "./alumni";
+import Tutor from "./tutor";
 import Goals from "./goals";
 import Tabels from "./tabels";
 import FAQ from "./faq";
+import Pricing from "./pricing";
 import { Metadata } from "next";
 import Link from "next/link";
-import Alumni from "./alumni";
+
 
 export const metadata: Metadata = {
     title: "Intensive English Program - Kampung Inggris LC",
@@ -19,11 +23,13 @@ export default function Intensive() {
     return (
         <div>
             {/* Start Hero */}
-            <div className="flex bg-jumbotron bg-secondaryLC w-full h-[676px]">
+            <div className="flex flex-col lg:flex-row bg-jumbotron bg-secondaryLC w-full h-auto lg:h-[676px]">
                 <div className="flex flex-col justify-center basis-1/2 pl-[150px]">
                     <h1 className="text-[48px] text-black font-extrabold leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                     <p className="text-[32px] text-black font-light leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
-                    <button className="hidden lg:btn lg:bg-primaryLC lg:text-white lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
+                    <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                        <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
+                    </Link>
                 </div>
                 <div className="basis-1/2">
 
@@ -32,11 +38,11 @@ export default function Intensive() {
             {/* End Hero */}
 
             {/* Start Content */}
-            <div className="px-[150px] mt-[91px] grid grid-cols-6">
-                <div className="sticky self-start top-5 col-span-2">
+            <div className="lg:px-[150px] mt-[91px] grid grid-cols-6">
+                <div className="sticky self-start top-5 hidden lg:block lg:col-span-2">
                     <ListContent />
                 </div>
-                <div className="col-span-4">
+                <div className="container col-span-6 lg:col-span-4">
                     <div className="overview">
                         <article className="">
                             <h1 id="overview"></h1>
@@ -59,6 +65,9 @@ export default function Intensive() {
                         </article>
                         <Benefits />
                     </div>
+                    <div className="keseruan">
+                        <Keseruan />
+                    </div>
                     <div className="alumni">
                         <article className="">
                             <h1 id="alumni"></h1>
@@ -78,7 +87,7 @@ export default function Intensive() {
                             <p></p>
                         </article>
                         <div className="flex max-w-xl">
-                            <Alumni />
+                            <Tutor />
                         </div>
                     </div>
                     <div className="Goals">
@@ -96,7 +105,7 @@ export default function Intensive() {
             </div>
             {/* End Content */}
 
-            <div className="px-16 mt-10">
+            <div className="lg:px-16 mt-10">
                 <article className="text-center">
                     <h1></h1>
                     <h2 className="text-[32px] font-bold">
@@ -105,7 +114,9 @@ export default function Intensive() {
                         Pilih Paket Belajarmu Di Sini!
                     </h2>
                 </article>
-                <Tabels />
+                <div className="hidden lg:block">
+                    <Tabels />
+                </div>
             </div>
             <div className="container flex flex-col items-center justify-center py-20">
                 <article className="prose text-center mb-20">
@@ -113,7 +124,7 @@ export default function Intensive() {
                     <h1>Frequently Asked Questions (FAQ) </h1>
                 </article>
                 <FAQ />
-                <Link href='/tanyacs' ><button className="btn bg-primaryLC text-white mt-10">Hubungi CS Kami</button></Link>
+                {/* <Pricing /> */}
             </div>
         </div >
     )

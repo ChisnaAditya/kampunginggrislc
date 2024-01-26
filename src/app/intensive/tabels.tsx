@@ -1,5 +1,5 @@
 import { Lalezar } from 'next/font/google'
-
+import Link from 'next/link'
 const lalezar = Lalezar({ subsets: ['latin'], weight: "400" })
 
 export default function tabels() {
@@ -109,10 +109,26 @@ export default function tabels() {
                 </tr>
                 <tr>
                     <td className="py-5"></td>
-                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
-                    <td className="px-10 py-5"><button className="btn w-[180px] h-[50px] bg-primaryLC text-white rounded-2xl">JOIN NOW</button></td>
+                    <td className="px-10 py-5">
+                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                            <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                        </Link>
+                    </td>
+                    <td className="px-10 py-5">
+                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                            <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                        </Link>
+                    </td>
+                    <td className="px-10 py-5">
+                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                            <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                        </Link>
+                    </td>
+                    <td className="px-10 py-5">
+                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                            <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                        </Link>
+                    </td>
                 </tr>
 
             </tbody>

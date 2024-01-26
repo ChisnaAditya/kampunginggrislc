@@ -27,14 +27,14 @@ export default function goals() {
 
     function Card(prop: cardProps) {
         return (
-            <div className='flex flex-col justify-center items-center w-[366px] h-[285px] my-8'>
+            <div className='flex flex-col justify-center items-center lg:w-[366px] h-[285px] my-4 lg:my-8'>
                 <h1 className='w-[174.17px] h-[39.62px] bg-primaryLC shadow-lg z-[2] text-center text-white text-[26px] font-bold italic rounded-full overflow-hidden'>{prop.periode}</h1>
                 <p className='h-64 w-full -mt-5 rounded-xl border-[2px] text-[18px] px-5 py-10'>{prop.goal}</p>
             </div>
         )
     }
     return (
-        <div className='grid grid-cols-2'>
+        <div className='grid grid-cols-1 lg:grid-cols-2 gap-4'>
             {
                 goalsContent.map((item, index) => (
                     <div key={index}>

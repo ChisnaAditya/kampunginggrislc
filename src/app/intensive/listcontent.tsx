@@ -84,14 +84,14 @@ export default function ListContent() {
         </li>
         <li className="mt-5">
           <Link href="#tabel-program">
-            <button className="btn bg-primaryLC text-white w-40 rounded-2xl">
+            <button className="btn bg-primaryLC hover:bg-primaryLC/80 hover:font-bold text-white w-40 rounded-2xl">
               Daftar Program
             </button>
           </Link>
         </li>
         <li>
           <Link href="#faq">
-            <button className="btn border-none shadow-none bg-transparent w-40 text-[#7A7979] text-[18px] font-light">
+            <button className="btn border-none shadow-none bg-transparent hover:bg-transparent hover:font-bold w-40 text-[#7A7979] text-[18px] font-light">
               FAQ
             </button>
           </Link>
