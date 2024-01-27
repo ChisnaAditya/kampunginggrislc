@@ -99,7 +99,7 @@ export default function Tutor() {
                 {
                     tutorContent.map((item, index) => (
                         <SwiperSlide key={index} className='w-full h-auto'>
-                            <div className="flex flex-col justify-start w-full h-[400px]">
+                            <div className="flex flex-col justify-start w-full lg:h-[400px]">
                                 <Image
                                     alt="avatar"
                                     src={item.avatar}
@@ -110,7 +110,7 @@ export default function Tutor() {
                                 <div>
                                     <p className='text-center text-xl mt-10 font-bold'>{item.name}</p>
                                 </div>
-                                <p className='text-center mt-2'>{item.bio.substring(0, 50)} <span>...</span>
+                                <p className='text-center my-2'>{item.bio.substring(0, 50)} <span>...</span>
                                     <br />
                                     <span
                                         className='font-bold text-warning cursor-pointer hover:text-warning/80'

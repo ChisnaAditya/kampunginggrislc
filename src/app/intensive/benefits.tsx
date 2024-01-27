@@ -34,13 +34,13 @@ export default function benefits() {
                     <figure className="lg:col-span-1">
                         <Image
                             alt="kampung inggris lc benefits"
-                            className="bg-center bg-cover w-[100px] h-[100px]"
+                            className="bg-center bg-cover w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
                             src={item.icon}
                         />
                     </figure>
                     <div className="lg:col-span-5">
-                        <h1 className="text-[32px] text-center lg:text-left font-bold italic mb-4">{item.title}</h1>
-                        <p className="text-[18px] mb-10">{item.desc}</p>
+                        <h1 className="text-[24px] lg:text-[32px] text-center lg:text-left font-bold italic mb-4">{item.title}</h1>
+                        <p className="text-[16px] lg:text-[18px] mb-10">{item.desc}</p>
                     </div>
                 </div>
             ))}

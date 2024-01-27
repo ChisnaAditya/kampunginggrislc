@@ -124,7 +124,7 @@ export default function Alumni() {
                 {
                     alumniContent.map((item, index) => (
                         <SwiperSlide key={index} className='w-full h-auto'>
-                            <div className="flex flex-col justify-start w-full h-[500px]">
+                            <div className="flex flex-col justify-start w-full lg:h-[500px]">
                                 <Image
                                     alt="avatar"
                                     src={item.avatar}
