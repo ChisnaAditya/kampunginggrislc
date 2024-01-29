@@ -14,8 +14,12 @@ export default function Faq() {
             content: 'Semakin lama durasi kursus yang diambil, maka materinya semakin advanced dan lengkap.',
         },
         {
-            title: 'Bisa belajar dari 0?',
-            content: 'Ya, LC menawarkan program belajar bahasa Inggris secara general mulai dari basic.',
+            title: 'Apakah bisa upgrade ke kamar AC?',
+            content: 'Bisa, namun dengan tambahan biaya dan S&K berlaku.',
+        },
+        {
+            title: 'Bisa belajar dari dasar?',
+            content: 'Ya, LC menawarkan program belajar bahasa Inggris secara general mulai dari dasar.',
         },
         {
             title: 'Kapan mulai programnya?',

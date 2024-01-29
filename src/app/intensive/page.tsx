@@ -131,12 +131,10 @@ export default function Intensive() {
                 <article className="text-center mt-10">
                     <h1></h1>
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
-                        <span className="italic">Mau tanya lebih lanjut?</span>
-                        <br />
-                        Hubungi CS Kami
+                        <span className="italic">Mau tanya lebih lanjut tentang Intensive English Program?</span>
                     </h2>
                     <Link href="https://kampunginggrislc.com/tanyacspare">
-                        <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Chat Sekarang</button>
+                        <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>
             </div>

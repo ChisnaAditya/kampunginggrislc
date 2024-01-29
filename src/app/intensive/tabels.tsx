@@ -35,10 +35,10 @@ export default function tabels() {
         },
         {
             head: "Tutor Asrama",
-            col_1: closeLogo(),
-            col_2: closeLogo(),
-            col_3: closeLogo(),
-            col_4: closeLogo(),
+            col_1: checkLogo(),
+            col_2: checkLogo(),
+            col_3: checkLogo(),
+            col_4: checkLogo(),
         },
         {
             head: "Qualified Teacher",
