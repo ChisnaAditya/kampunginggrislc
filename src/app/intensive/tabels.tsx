@@ -71,7 +71,7 @@ export default function tabels() {
     ]
     return (
         <div className="px-[1rem] lg:px-0">
-            <table id="tabel-program" className="table-fixed mt-20 w-full">
+            <table id="tabel-program" className="table-fixed mt-20 lg:w-full">
                 <thead className={`p-10 ${lalezar.className}`}>
                     <tr>
                         <th></th>
