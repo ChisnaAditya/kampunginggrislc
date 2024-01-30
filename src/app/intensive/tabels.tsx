@@ -112,22 +112,22 @@ export default function tabels() {
                         <td className="py-5"></td>
                         <td className="px-10 py-5">
                             <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
-                                <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                                <button aria-label='btn-registrasi' className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
                             </Link>
                         </td>
                         <td className="px-10 py-5">
                             <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
-                                <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                                <button aria-label='btn-registrasi' className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
                             </Link>
                         </td>
                         <td className="px-10 py-5">
                             <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
-                                <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                                <button aria-label='btn-registrasi' className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
                             </Link>
                         </td>
                         <td className="px-10 py-5">
                             <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
-                                <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
+                                <button aria-label='btn-registrasi' className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">JOIN NOW</button>
                             </Link>
                         </td>
                     </tr>
