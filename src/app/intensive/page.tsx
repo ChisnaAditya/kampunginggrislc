@@ -26,14 +26,14 @@ export default function Intensive() {
                 <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
                     <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                     <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
-                    <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                    <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
                         <button aria-label="btn-registrasi" className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
                     </Link>
                 </div>
                 <div className="basis-1/2 pb-10">
                     <Image alt="Intensive English Program - jumbotron mobile" src='/jumbotron-mobile.png' width={500} height={500} className="lg:hidden" />
                     <div className="px-5">
-                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                        <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
                             <button aria-label="btn-registrasi" className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-full border-none w-full">JOIN NOW</button>
                         </Link>
                     </div>
