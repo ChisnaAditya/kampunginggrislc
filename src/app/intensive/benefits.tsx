@@ -30,11 +30,11 @@ export default function benefits() {
     return (
         <div className="flex flex-col gap-4">
             {content.map((item, index) => (
-                <div key={index} className="flex flex-col items-center justify-center lg:grid lg:grid-cols-6">
-                    <figure className="lg:col-span-1">
+                <div key={index} className="flex flex-col items-center justify-center lg:grid lg:grid-cols-6 lg:align-top lg:items-start">
+                    <figure className="lg:col-span-1 lg:align-top">
                         <Image
                             alt="kampung inggris lc benefits"
-                            className="bg-center bg-cover w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
+                            className="bg-cover w-[50px] h-[50px] lg:w-[100px] lg:h-[100px]"
                             src={item.icon}
                         />
                     </figure>

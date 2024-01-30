@@ -50,7 +50,7 @@ export default function Intensive() {
                     <div className="overview">
                         <article className="">
                             <h1 id="overview"></h1>
-                            <h3 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Overview</h3>
+                            <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Overview</h2>
                             <h2 className="text-[24px] lg:text-[32px] font-bold">Ingin belajar English dari basic?
                                 <br />
                                 <span className="italic">Here’s your chance!</span>
@@ -63,7 +63,7 @@ export default function Intensive() {
                     <div className="benefit">
                         <article className="mb-4">
                             <h1 id="benefits"></h1>
-                            <h3 className="text-[18px] lg:text-[24px] font-bold text-primaryLC mt-10">Benefits</h3>
+                            <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC mt-10">Benefits</h2>
                             <h2></h2>
                             <p></p>
                         </article>
@@ -75,7 +75,7 @@ export default function Intensive() {
                     <div className="alumni">
                         <article className="">
                             <h1 id="alumni"></h1>
-                            <h3 className="text-[18px] lg:text-[24px] text-primaryLC font-bold mt-10">Alumni Kami</h3>
+                            <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold mt-10">Alumni Kami</h2>
                             <h2></h2>
                             <p></p>
                         </article>
@@ -86,7 +86,7 @@ export default function Intensive() {
                     <div className="Tutor">
                         <article className="">
                             <h1 id="Tutor"></h1>
-                            <h3 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Tutor Kami</h3>
+                            <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Tutor Kami</h2>
                             <h2></h2>
                             <p></p>
                         </article>
@@ -97,7 +97,7 @@ export default function Intensive() {
                     <div className="Goals">
                         <article className="">
                             <h1 id="Goals"></h1>
-                            <h3 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Goals Program</h3>
+                            <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Goals Program</h2>
                             <h2></h2>
                             <p></p>
                         </article>
@@ -133,8 +133,8 @@ export default function Intensive() {
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
                         <span className="italic">Mau tanya lebih lanjut tentang Intensive English Program?</span>
                     </h2>
-                    <Link href="https://kampunginggrislc.com/tanyacspare">
-                        <button className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
+                    <Link aria-label="link-tanyacs" href="https://kampunginggrislc.com/tanyacspare">
+                        <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>
             </div>
