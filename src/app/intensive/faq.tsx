@@ -7,6 +7,7 @@ import Image from "next/image"
 export default function Faq() {
     const [isOpenSatu, setIsOpenSatu] = useState(true)
     const [isOpenDua, setIsOpenDua] = useState(true)
+    const [isOpenTiga, setIsOpenTiga] = useState(false)
 
     const faqContent = [
         {
@@ -20,10 +21,6 @@ export default function Faq() {
         {
             title: 'Bisa belajar dari dasar?',
             content: 'Ya, LC menawarkan program belajar bahasa Inggris secara general mulai dari dasar.',
-        },
-        {
-            title: 'Kapan mulai programnya?',
-            content: 'Coming Soon',
         },
     ]
     function IconPlus() {
@@ -61,7 +58,7 @@ export default function Faq() {
         )
     }
     return (
-        <div className="flex flex-col gap-10">
+        <div className="flex flex-col gap-5 lg:gap-10">
             <div onClick={() => setIsOpenSatu(!isOpenSatu)} className="border-[1px] lg:w-[1140px] border-[#232323] lg:p-5 rounded-2xl">
                 <div className="flex items-center justify-start gap-4 px-4 py-2 lg:px-16 cursor-pointer">
                     <div>
@@ -103,10 +100,26 @@ export default function Faq() {
                     </div>
                 }
             </div>
+
             {faqContent.map((item, index) => (
                 <Accordion key={index} title={item.title} content={item.content} />
             ))
             }
+
+            <div onClick={() => setIsOpenTiga(!isOpenTiga)} className="border-[1px] lg:w-[1140px] border-[#232323] lg:p-5 rounded-2xl">
+                <div className="flex items-center justify-start gap-4 px-4 py-2 lg:px-16 cursor-pointer">
+                    <div>
+                        <IconPlus />
+                    </div>
+                    <h1 className="text-md lg:text-[32px] font-bold ">Kapan mulai programnya?</h1>
+                </div>
+                {isOpenTiga &&
+                    <div className="px-5 pb-5 lg:px-32 text-[12px] lg:text-[18px]">
+                        <p>Kalian bisa cek kapan mulai programnya di kalender akademik Kampung Inggris LC di bawah ini</p>
+                        <Image alt="kalender akademik" src="/kalender.webp" width={720} height={1152} />
+                    </div>
+                }
+            </div>
         </div>
     )
 }
