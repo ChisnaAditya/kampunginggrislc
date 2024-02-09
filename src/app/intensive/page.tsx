@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function Intensive() {
     return (
-        <div className="max-w-[1440px]">
+        <div className="">
             {/* Start Hero */}
             <div className="flex flex-col lg:flex-row w-full h-screen bg-secondaryLC bg-none lg:bg-[url('/jumbotron.png')] lg:bg-cover">
                 <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
