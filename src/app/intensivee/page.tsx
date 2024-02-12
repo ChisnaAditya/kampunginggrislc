@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Intensive() {
     return (
         <div className="">
-            <nav className="bg-black text-white text-[18px] font-normal w-full h-[100px] flex items-center">
+            <nav className="hidden lg:flex lg:items-center w-full h-[100px] bg-black text-white text-[18px] font-normal">
                 <div className="basis-2/6 container lg:pl-[150px]">
                     <Image alt="logo" src="/logo-black.webp" width={100} height={100} />
                 </div>
