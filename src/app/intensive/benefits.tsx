@@ -2,7 +2,7 @@ import Image from "next/image"
 import icon_1 from "../../assets/icon/A1@4x.webp"
 import icon_4 from "../../assets/icon/A4@4x.webp"
 import icon_5 from "../../assets/icon/A5@4x.webp"
-import icon_6 from "../../assets/icon/A6@4x.webp"
+import icon_6 from "../../assets/icon/supportevent.png"
 
 export default function benefits() {
     const content = [
