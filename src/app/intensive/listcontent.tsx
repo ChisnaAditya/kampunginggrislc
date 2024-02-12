@@ -56,19 +56,19 @@ export default function ListContent() {
   return (
     <aside>
       <h1></h1>
-      <h3 className="text-[24px] font-bold mb-5">Intensive English Program</h3>
+      <h3 className="text-[24px] font-bold mb-5 italic">Intensive English Program</h3>
       <ul className="text-[#7A7979] text-[18px]">
         <li className="flex items-center">
           <div className={`border-l-4 ${overviewActive} py-5 px-3`}></div>
-          <p>Overview</p>
+          <p>Gambaran Umum</p>
         </li>
         <li className="flex items-center">
           <div className={`border-l-4 ${benefitsActive} py-5 px-3`}></div>
-          <p>Benefits</p>
+          <p>Keuntungan</p>
         </li>
         <li className="flex items-center">
           <div className={`border-l-4 ${galleryActive} py-5 px-3`}></div>
-          <p>Gallery</p>
+          <p>Galeri</p>
         </li>
         <li className="flex items-center">
           <div className={`border-l-4 ${alumniActive} py-5 px-3`}></div>
@@ -80,7 +80,7 @@ export default function ListContent() {
         </li>
         <li className="flex items-center">
           <div className={`border-l-4 ${goalActive} py-5 px-3`}></div>
-          <p>Goals Kami</p>
+          <p>Target Kami</p>
         </li>
         <li className="mt-5">
           <Link href="#tabel-program">

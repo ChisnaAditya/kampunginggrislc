@@ -1,4 +1,4 @@
-import React from 'react'
+import HTMLReactParser from "html-react-parser";
 
 export default function goals() {
     const goalsContent = [
@@ -16,7 +16,7 @@ export default function goals() {
         },
         {
             periode: '3 Bulan',
-            goal: 'Siswa mampu merespon kalimat yang diucapkan oleh native speaker (by audio/ video), mampu membuat mapping poin dan membuat rangkuman untuk dipresentasikan di depan publik.'
+            goal: 'Siswa mampu merespon kalimat yang diucapkan oleh <span className="italic">native speaker</span> (by audio/ video), mampu membuat <span className="italic"> mapping poin</span> dan membuat rangkuman untuk dipresentasikan di depan publik.'
         },
     ]
 
@@ -29,7 +29,7 @@ export default function goals() {
         return (
             <div className='flex flex-col justify-center items-center lg:w-[366px] h-[285px] my-1 lg:my-8'>
                 <h1 className='w-[174.17px] h-[39.62px] bg-primaryLC shadow-lg z-[2] text-center text-white text-[26px] font-bold italic rounded-full overflow-hidden'>{prop.periode}</h1>
-                <p className='h-64 w-full -mt-5 rounded-xl border-[2px] text-[16px] lg:text-[18px] px-5 py-10'>{prop.goal}</p>
+                <p className='h-64 w-full -mt-5 rounded-xl border-[2px] text-[16px] lg:text-[18px] px-5 py-10'>{HTMLReactParser(prop.goal)}</p>
             </div>
         )
     }

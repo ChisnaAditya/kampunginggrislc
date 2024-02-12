@@ -1,8 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import icon_faq from "../../assets/icon/icon_faq.png"
 import Image from "next/image"
+import HTMLReactParser from "html-react-parser";
 
 export default function Faq() {
     const [isOpenSatu, setIsOpenSatu] = useState(true)
@@ -15,7 +15,7 @@ export default function Faq() {
             content: 'Semakin lama durasi kursus yang diambil, maka materinya semakin advanced dan lengkap.',
         },
         {
-            title: 'Apakah bisa upgrade ke kamar AC?',
+            title: 'Apakah bisa <span className="italic">upgrade</span> ke kamar AC?',
             content: 'Bisa, namun dengan tambahan biaya dan S&K berlaku.',
         },
         {
@@ -47,7 +47,7 @@ export default function Faq() {
                     <div>
                         <IconPlus />
                     </div>
-                    <h1 className="text-md lg:text-[32px] font-bold ">{prop.title}</h1>
+                    <h1 className="text-md lg:text-[32px] font-bold ">{HTMLReactParser(prop.title)}</h1>
                 </div>
                 {isActive &&
                     <div className="px-5 pb-5 lg:px-32 text-[12px] lg:text-[18px]">
@@ -64,19 +64,19 @@ export default function Faq() {
                     <div>
                         <IconPlus />
                     </div>
-                    <h1 className="text-md lg:text-[32px] font-bold ">Apa beda main class dan camp class?</h1>
+                    <h1 className="text-md lg:text-[32px] font-bold ">Apa beda <span className="italic">main class</span> dan <span className="italic">camp class</span>?</h1>
                 </div>
                 {isOpenSatu &&
                     <div className="px-5 pb-5 lg:px-32 text-[12px] lg:text-[18px]">
-                        <p>Main Class</p>
+                        <p className="italic">Main Class</p>
                         <ul className="list-disc list-inside">
                             <li>Lokasi : Gedung kelas</li>
-                            <li>Materi: Merupakan materi kelas yg utama di program intensif seperti: grammar, speaking dan pronunciation.</li>
+                            <li>Materi: Merupakan materi kelas yg utama di program intensif seperti: <span className="italic"> grammar, speaking</span> dan <span className="italic">pronunciation</span></li>
                         </ul>
-                        <p className="mt-10">Camp Class</p>
+                        <p className="mt-10 italic">Camp Class</p>
                         <ul className="list-disc list-inside">
-                            <li>Lokasi: Camp masing-masing</li>
-                            <li>Materi: Merupakan kelas pendukung dari main class seperti: hafalan vocab, latihan conversation, review materi</li>
+                            <li>Lokasi: <span className="italic">Camp</span> masing-masing</li>
+                            <li>Materi: Merupakan kelas pendukung dari main class seperti: hafalan <span className="italic">vocab</span>, latihan <span className="italic">conversation</span>, <span className="italic">review</span> materi</li>
                         </ul>
                     </div>
                 }

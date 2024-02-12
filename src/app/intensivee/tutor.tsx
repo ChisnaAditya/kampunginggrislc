@@ -111,7 +111,7 @@ export default function Tutor() {
                                 <div>
                                     <p className='text-center text-xl mt-10 font-bold'>{item.name}</p>
                                 </div>
-                                <p className='text-center my-2'>{item.bio.substring(0, 50)} <span>...</span>
+                                <p className='text-center italic my-2'>{item.bio.substring(0, 50)} <span>...</span>
                                     <br />
                                     <span
                                         className='font-bold text-warning cursor-pointer hover:text-warning/80'

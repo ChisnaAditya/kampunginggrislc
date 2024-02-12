@@ -20,6 +20,24 @@ export const metadata: Metadata = {
 export default function Intensive() {
     return (
         <div className="">
+            <nav className="bg-black text-white text-[18px] font-normal w-full h-[100px] flex items-center">
+                <div className="basis-2/6 container lg:pl-[150px]">
+                    <Image alt="logo" src="/logo-black.webp" width={100} height={100} />
+                </div>
+                <ul className="flex justify-center items-center gap-6 basis-4/6">
+                    <Link href="#overview"><p className="hover:text-primaryLC">Gambaran Umum</p></Link>
+                    <Link href="#benefits"><p className="hover:text-primaryLC">Keuntungan</p></Link>
+                    <Link href="#keseruan"><p className="hover:text-primaryLC">Galeri</p></Link>
+                    <Link href="#alumni"><p className="hover:text-primaryLC">Alumni Kami</p></Link>
+                    <Link href="#tutor"><p className="hover:text-primaryLC">Tutor Kami</p></Link>
+                    <Link href="#goals"><p className="hover:text-primaryLC">Target Kami</p></Link>
+                    <Link href="#tabel-program">
+                        <button className="btn bg-primaryLC hover:bg-primaryLC/80 hover:font-bold text-white w-40 border-none rounded-2xl">
+                            Daftar Program
+                        </button>
+                    </Link>
+                </ul>
+            </nav>
             {/* Start Hero */}
             <div className="flex flex-col lg:flex-row w-full h-screen bg-white">
                 <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
@@ -51,21 +69,21 @@ export default function Intensive() {
                         <article className="">
                             <h1 id="overview"></h1>
                             <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Overview</h2>
-                            <h2 className="text-[24px] lg:text-[32px] font-bold">Apakah kamu gap year student yang ingin membuat waktu break kamu produktif dan bermanfaat untuk masa depan kamu?
+                            <h2 className="text-[24px] lg:text-[32px] font-bold">Apakah kamu gap year student yang ingin membuat waktu <span className="italic">break</span> kamu produktif dan bermanfaat untuk masa depan kamu?
                                 <br />
                                 <span className="italic">Here’s your chance!</span>
                             </h2>
-                            <p className="text-[16px] lg:text-[18px] mt-5">Atau kamu adalah profesional atau karyawan di suatu perusahaan yang ingin upgrade English skills untuk meraih peluang karier yang lebih baik?</p>
+                            <p className="text-[16px] lg:text-[18px] mt-5">Atau kamu adalah profesional atau karyawan di suatu perusahaan yang ingin <span className="italic">upgrade English skills</span> untuk meraih peluang karier yang lebih baik?</p>
                             <br />
-                            <p className="text-[16px] lg:text-[18px]"><span className="font-bold italic">Intensive English Program</span> is exactly what you need.</p>
+                            <p className="text-[16px] lg:text-[18px] italic"><span className="font-bold">Intensive English Program</span> is exactly what you need.</p>
                             <br />
-                            <p className="text-[16px] lg:text-[18px]">Program ini dirancang khusus untuk kamu yang ingin meningkatkan English skills dari basic.</p>
+                            <p className="text-[16px] lg:text-[18px]">Program ini dirancang khusus untuk kamu yang ingin meningkatkan <span className="italic">English skills</span> dari <span className="italic">basic</span>.</p>
                             <br />
-                            <p className="text-[16px] lg:text-[18px]">LC menawarkan metode English boarding course yang dilengkapi dengan English area yang memungkinkan kamu tidak hanya belajar teori, namun juga praktik speaking langsung sehingga kamu percaya diri mengaplikasikan English skills kamu dalam kehidupan sehari-hari dengan efektif.</p>
+                            <p className="text-[16px] lg:text-[18px]">LC menawarkan metode <span className="italic">English boarding course</span> yang dilengkapi dengan <span className="italic">English area</span> yang memungkinkan kamu tidak hanya belajar teori, namun juga praktik <span className="italic">speaking</span> langsung sehingga kamu percaya diri mengaplikasikan <span className="italic">English skills</span> kamu dalam kehidupan sehari-hari dengan efektif.</p>
                             <br />
-                            <p className="text-[16px] lg:text-[18px]">Tersedia berbagai pilihan paket, mulai dari program 2 minggu, program 1 bulan, program 2 bulan, hingga program 3 bulan, yang dapat disesuaikan dengan jadwal dan kebutuhan kamu.</p>
+                            <p className="text-[16px] lg:text-[18px]">Tersedia berbagai pilihan paket, mulai dari program 2 minggu, program 1 bulan, program 2 bulan, hingga program 3 bulan.</p>
                             <br />
-                            <p className="text-[16px] lg:text-[18px]">Bergabunglah dengan LC dan upgrade English skills kamu untuk masa depan yang lebih baik!</p>
+                            <p className="text-[16px] lg:text-[18px]">Bergabunglah dengan LC dan upgrade <span className="italic">English skills</span> kamu untuk masa depan yang lebih baik!</p>
                         </article>
                     </div>
                     <div className="benefit">
@@ -77,7 +95,7 @@ export default function Intensive() {
                         </article>
                         <Benefits />
                     </div>
-                    <div className="keseruan">
+                    <div id="keseruan" className="keseruan">
                         <Keseruan />
                     </div>
                     <div className="alumni">
@@ -93,7 +111,7 @@ export default function Intensive() {
                     </div>
                     <div className="Tutor">
                         <article className="">
-                            <h1 id="Tutor"></h1>
+                            <h1 id="tutor"></h1>
                             <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Tutor Kami</h2>
                             <h2></h2>
                             <p></p>
@@ -104,7 +122,7 @@ export default function Intensive() {
                     </div>
                     <div className="Goals">
                         <article className="">
-                            <h1 id="Goals"></h1>
+                            <h1 id="goals"></h1>
                             <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Goals Program</h2>
                             <h2></h2>
                             <p></p>
@@ -133,13 +151,13 @@ export default function Intensive() {
             <div className="container flex flex-col items-center justify-center py-20">
                 <article className="prose text-center mb-10 lg:mb-20">
                     <h1 id="faq"></h1>
-                    <h1 className="text-[24px] lg:text-[32px]">Frequently Asked Questions <br />(FAQ) </h1>
+                    <h1 className="text-[24px] lg:text-[32px]"><span className="italic">Frequently Asked Questions</span> <br />(FAQ) </h1>
                 </article>
                 <FAQ />
                 <article className="text-center mt-10">
                     <h1></h1>
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
-                        <span className="italic">Mau tanya lebih lanjut tentang Intensive English Program?</span>
+                        <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
                     <Link aria-label="link-tanyacs" href="https://kampunginggrislc.com/tanyacspare">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>

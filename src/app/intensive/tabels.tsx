@@ -1,6 +1,7 @@
 import { Lalezar } from 'next/font/google'
 import Link from 'next/link'
 const lalezar = Lalezar({ subsets: ['latin'], weight: "400" })
+import HTMLReactParser from "html-react-parser";
 
 export default function tabels() {
     function checkLogo() {
@@ -20,14 +21,14 @@ export default function tabels() {
     }
     const contentTable = [
         {
-            head: "Camp English Area",
+            head: `<span className="italic">Camp English Area</span>`,
             col_1: checkLogo(),
             col_2: checkLogo(),
             col_3: checkLogo(),
             col_4: checkLogo(),
         },
         {
-            head: "Assesment Test",
+            head: `<span className="italic">Assesment Test</span>`,
             col_1: checkLogo(),
             col_2: checkLogo(),
             col_3: checkLogo(),
@@ -41,7 +42,7 @@ export default function tabels() {
             col_4: checkLogo(),
         },
         {
-            head: "Qualified Teacher",
+            head: `<span className="italic">Qualified Teacher</span>`,
             col_1: checkLogo(),
             col_2: checkLogo(),
             col_3: checkLogo(),
@@ -55,14 +56,14 @@ export default function tabels() {
             col_4: checkLogo(),
         },
         {
-            head: "E-Certificate",
+            head: `<span className="italic">E-Certificate</span>`,
             col_1: checkLogo(),
             col_2: checkLogo(),
             col_3: checkLogo(),
             col_4: checkLogo(),
         },
         {
-            head: "Merchandise",
+            head: `<span className="italic">Merchandise</span>`,
             col_1: checkLogo(),
             col_2: checkLogo(),
             col_3: checkLogo(),
@@ -93,7 +94,7 @@ export default function tabels() {
                     {
                         contentTable.map((item, index) => (
                             <tr key={index} className="border-b-[1px] border-b-[#D9D9D9]">
-                                <td className="lg:pe-20 py-5 font-bold text-[16px] lg:text-[18px]">{item.head}</td>
+                                <td className="lg:pe-20 py-5 font-bold text-[16px] lg:text-[18px]">{HTMLReactParser(item.head)}</td>
                                 <td className=" lg:px-10  py-5 text-center">{item.col_1}</td>
                                 <td className=" lg:px-10  py-5 text-center">{item.col_2}</td>
                                 <td className=" lg:px-10  py-5 text-center">{item.col_3}</td>

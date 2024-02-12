@@ -51,11 +51,11 @@ export default function Intensive() {
                         <article className="">
                             <h1 id="overview"></h1>
                             <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Overview</h2>
-                            <h2 className="text-[24px] lg:text-[32px] font-bold">Ingin belajar English dari basic?
+                            <h2 className="text-[24px] lg:text-[32px] font-bold">Ingin belajar <span className="italic">English</span> dari <span className="italic">basic</span>?
                                 <br />
                                 <span className="italic">Here’s your chance!</span>
                             </h2>
-                            <p className="text-[16px] lg:text-[18px] mt-5">Program intensif, dirancang khusus buat kamu yang ingin ningkatin skill English dari basic. Dengan konsep boarding course yang ditunjang English area, kamu bisa praktik setiap hari, banyak event yang menunjang ke-PD-anmu.</p>
+                            <p className="text-[16px] lg:text-[18px] mt-5">Program intensif, dirancang khusus buat kamu yang ingin ningkatin skill <span className="italic">English</span> dari basic. Dengan konsep <span className="italic">boarding course</span> yang ditunjang <span className="italic">English area</span>, kamu bisa praktik setiap hari, banyak event yang menunjang ke-PD-anmu.</p>
                             <br />
                             <p className="text-[16px] lg:text-[18px]">6 kali pertemuan dalam sehari, bikin skill-mu meningkat dalam waktu singkat. Banyak pilihan paket tersedia, mulai dari: 2 minggu, 1 bulan, 2 bulan, hingga 3 bulan.</p>
                         </article>
@@ -125,13 +125,13 @@ export default function Intensive() {
             <div className="container flex flex-col items-center justify-center py-20">
                 <article className="prose text-center mb-10 lg:mb-20">
                     <h1 id="faq"></h1>
-                    <h1 className="text-[24px] lg:text-[32px]">Frequently Asked Questions <br />(FAQ) </h1>
+                    <h1 className="text-[24px] lg:text-[32px] italic">Frequently Asked Questions <br />(FAQ) </h1>
                 </article>
                 <FAQ />
                 <article className="text-center mt-10">
                     <h1></h1>
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
-                        <span className="italic">Mau tanya lebih lanjut tentang Intensive English Program?</span>
+                        <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
                     <Link aria-label="link-tanyacs" href="https://kampunginggrislc.com/tanyacspare">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
