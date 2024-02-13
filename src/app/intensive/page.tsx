@@ -50,7 +50,7 @@ export default function Intensive() {
                     <div className="overview">
                         <article className="">
                             <h1 id="overview"></h1>
-                            <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Overview</h2>
+                            <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Gambaran Umum</h2>
                             <h2 className="text-[24px] lg:text-[32px] font-bold">Ingin belajar <span className="italic">English</span> dari <span className="italic">basic</span>?
                                 <br />
                                 <span className="italic">Here’s your chance!</span>
@@ -63,7 +63,7 @@ export default function Intensive() {
                     <div className="benefit">
                         <article className="mb-4">
                             <h1 id="benefits"></h1>
-                            <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC mt-10">Benefits</h2>
+                            <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC mt-10">Keuntungan</h2>
                             <h2></h2>
                             <p></p>
                         </article>
@@ -97,7 +97,7 @@ export default function Intensive() {
                     <div className="Goals">
                         <article className="">
                             <h1 id="Goals"></h1>
-                            <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Goals Program</h2>
+                            <h2 className="text-[18px] lg:text-[24px] text-primaryLC font-bold">Target Kami</h2>
                             <h2></h2>
                             <p></p>
                         </article>
@@ -133,7 +133,7 @@ export default function Intensive() {
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
                         <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
-                    <Link aria-label="link-tanyacs" href="https://kampunginggrislc.com/tanyacspare">
+                    <Link aria-label="link-tanyacs" href="https://kampunginggrislc.com/tanyacspare?utm_source=iep2024&utm_medium=btntanyacs">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>
