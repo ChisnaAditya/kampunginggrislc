@@ -133,7 +133,7 @@ export default function Intensive() {
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
                         <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
-                    <Link aria-label="link-tanyacs" href="https://tanyacs.vercel.app/?cabang=lampung&utm_source=iep2024&utm_medium=btntanyacs">
+                    <Link aria-label="link-tanyacs" href="https://kampunginggrislc.com/tanyacspare?utm_source=iep2024&utm_medium=btntanyacs">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>
