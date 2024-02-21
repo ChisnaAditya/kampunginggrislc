@@ -12,11 +12,11 @@ export default function Hero() {
                     </h1>
                     <p className="text-white text-sm">Kampung Inggris LC lebih dari sekadar tempat kursus Bahasa Inggris. <br /> Language Center adalah tempat bertumbuh dan meraih impian. 53 ribu ++ member dari seluruh Indonesia sudah merasakan baik dan asiknya metode unik yang diterapkan di LC.</p>
                     <div className="btns flex items-center justify-center gap-4">
-                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE" passHref={true}>
+                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
                             <button className="btn btn-warning">Daftar Sekarang</button>
                         </Link>
 
-                        <Link href="https://cs.kampunginggrislc.com/?cabang=pare" passHref={true}>
+                        <Link href="https://cs.kampunginggrislc.com/?cabang=pare">
                             <button className="btn btn-accent">Konsultasi CS</button>
                         </Link>
                     </div>
