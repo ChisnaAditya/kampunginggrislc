@@ -5,18 +5,18 @@ export default function Hero() {
             <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
             <div className="hero-content text-center z-[2]">
                 <article className="prose">
-                    <h1 className="text-white">
+                    <h1 className="text-white text-2xl">
                         53.333+ Member LC Telah Membuktikannya
                         <br />
                         Sekarang Giliran Kamu!
                     </h1>
-                    <p className="text-white">Kampung Inggris LC lebih dari sekadar tempat kursus Bahasa Inggris. Language Center adalah tempat bertumbuh dan meraih impian. 53 ribu ++ member dari seluruh Indonesia sudah merasakan baik dan asiknya metode unik yang diterapkan di LC.</p>
+                    <p className="text-white text-sm">Kampung Inggris LC lebih dari sekadar tempat kursus Bahasa Inggris. <br /> Language Center adalah tempat bertumbuh dan meraih impian. 53 ribu ++ member dari seluruh Indonesia sudah merasakan baik dan asiknya metode unik yang diterapkan di LC.</p>
                     <div className="btns flex items-center justify-center gap-4">
                         <Link href="https://registrasi.kampunginggris.id/?br_code=PARE" passHref={true}>
                             <button className="btn btn-warning">Daftar Sekarang</button>
                         </Link>
 
-                        <Link href="https://kampunginggrislc.com/tanyacspare?utm_source=lp_program&utm_medium=buttontanyacs&utm_campaign=organik" passHref={true}>
+                        <Link href="https://cs.kampunginggrislc.com/?cabang=pare" passHref={true}>
                             <button className="btn btn-accent">Konsultasi CS</button>
                         </Link>
                     </div>

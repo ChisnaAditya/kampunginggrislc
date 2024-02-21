@@ -78,7 +78,7 @@ export default function Company() {
                     <button className="btn btn-warning">Daftar Sekarang</button>
                 </Link>
 
-                <Link href="https://kampunginggrislc.com/tanyacspare?utm_source=LP&utm_medium=buttontanyacs&utm_campaign=Organik" passHref={true}>
+                <Link href="https://cs.kampunginggrislc.com/?cabang=pare" passHref={true}>
                     <button className="btn btn-accent">Konsultasi CS</button>
                 </Link>
             </div>
