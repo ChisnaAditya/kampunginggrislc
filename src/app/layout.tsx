@@ -26,6 +26,16 @@ export default function RootLayout({
     <html lang="en">
       <Suspense>
         <Analytics />
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-SC1KTK3NMP" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'G-SC1KTK3NMP');
+        `}
+        </Script>
         <Script id='tiktok-pixel'>
           {`
           !function (w, d, t) {
