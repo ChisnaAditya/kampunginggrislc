@@ -58,9 +58,9 @@ export default function Teachers() {
         },
     ]
     return (
-        <div className="flex flex-col py-10 bg-base-content min-h-screen items-center justify-center">
+        <div className="flex flex-col py-10 bg-base min-h-screen items-center justify-center">
             <article className="container prose flex flex-col w-full text-center">
-                <h1 className='text-base-100'>Yuk Kenalan Sama Teacher Kampung Inggris LC</h1>
+                <h1 className='text-2xl'>Yuk Kenalan Sama <span className='italic text-primaryLC'>Teacher </span> Kampung Inggris LC</h1>
             </article>
 
             <div className='container py-10'>

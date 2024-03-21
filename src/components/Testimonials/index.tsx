@@ -2,11 +2,15 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import monica from "../../assets/alumni/1.png"
+import alief from "../../assets/alumni/5.png"
+import arbaz from "../../assets/alumni/7.png"
+import cutputri from "../../assets/alumni/12.png"
 
 export default function Testimonials() {
     const testies = [
         {
-            img: "",
+            img: monica,
             name: "Monica",
             job: "Pramugari",
             program: "Alumni Program EM",
@@ -15,7 +19,7 @@ export default function Testimonials() {
             link: "zE6Xr5o2axc",
         },
         {
-            img: "",
+            img: arbaz,
             name: "Albir",
             job: "",
             program: "Alumni Holiday Ceria - 2 Minggu",
@@ -24,7 +28,7 @@ export default function Testimonials() {
             link: "x54B_M3IojU",
         },
         {
-            img: "",
+            img: cutputri,
             name: "Riski Khairatunnisa",
             job: "",
             program: "Alumni Intensive 1 Bulan",
@@ -33,7 +37,7 @@ export default function Testimonials() {
             link: "qc8UMu5M9i0",
         },
         {
-            img: "",
+            img: alief,
             name: "Pak Simon, Pak Eduard, dan Pak Yayang",
             job: "",
             program: "Alumni Intensive 2 Minggu",
@@ -46,23 +50,23 @@ export default function Testimonials() {
     return (
         <div className="container flex flex-col items-center bg-base-200 py-10">
             <article className="prose pb-4 text-center">
-                <h1>53.333+ Member Membuktikannya</h1>
+                <h1 className="text-2xl">53.333+ Member Membuktikannya</h1>
             </article>
             <div className="container carousel p-2 space-x-4">
                 {
                     testies.map((testi, index) => (
                         <div key={index + 1} className="carousel-item">
-                            <div className="card card-compact w-80 md:w-[28rem] bg-base-100 shadow-sm border overflow-hidden">
-                                <article className="prose card-body">
-                                    <h3>{testi.title}</h3>
-                                    <p>{testi.text}</p>
+                            <div className="card card-compact w-60 md:w-[28rem] bg-base-100 shadow-sm border overflow-hidden">
+                                <article className="card-body">
+                                    <h1 className="font-bold text-primaryLC">{testi.title}</h1>
+                                    <p className="text-xs">{testi.text}</p>
                                 </article>
                                 <div className="flex p-4 justify-between bg-base-300">
                                     <div className="flex items-center gap-2">
                                         <Image
                                             alt="kampung inggris lc testimonial"
                                             className="w-12 h-12 bg-center bg-cover rounded-full"
-                                            src="/logo-white.webp"
+                                            src={testi.img}
                                             width={50}
                                             height={50}
                                         />

@@ -50,10 +50,9 @@ export default function Card() {
     return (
         <div className="container py-10 flex flex-col items-center justify-center">
             <article className="container prose mb-1 text-center">
-                <h1>
+                <h1 className="text-2xl">
                     7 Metode Ini Bikin Ribuan Member
-                    <br />
-                    Lancar Berbahasa Inggris
+                    <span className="italic text-primaryLC"> Lancar Berbahasa Inggris</span>
                 </h1>
             </article>
 
@@ -69,7 +68,7 @@ export default function Card() {
                         </figure>
                         <div className="card-body items-center text-center">
                             <h2 className="card-title">{item.title}</h2>
-                            <p>{item.desc}</p>
+                            <p className="text-xs">{item.desc}</p>
                         </div>
                     </div>
                 ))}

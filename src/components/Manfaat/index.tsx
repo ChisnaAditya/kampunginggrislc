@@ -57,7 +57,7 @@ export default function Card() {
     return (
         <div className="container flex flex-col items-center justify-center mt-20">
             <article className="prose flex flex-col w-full text-center mb-1">
-                <h1>
+                <h1 className="text-2xl">
                     Ini 8 Hal yang Bakal Kamu Dapetin
                     <br />
                     di Kampung Inggris LC
@@ -75,8 +75,8 @@ export default function Card() {
                             />
                         </figure>
                         <div className="card-body items-center text-center">
-                            <h2 className="card-title">{item.title}</h2>
-                            <p>{item.desc}</p>
+                            <h2 className="card-title text-md">{item.title}</h2>
+                            <p className="text-xs text-left">{item.desc}</p>
                         </div>
                     </div>
                 ))}

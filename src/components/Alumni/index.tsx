@@ -32,7 +32,7 @@ export default function Alumni() {
     return (
         <div className="flex flex-col w-full items-center justify-center py-10">
             <article className="container prose flex flex-col w-full text-center">
-                <h1>Temui Alumni yang Sukses dan Dapetin Inspirasi di Sini</h1>
+                <h1 className="text-2xl">Temui <span className="italic text-primaryLC">Alumni yang Sukses</span>  dan Dapetin Inspirasi di Sini</h1>
             </article>
             <div className="container carousel carousel-center p-2 space-x-4">
                 {testies.map((testi, index) => (

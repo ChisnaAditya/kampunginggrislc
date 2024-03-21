@@ -10,12 +10,14 @@ import Analytics from "@/components/Analytics";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kampung Inggris LC",
+  title: "Program Kampung Inggris LC",
   description: "Kursus Bahasa Inggris Terfavorit di Kampung Inggris",
   verification: {
     google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA"
   },
 }
+
+
 
 export default function RootLayout({
   children,

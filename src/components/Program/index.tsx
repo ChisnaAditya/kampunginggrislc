@@ -23,62 +23,73 @@ export default function Program() {
             title: "Paket Intensive 2 Minggu",
             desc: "Program ini dirancang untuk kamu yang ingin meningkatkan kemampuan bahasa Inggris secara general mulai dari dasar dalam waktu 2 minggu. Dengan durasi yang relatif singkat kamu akan dilatih untuk percaya diri dan berbicara menggunakan bahasa Inggris secara sederhana.",
             price: "Rp. 950.000",
+            link: "https://program.kampunginggrislc.com/intensive",
         },
         {
             img: paket_2,
             title: "Paket Intensive 1 Bulan",
             desc: "Program ini dirancang untuk kamu yang ingin meningkatkan kemampuan bahasa Inggris secara general mulai dari dasar dalam waktu 1 bulan. Dengan durasi 1 bulan, kamu akan dilatih untuk percaya diri. Peserta mampu membuat kalimat, mengungkapkan serta mengaplikasikannya dalam kehidupan sehari-hari dengan menggunakan bahasa inggris yang baik dan benar.",
             price: "Rp. 1.600.000",
+            link: "https://program.kampunginggrislc.com/intensive",
         },
         {
             img: paket_3,
             title: "Paket Intensive 2 Bulan",
             desc: "Program ini dirancang untuk kamu yang ingin meningkatkan kemampuan bahasa Inggris secara general mulai dari dasar dalam waktu 2 bulan. Dengan durasi 2 bulan, kamu akan dilatih untuk percaya diri. Peserta mampu membuat kalimat, mengungkapkan serta mengaplikasikannya dalam kehidupan sehari-hari dengan menggunakan bahasa inggris yang baik dan benar.",
             price: "Rp. 2.975.000",
+            link: "https://program.kampunginggrislc.com/intensive"
         },
         {
             img: paket_4,
             title: "Paket Intensive 3 Bulan",
             desc: "Program ini dirancang untuk kamu yang ingin meningkatkan kemampuan bahasa Inggris secara general mulai dari dasar dalam waktu 3 bulan. Dengan durasi 3 bulan, kamu akan dilatih untuk percaya diri dan aktif berbicara bahasa Inggris. Peserta mampu merespon kalimat yang diucapkan oleh native speaker (by audio/video), mampu membuat mapping point dan rangkuman untuk dipresentasikan di depan publik.",
             price: "Rp. 4.200.000",
+            link: "https://program.kampunginggrislc.com/intensive"
         },
         {
             img: paket_5,
             title: "Paket English Master 4 Bulan",
             desc: "Paket ini cocok buat kamu yang mempunyai banyak waktu luang dan inggin belajar bahasa Inggris dari dasar secara lengkap, meliputi grammar, speaking, pronunciation dan vocabulary, yang dipadukan dengan camp english area. Sehingga kamu bisa praktik berbicara bahasa Inggris setiap hari bersama teman dan teacher camp. Goals dari paket ini adalah meningkatkan rasa percaya diri sehingga bisa lancar speaking. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
             price: "Rp. 6.500.000",
+            link: "https://cs.kampunginggrislc.com/"
         },
         {
             img: paket_6,
             title: "Paket English Master 6 Bulan",
             desc: "Paket ini cocok buat kamu yang mempunyai banyak waktu luang dan inggin belajar bahasa Inggris dari dasar secara lengkap, meliputi grammar, speaking, pronunciation dan vocabulary, yang dipadukan dengan camp english area. Sehingga kamu bisa praktik berbicara bahasa Inggris setiap hari bersama teman dan teacher camp. Goals dari paket ini adalah meningkatkan rasa percaya diri sehingga bisa lancar speaking. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
             price: "Rp. 9.500.000",
+            link: "https://cs.kampunginggrislc.com/"
         },
         {
             img: paket_7,
             title: "Paket Full Service 1 Bulan",
             desc: "Program ini dirancang untuk kamu yang ingin meningkatkan kemampuan bahasa Inggris secara general mulai dari dasar dalam waktu 1 bulan. Dengan durasi 1 bulan, kamu akan dilatih untuk percaya diri. Peserta mampu membuat kalimat, mengungkapkan serta mengaplikasikannya dalam kehidupan sehari-hari dengan menggunakan bahasa Inggris yang baik dan benar.",
             price: "Rp. 2.620.000",
+            link: "https://cs.kampunginggrislc.com/"
         },
         {
             img: paket_8,
             title: "Paket TOEFL Mastery 1 Bulan",
             desc: "Peserta mampu mengerjakan soal-soal TOEFL ITP dengan mudah  menggunakan tips & trik yang sudah diajarkan",
             price: "Rp. 1.750.000",
+            link: "https://cs.kampunginggrislc.com/"
         },
     ]
 
     return (
-        <div className="container flex flex-col lg:flex-row items-center justify-center w-full min-h-screen py-10">
+        <div id="program" className="container flex flex-col lg:flex-row items-center justify-center w-full min-h-screen py-10">
             <div>
-                <article className="prose flex flex-col w-full text-center">
-                    <h1>Pilih Paket Belajar Sesuai Kebutuhanmu</h1>
+                <article className="prose flex flex-col w-full">
+                    <h1 className="text-2xl text-center">Pilih <span className="italic text-primaryLC">Paket Belajar</span> Sesuai Kebutuhanmu</h1>
                 </article>
-                <div className="mt-10 w-full">
+                <div className="w-full">
                     <div className="flex flex-wrap-reverse items-center justify-center">
+                        <Link href={pakets[currentProduct].link} className="lg:hidden">
+                            <button className="btn btn-circle btn-wide bg-primaryLC text-white transition ease-in-out delay-150 hover:bg-primaryLC/80 hover:-translate-y-1 my-3">Detail Program</button>
+                        </Link>
                         <Image alt="kampung inggris lc paket" src={pakets[currentProduct].img} className="lg:w-1/4 w-full object-cover object-center rounded border border-warning" />
                         <article className="prose lg:w-1/2 w-full lg:pl-10 lg:py-6 mt-6 lg:mt-0">
-                            <h2 className="text-sm tracking-widest">NAMA PROGRAM</h2>
+                            <h2 className="text-sm">NAMA PROGRAM</h2>
                             <h1 className="text-3xl font-medium mb-1">{pakets[currentProduct].title}</h1>
                             <div className="flex mb-4">
                                 <span className="flex items-center">
@@ -110,7 +121,7 @@ export default function Program() {
                                     </svg>
                                 </span>
                             </div>
-                            <p className="leading-relaxed">{pakets[currentProduct].desc}</p>
+                            <p className="text-sm leading-tight">{pakets[currentProduct].desc}</p>
                             <div className="flex mt-6 items-center pb-5 border-b-2 border-gray-200 mb-5">
                                 <div className="flex items-center">
                                     <span className="mr-3">Pilihan</span>
@@ -125,11 +136,16 @@ export default function Program() {
                                     </div>
                                 </div>
                             </div>
-                            <div className="flex">
-                                <span className="font-medium text-2xl">{pakets[currentProduct].price}</span>
-                                <Link href="https://registrasi.kampunginggris.id/?br_code=PARE" passHref={true} className="flex ml-auto">
-                                    <button className="btn btn-warning mb-10">Daftar Sekarang</button>
-                                </Link>
+                            <div className="flex items-center justify-between">
+                                <p className="font-medium text-lg">{pakets[currentProduct].price}</p>
+                                <div className="flex items-center justify-center">
+                                    <Link href="https://registrasi.kampunginggris.id/?br_code=PARE" passHref={true}>
+                                        <button className="btn btn-circle w-32 bg-secondaryLC text-black transition ease-in-out delay-150 hover:bg-secondaryLC/80 hover:-translate-y-1">Daftar Sekarang</button>
+                                    </Link>
+                                    <Link href={pakets[currentProduct].link} className="hidden lg:block">
+                                        <button className="btn btn-circle w-32 bg-primaryLC text-white transition ease-in-out delay-150 hover:bg-primaryLC/80 hover:-translate-y-1 my-3">Detail Program</button>
+                                    </Link>
+                                </div>
                             </div>
                         </article>
                     </div>
