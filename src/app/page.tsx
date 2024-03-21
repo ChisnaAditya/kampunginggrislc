@@ -15,18 +15,6 @@ import NavBar from '@/components/NavBar'
 export default function Home() {
   return (
     <main className="ease-in duration-300">
-
-      <Script src="https://www.googletagmanager.com/gtag/js?id=G-HMS8J1N0MY" />
-      <Script id="google-analytics">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-HMS8J1N0MY');
-        `}
-      </Script>
-
       {/* <NavBar /> */}
       <Hero />
       <CTA />
