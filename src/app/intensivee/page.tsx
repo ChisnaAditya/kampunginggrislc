@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 export default function Intensive() {
     return (
         <div className="">
-            <nav className="hidden lg:flex lg:items-center w-full h-[100px] bg-black text-white text-[18px] font-normal">
+            <nav className="z-[2] hidden lg:flex lg:items-center w-full h-[100px] bg-black text-white text-[18px] font-normal">
                 <div className="basis-2/6 container lg:pl-[150px]">
                     <Image alt="logo" src="/logo-black.webp" width={100} height={100} />
                 </div>
@@ -40,7 +40,7 @@ export default function Intensive() {
             </nav>
             {/* Start Hero */}
             <div className="flex flex-col lg:flex-row w-full h-screen bg-white">
-                <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
+                <div className="z-[2] container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
                     <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]"> <span className="italic text-primaryLC">Upgrade English Skills </span> untuk Peluang yang Lebih Baik</h1>
                     <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">
                         Investasi terbaik untuk masa
@@ -60,6 +60,18 @@ export default function Intensive() {
                     </div>
                 </div>
             </div>
+            <Image
+                alt="hehe"
+                src="/ketupat.png"
+                width={250}
+                height={250}
+                className="absolute top-0 lg:top-20 left-0 right-0 bottom-0 w-1/4" />
+            <Image
+                alt="hehe"
+                src="/Bintang.png"
+                width={250}
+                height={250}
+                className="absolute top-0 lg:top-20 left-100 right-0 bottom-0" />
             {/* End Hero */}
 
             {/* Start Content */}

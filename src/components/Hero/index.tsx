@@ -1,6 +1,7 @@
 'use client'
 import { url } from "inspector"
 import Link from "next/link"
+import Image from "next/image"
 import { useSearchParams } from "next/navigation"
 import { useEffect, useState } from "react"
 export default function Hero() {
@@ -28,7 +29,7 @@ export default function Hero() {
 
     return (
         <div className="hero min-h-screen bg-fixed bg-center bg-cover bg-[url('/background.webp')]">
-            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
+            <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70" />
             <div className="hero-content text-center z-[2]">
                 <article className="prose text-left lg:text-center">
                     <h1 className="text-white text-2xl lg:text-4xl">
@@ -55,6 +56,19 @@ export default function Hero() {
                     </div>
                 </article>
             </div>
+            <Image
+                alt="hehe"
+                src="/ketupat.png"
+                width={250}
+                height={250}
+                className="z-[1] absolute top-0 left-0 right-0 bottom-0 w-1/4" />
+            <Image
+                alt="hehe"
+                src="/Bintang.png"
+                width={250}
+                height={250}
+                className="z-[1] absolute top-0 left-100 right-0 bottom-0" />
         </div>
+
     )
 }

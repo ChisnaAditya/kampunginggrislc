@@ -2,7 +2,6 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import Footer from "@/components/Footer";
 import { Metadata } from "next";
-import Head from "next/head";
 import Script from "next/script";
 import { Suspense } from "react";
 import Analytics from "@/components/Analytics";
@@ -102,7 +101,6 @@ export default function RootLayout({
       </Suspense>
       <body className={inter.className}>
         <div className="flex flex-col justify-between h-screen">
-          {/* <NavBar /> */}
           {children}
         </div>
       </body>

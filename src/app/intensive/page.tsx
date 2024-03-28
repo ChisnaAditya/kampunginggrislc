@@ -23,7 +23,7 @@ export default function Intensive() {
         <div className="">
             {/* Start Hero */}
             <div className="flex flex-col lg:flex-row w-full h-screen bg-secondaryLC bg-none lg:bg-[url('/jumbotron.png')] lg:bg-cover">
-                <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
+                <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] z-[2]">
                     <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                     <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
                     <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
@@ -39,9 +39,22 @@ export default function Intensive() {
                     </div>
                 </div>
             </div>
+            <Image
+                alt="hehe"
+                src="/ketupat.png"
+                width={250}
+                height={250}
+                className="z-[1] absolute top-0 left-0 right-0 bottom-0 w-1/4" />
+            <Image
+                alt="hehe"
+                src="/Bintang.png"
+                width={250}
+                height={250}
+                className="z-[1] absolute top-0 left-100 right-0 bottom-0" />
             {/* End Hero */}
 
             {/* Start Content */}
+            <div className="z-[2] bg-[url('/ornamen-ramadhan.png')] bg-center bg-cover" />
             <div className="lg:px-[150px] lg:mt-[91px] mt-5 grid grid-cols-6">
                 <div className="sticky self-start top-5 hidden lg:block lg:col-span-2">
                     <ListContent />
