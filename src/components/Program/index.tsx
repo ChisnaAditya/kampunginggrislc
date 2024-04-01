@@ -10,7 +10,8 @@ import paket_6 from '../../assets/paket/kampung-inggris-lc-paket-6-EM6.webp'
 import paket_7 from '../../assets/paket/kampung-inggris-lc-paket-7-full-service.webp'
 import paket_8 from '../../assets/paket/kampung-inggris-lc-paket-8-toefl.webp'
 import kalender from '../../assets/kalender-akademik-2024.webp'
-import { useState } from "react"
+import { useEffect, useState } from "react"
+import { useSearchParams } from "next/navigation"
 
 export default function Program() {
     const [currentProduct, setCurrentProduct] = useState(0)
@@ -76,6 +77,28 @@ export default function Program() {
         },
     ]
 
+    const [urlParam, setUrlParam] = useState('')
+    const searchParams = useSearchParams()
+    const utm_source = searchParams.get('utm_source') || "program.kampunginggrislc.com" as string
+    const utm_medium = searchParams.get('utm_medium') || "btntanyacs" as string
+    const utm_campaign = searchParams.get('utm_campaign') || "organik" as string
+
+    const setToLocalStorage = () => {
+        if (localStorage.getItem('utm_source') !== null) {
+            localStorage.setItem('utm_source', utm_source)
+        }
+        if (localStorage.getItem('utm_source') !== null) {
+            localStorage.setItem('utm_medium', utm_medium)
+        }
+        if (localStorage.getItem('utm_source') !== null) {
+            localStorage.setItem('utm_campaign', utm_campaign)
+        }
+    }
+    useEffect(() => {
+        setUrlParam(`utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`)
+        setToLocalStorage()
+    }, [utm_source, utm_medium, utm_campaign,])
+
     return (
         <div id="program" className="container flex flex-col lg:flex-row items-center justify-center w-full min-h-screen py-10">
             <div>
@@ -139,7 +162,7 @@ export default function Program() {
                             <div className="flex items-center justify-between">
                                 <p className="font-medium text-lg">{pakets[currentProduct].price}</p>
                                 <div className="flex items-center justify-center">
-                                    <Link href="https://registrasi.kampunginggris.id/?br_code=PARE" passHref={true}>
+                                    <Link href={`https://registrasi.kampunginggris.id/?br_code=PARE&${urlParam}`} passHref={true}>
                                         <button className="btn btn-circle w-32 bg-secondaryLC text-black transition ease-in-out delay-150 hover:bg-secondaryLC/80 hover:-translate-y-1">Daftar Sekarang</button>
                                     </Link>
                                     <Link href={pakets[currentProduct].link} className="hidden lg:block">

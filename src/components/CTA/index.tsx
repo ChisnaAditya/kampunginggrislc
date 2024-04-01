@@ -1,9 +1,33 @@
+"use client"
 import Image from "next/image"
 import Link from "next/link"
 import image_1 from "../../assets/kampung-inggris-lc-cta-1.webp"
 import image_2 from "../../assets/kampung-inggris-lc-cta-2.webp"
+import { useEffect, useState } from "react"
+import { useSearchParams } from "next/navigation"
 
 export default function CTA() {
+    const [urlParam, setUrlParam] = useState('')
+    const searchParams = useSearchParams()
+    const utm_source = searchParams.get('utm_source') || "program.kampunginggrislc.com" as string
+    const utm_medium = searchParams.get('utm_medium') || "btntanyacs" as string
+    const utm_campaign = searchParams.get('utm_campaign') || "organik" as string
+
+    const setToLocalStorage = () => {
+        if (localStorage.getItem('utm_source') !== null) {
+            localStorage.setItem('utm_source', utm_source)
+        }
+        if (localStorage.getItem('utm_source') !== null) {
+            localStorage.setItem('utm_medium', utm_medium)
+        }
+        if (localStorage.getItem('utm_source') !== null) {
+            localStorage.setItem('utm_campaign', utm_campaign)
+        }
+    }
+    useEffect(() => {
+        setUrlParam(`utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`)
+        setToLocalStorage()
+    }, [utm_source, utm_medium, utm_campaign,])
     return (
         <>
             <div className="container pt-10">
@@ -53,10 +77,10 @@ export default function CTA() {
                         <svg className="animate-bounce fill-base-content" xmlns="http://www.w3.org/2000/svg" height="30" width="30" viewBox="0 0 448 512"><path d="M246.6 470.6c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 402.7 361.4 265.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3l-160 160zm160-352l-160 160c-12.5 12.5-32.8 12.5-45.3 0l-160-160c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L224 210.7 361.4 73.4c12.5-12.5 32.8-12.5 45.3 0s12.5 32.8 0 45.3z" /></svg>
                     </div>
                     <div className="btns flex flex-col lg:flex-row items-center justify-center gap-4">
-                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE" >
+                        <Link href={`https://registrasi.kampunginggris.id/?br_code=PARE&${urlParam}`} >
                             <button className="btn btn-circle btn-wide bg-secondaryLC text-black transition ease-in-out delay-150 hover:bg-secondaryLC/80 hover:-translate-y-1">Daftar Sekarang</button>
                         </Link>
-                        <Link href="https://cs.kampunginggrislc.com/?cabang=pare" >
+                        <Link href={`https://cs.kampunginggrislc.com/?cabang=pare&${urlParam}`} >
                             <button className="btn btn-circle btn-wide bg-primaryLC text-white transition ease-in-out delay-150 hover:bg-primaryLC/80 hover:-translate-y-1">Konsultasi CS</button>
                         </Link>
                     </div>

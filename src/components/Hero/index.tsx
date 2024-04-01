@@ -7,9 +7,9 @@ import { useEffect, useState } from "react"
 export default function Hero() {
     const [urlParam, setUrlParam] = useState('')
     const searchParams = useSearchParams()
-    const utm_source = searchParams.get('utm_source') as string
-    const utm_medium = searchParams.get('utm_medium') as string
-    const utm_campaign = searchParams.get('utm_campaign') as string
+    const utm_source = searchParams.get('utm_source') || "program.kampunginggrislc.com" as string
+    const utm_medium = searchParams.get('utm_medium') || "btntanyacs" as string
+    const utm_campaign = searchParams.get('utm_campaign') || "organik" as string
 
     const setToLocalStorage = () => {
         if (localStorage.getItem('utm_source') !== null) {
@@ -39,7 +39,7 @@ export default function Hero() {
                     </h1>
                     <p className="text-white text-xs lg:text-lg leading-tight">Kampung Inggris LC lebih dari sekadar tempat kursus Bahasa Inggris. <br /> Language Center adalah tempat bertumbuh dan meraih impian. 53 ribu ++ member dari seluruh Indonesia sudah merasakan baik dan asiknya metode unik yang diterapkan di LC.</p>
                     <div className="btns flex flex-col lg:flex-row items-center justify-center gap-4">
-                        <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                        <Link href={`https://registrasi.kampunginggris.id/?br_code=PARE&${urlParam}`}>
                             <button className="btn btn-circle btn-wide bg-secondaryLC text-black transition ease-in-out delay-150 hover:bg-secondaryLC/80 hover:-translate-y-1">Daftar Sekarang</button>
                         </Link>
 
