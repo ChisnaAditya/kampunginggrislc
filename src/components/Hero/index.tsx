@@ -1,5 +1,4 @@
 'use client'
-import { url } from "inspector"
 import Link from "next/link"
 import Image from "next/image"
 import { useSearchParams } from "next/navigation"
@@ -22,6 +21,21 @@ export default function Hero() {
             localStorage.setItem('utm_campaign', utm_campaign)
         }
     }
+
+    const sendEventCS = () => {
+        window.gtag('event', 'btnCS-1', {
+            'posisi': 'Hero',
+        })
+        window.location.href = `https://cs.kampunginggrislc.com/?cabang=pare&${urlParam}`
+    }
+
+    const sendEventRegister = () => {
+        window.gtag('event', 'btnRegister-1', {
+            'posisi': 'Hero',
+        })
+        window.location.href = `https://registrasi.kampunginggris.id/?br_code=PARE&${urlParam}`
+    }
+
     useEffect(() => {
         setUrlParam(`utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`)
         setToLocalStorage()
@@ -39,13 +53,13 @@ export default function Hero() {
                     </h1>
                     <p className="text-white text-xs lg:text-lg leading-tight">Kampung Inggris LC lebih dari sekadar tempat kursus Bahasa Inggris. <br /> Language Center adalah tempat bertumbuh dan meraih impian. 53 ribu ++ member dari seluruh Indonesia sudah merasakan baik dan asiknya metode unik yang diterapkan di LC.</p>
                     <div className="btns flex flex-col lg:flex-row items-center justify-center gap-4">
-                        <Link href={`https://registrasi.kampunginggris.id/?br_code=PARE&${urlParam}`}>
-                            <button className="btn btn-circle btn-wide bg-secondaryLC text-black transition ease-in-out delay-150 hover:bg-secondaryLC/80 hover:-translate-y-1">Daftar Sekarang</button>
-                        </Link>
+                        {/* <Link href={`https://registrasi.kampunginggris.id/?br_code=PARE&${urlParam}`}> */}
+                        <button onClick={sendEventRegister} className="btn btn-circle btn-wide bg-secondaryLC text-black transition ease-in-out delay-150 hover:bg-secondaryLC/80 hover:-translate-y-1">Daftar Sekarang</button>
+                        {/* </Link> */}
 
-                        <Link href={`https://cs.kampunginggrislc.com/?cabang=pare&${urlParam}`}>
-                            <button className="btn btn-circle btn-wide bg-primaryLC text-white transition ease-in-out delay-150 hover:bg-primaryLC/80 hover:-translate-y-1">Konsultasi CS</button>
-                        </Link>
+                        {/* <Link href={`https://cs.kampunginggrislc.com/?cabang=pare&${urlParam}`}> */}
+                        <button onClick={sendEventCS} className="btn btn-circle btn-wide bg-primaryLC text-white transition ease-in-out delay-150 hover:bg-primaryLC/80 hover:-translate-y-1">Konsultasi CS</button>
+                        {/* </Link> */}
                     </div>
                     <div className="divider"></div>
                     <Link href="#program">
