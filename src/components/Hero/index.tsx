@@ -70,18 +70,6 @@ export default function Hero() {
                     </div>
                 </article>
             </div>
-            <Image
-                alt="hehe"
-                src="/ketupat.png"
-                width={250}
-                height={250}
-                className="z-[1] absolute top-0 left-0 right-0 bottom-0 w-1/4" />
-            <Image
-                alt="hehe"
-                src="/Bintang.png"
-                width={250}
-                height={250}
-                className="z-[1] absolute top-0 left-100 right-0 bottom-0" />
         </div>
 
     )

@@ -10,7 +10,7 @@ export default function benefits() {
         {
             icon: icon_4,
             title: 'English Area',
-            desc: `Kampung Inggris LC nyediain cam yang nyaman dan nerapin <span className="italic">English area</span>. Kamu bisa praktik secara intens biar speaking English-mu makin natural.`
+            desc: `Kampung Inggris LC nyediain camp yang nyaman dan nerapin <span className="italic">English area</span>. Kamu bisa praktik secara intens biar speaking English-mu makin natural.`
         },
         {
             icon: icon_5,
