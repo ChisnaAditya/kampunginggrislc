@@ -39,10 +39,10 @@ export default function Intensive() {
                 </ul>
             </nav>
             {/* Start Hero */}
-            <div className="flex flex-col lg:flex-row w-full h-screen bg-white">
+            <div className="flex flex-col lg:flex-row w-full min-h-screen lg:h-screen bg-white">
                 <div className="z-[2] container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
-                    <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]"> <span className="italic text-primaryLC">Upgrade English Skills </span> untuk Peluang yang Lebih Baik</h1>
-                    <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">
+                    <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]"> <span className="italic text-primaryLC">Upgrade English Skills </span> untuk Peluang yang Lebih Baik</h1>
+                    <p className="text-[16px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">
                         Investasi terbaik untuk masa
                         depan yang lebih cerah, belajar
                         bahasa Inggris secara intensif
@@ -60,18 +60,6 @@ export default function Intensive() {
                     </div>
                 </div>
             </div>
-            <Image
-                alt="hehe"
-                src="/ketupat.png"
-                width={250}
-                height={250}
-                className="absolute top-0 lg:top-20 left-0 right-0 bottom-0 w-1/4" />
-            <Image
-                alt="hehe"
-                src="/Bintang.png"
-                width={250}
-                height={250}
-                className="absolute top-0 lg:top-20 left-100 right-0 bottom-0" />
             {/* End Hero */}
 
             {/* Start Content */}
@@ -81,7 +69,7 @@ export default function Intensive() {
                         <article className="">
                             <h1 id="overview"></h1>
                             <h2 className="text-[18px] lg:text-[24px] font-bold text-primaryLC">Gambaran Umum</h2>
-                            <h2 className="text-[24px] lg:text-[32px] font-bold">Apakah kamu <span className="italic">gap year student</span> yang ingin membuat waktu <span className="italic">break</span> kamu produktif dan bermanfaat untuk masa depan kamu?
+                            <h2 className="text-[24px] leading-[1.3em] lg:text-[32px] font-bold">Apakah kamu <span className="italic">gap year student</span> yang ingin membuat waktu <span className="italic">break</span> kamu produktif dan bermanfaat untuk masa depan kamu?
                                 <br />
                                 <span className="italic">Here’s your chance!</span>
                             </h2>
