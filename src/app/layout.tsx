@@ -1,6 +1,6 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Footer from "@/components/Footer";
+import Modal from "@/components/Modal";
 import { Metadata } from "next";
 import Script from "next/script";
 import { Suspense } from "react";
@@ -103,6 +103,7 @@ export default function RootLayout({
         <div className="flex flex-col justify-between h-screen">
           {children}
         </div>
+        <Modal />
       </body>
     </html>
   );
