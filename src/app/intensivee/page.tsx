@@ -39,22 +39,22 @@ export default function Intensive() {
                 </ul>
             </nav>
             {/* Start Hero */}
-            <div className="flex flex-col lg:flex-row w-full min-h-screen lg:h-screen bg-white">
-                <div className="z-[2] container flex flex-col justify-center basis-1/2 lg:pl-[150px] ">
+            <div className="flex flex-col lg:flex-row w-full lg:h-screen bg-white">
+                <div className="z-[2] container flex flex-col justify-center basis-1/2 py-5 lg:pl-[150px] ">
                     <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]"> <span className="italic text-primaryLC">Upgrade English Skills </span> untuk Peluang yang Lebih Baik</h1>
                     <p className="text-[16px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">
                         Investasi terbaik untuk masa
                         depan yang lebih cerah, belajar
                         bahasa Inggris secara intensif
                         di LC <span className="italic font-extralight">can open new doors.</span></p>
-                    <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                    <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
                         <button aria-label="btn-registrasi" className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
                     </Link>
                 </div>
                 <div className="basis-1/2 pb-10">
-                    <Image alt="Intensive English Program - jumbotron mobile" src='/hero-iep.png' width={720} height={676} className="lg:mx-auto" />
+                    <Image alt="Intensive English Program - jumbotron mobile" src='/hero-iep.png' width={720} height={676} className="lg:mx-auto" priority />
                     <div className="px-5">
-                        <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                        <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
                             <button aria-label="btn-registrasi" className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-full border-none w-full">JOIN NOW</button>
                         </Link>
                     </div>
@@ -159,7 +159,7 @@ export default function Intensive() {
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
                         <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
-                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_source=iep2024&utm_medium=btntanyacs">
+                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>

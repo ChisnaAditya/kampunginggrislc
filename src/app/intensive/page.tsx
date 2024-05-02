@@ -22,21 +22,25 @@ export default function Intensive() {
     return (
         <div className="">
             {/* Start Hero */}
-            <div className="flex flex-col lg:flex-row w-full h-screen bg-secondaryLC bg-none lg:bg-[url('/jumbotron.png')] lg:bg-cover">
+            <div className="flex flex-col items-center justify-center lg:flex-row w-full py-5 lg:h-screen bg-secondaryLC bg-none lg:bg-[url('/jumbotron.png')] lg:bg-cover">
                 <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] z-[2]">
                     <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                     <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
-                    <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                    <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
                         <button aria-label="btn-registrasi" className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
                     </Link>
+                    <Image alt="Intensive English Program - jumbotron mobile" src='/jumbotron-mobile.png' width={500} height={500} className="lg:hidden" priority />
+                    <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
+                        <button aria-label="btn-registrasi" className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-full border-none w-full">JOIN NOW</button>
+                    </Link>
                 </div>
-                <div className="basis-1/2 pb-10">
-                    <Image alt="Intensive English Program - jumbotron mobile" src='/jumbotron-mobile.png' width={500} height={500} className="lg:hidden" />
-                    <div className="px-5">
-                        <Link aria-label="link-registrasi" href="https://registrasi.kampunginggris.id/?br_code=PARE">
+                <div className="lg:basis-1/2">
+                    {/* <Image alt="Intensive English Program - jumbotron mobile" src='/jumbotron-mobile.png' width={500} height={500} className="lg:hidden" priority /> */}
+                    {/* <div className="px-5">
+                        <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
                             <button aria-label="btn-registrasi" className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-full border-none w-full">JOIN NOW</button>
                         </Link>
-                    </div>
+                    </div> */}
                 </div>
             </div>
             {/* End Hero */}
@@ -134,7 +138,7 @@ export default function Intensive() {
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
                         <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
-                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_source=iep2024&utm_medium=btntanyacs">
+                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>
