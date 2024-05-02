@@ -103,7 +103,6 @@ export default function RootLayout({
         <div className="flex flex-col justify-between h-screen">
           {children}
         </div>
-        <Modal />
       </body>
     </html>
   );

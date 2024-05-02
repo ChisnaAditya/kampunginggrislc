@@ -11,6 +11,7 @@ import Keseruan from '@/components/Keseruan'
 import Script from 'next/script'
 import Testimonials from '@/components/Testimonials'
 import NavBar from '@/components/NavBar'
+import Modal from '@/components/Modal'
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
       <Company />
       <Teachers />
       <Program />
+      <Modal />
     </main>
   )
 }
