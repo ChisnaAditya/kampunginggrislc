@@ -2,9 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
-.bg-jumbotron{
+.bg-jumbotron {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-image: url('/jumbotron.png');
+}
+
+.bg-pare {
+    background: linear-gradient(305deg, rgb(35, 164, 85, 0.9) 0%, rgb(240, 232, 81, 0.9) 100%), url('/hero/bg-hero-pare.webp');
+    /* background-blend-mode: multiply; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.headline {
+    font-size: 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.subheadline {
+    font-size: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.text-icon {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.p {
+    font-size: 16px;
+}
+
+.harga {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 768px) {
+    .headline {
+        font-size: 1.5rem;
+    }
+
+    .subheadline {
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        line-height: 1.2em;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
 }

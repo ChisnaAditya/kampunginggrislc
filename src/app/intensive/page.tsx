@@ -22,7 +22,7 @@ export default function Intensive() {
     return (
         <div className="">
             {/* Start Hero */}
-            <div className="flex flex-col items-center justify-center lg:flex-row w-full py-5 lg:h-screen bg-secondaryLC bg-none lg:bg-[url('/jumbotron.png')] lg:bg-cover">
+            <div className="flex flex-col items-center justify-center lg:flex-row w-full py-56 lg:h-screen bg-secondaryLC bg-none lg:bg-[url('/jumbotron.png')] lg:bg-cover">
                 <div className="container flex flex-col justify-center basis-1/2 lg:pl-[150px] z-[2]">
                     <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                     <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
@@ -46,7 +46,6 @@ export default function Intensive() {
             {/* End Hero */}
 
             {/* Start Content */}
-            <div className="z-[2] bg-[url('/ornamen-ramadhan.png')] bg-center bg-cover" />
             <div className="lg:px-[150px] lg:mt-[91px] mt-5 grid grid-cols-6">
                 <div className="sticky self-start top-5 hidden lg:block lg:col-span-2">
                     <ListContent />
