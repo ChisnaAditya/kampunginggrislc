@@ -515,6 +515,7 @@ export default function Pare() {
                         src='/hero/hero-pare.webp'
                         width={720}
                         height={450}
+                        priority
                     />
                 </div>
                 <div className="text-center w-full h-full">
