@@ -395,16 +395,17 @@ export default function EnglishMaster() {
                     Pilih Paket Belajarmu Di Sini!
                 </h2>
                 <TabelHarga />
-                <div className="flex items-center justify-evenly w-full mx-auto py-5 my-10 rounded-lg bg-secondaryLC">
+                <div className="flex flex-col items-center justify-center w-full mx-auto my-10 rounded-lg border-[1px] py-20">
                     <h2 className='text-[16px] lg:text-[28px] font-bold'>
                         Bingung Menentukan Paket Pilihan? <br />
-                        <span><p className='font-normal'>Tanya cs kami</p></span>
+                        <span><p className='text-[24px] font-normal text-center'>Tanya cs kami</p></span>
                     </h2>
+                    <svg className=' fill-black w-[80px] animate-bounce' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Double down"><path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" /><path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" /></g></svg>
                     <Link
-                        className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none w-1/4 rounded-2xl"
+                        className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none rounded-2xl px-10"
                         href={`https://cs.kampunginggrislc.com/`}
                     >
-                        Hubungi CS
+                        Tanya CS
                     </Link>
                 </div>
                 <h2 className={`${subtitle()} mb-5`}>Frequently Asked Questions (FAQ) </h2>
