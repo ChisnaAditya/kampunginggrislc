@@ -281,12 +281,12 @@ export default function Pare() {
             desc: 'Teacher LC akan mengajarkan kamu cara efektif merangkum pelajaran atau artikel dengan cepat dan mempresentasikannya kembali secara akurat.'
         },
         {
-            icon: '/icon/B6@4x.webp',
+            icon: '/icon/B7@4x.webp',
             title: 'English for Spesific Purpose',
             desc: 'LC akan membekali kamu dengan kosa kata dan hal lain yang berhubungan dengan tujuan belajar bahasa Inggrismu.'
         },
         {
-            icon: '/icon/B7@4x.webp',
+            icon: '/icon/B6@4x.webp',
             title: 'Critical Thinking',
             desc: 'Games dan aktivitas seru seperti English debate dan random question bakal asah kemampuan berpikir, berinovasi, dan berargumen dengan cerdas, sambil boost confidence-mu untuk berani sepak up berbahasa Inggris.'
         },
