@@ -42,7 +42,7 @@ function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <div className="w-full">
+            <div className="lg:w-[80%]">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     src='/hero/Hero Image EMEMP.png'
@@ -110,7 +110,7 @@ function CardBenefits() {
 }
 function Galeri(props: any) {
     return (
-        <div key={props.key} className="w-full">
+        <div key={props.keyy} className="w-full">
             <div className="w-[350px]">
                 <Image alt='fasilitas kampung inggris lc pare' src={props.src} width={720} height={450} className='rounded-xl w-[720px]' />
             </div>
@@ -316,15 +316,15 @@ export default function EnglishMaster() {
                         {/* <h2 className={title()}>Gambaran Umum</h2> */}
                         <h3 className={subtitle()}>Apakah kamu termasuk kriteria dibawah ini?</h3>
                         <p className={text()}>
-                            <span className="flex gap-2">{iconCheck()}Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!</span>
-                            <span className="flex gap-2">{iconCheck()}Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!</span>
-                            <span className="flex gap-2">{iconCheck()}Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!</span>
+                            <span className="flex gap-2"><div>{iconCheck()}</div>Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!</span>
+                            <span className="flex gap-2"><div>{iconCheck()}</div>Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!</span>
+                            <span className="flex gap-2"><div>{iconCheck()}</div>Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!</span>
                         </p>
                         <p className={text()}>
                             <span className="font-bold italic mt-4">Berarti kamu harus!</span> <br />
-                            <span className="flex gap-2">{iconCheck()}Bukan hanya belajar teori tapi juga praktek</span>
-                            <span className="flex gap-2">{iconCheck()}Bukan hanya praktek sekali, tapi juga setiap hari</span>
-                            <span className="flex gap-2">{iconCheck()}Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback</span>
+                            <span className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya belajar teori tapi juga praktek</span>
+                            <span className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya praktek sekali, tapi juga setiap hari</span>
+                            <span className="flex gap-2"><div>{iconCheck()}</div>Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback</span>
                         </p>
                     </div>
 
