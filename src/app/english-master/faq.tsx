@@ -75,7 +75,7 @@ export default function Faq() {
                     <h3 className="text-md leading-tight lg:text-[22px] font-bold ">{HTMLReactParser(prop.title)}</h3>
                 </div>
                 {isActive &&
-                    <div className="px-5 pb-5 text-[12px] lg:text-[18px]">
+                    <div className="lg:px-5 py-5 text-[12px] lg:text-[18px]">
                         <p>{prop.content}</p>
                     </div>
                 }
