@@ -18,7 +18,7 @@ export const metadata: Metadata = {
 
 function HeroSection() {
     return (
-        <div className="flex flex-col lg:flex-row justify-between bg-secondaryLC w-full">
+        <div className="flex flex-col-reverse lg:flex-row justify-between bg-secondaryLC w-full">
             <div className="w-full p-[1rem]">
                 <article className="lg:pl-[8rem] lg:pt-[5rem]">
                     <Image
@@ -34,7 +34,13 @@ function HeroSection() {
                     <Link href="#harga">
                         <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">JOIN NOW</button>
                     </Link>
+
                 </article>
+                <div className="p-5">
+                    <Link href="#harga">
+                        <button className="lg:hidden w-full text-bold bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-xl border-none">JOIN NOW</button>
+                    </Link>
+                </div>
             </div>
             <div className="w-full">
                 <Image
@@ -44,16 +50,10 @@ function HeroSection() {
                     height={450}
                     priority
                 />
-                <div className="p-5">
-                    <Link href="#harga">
-                        <button className="lg:hidden w-full text-bold bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-xl border-none">JOIN NOW</button>
-                    </Link>
-                </div>
             </div>
         </div>
     )
 }
-
 function CardBenefits() {
     const content = [
         {
@@ -108,126 +108,100 @@ function CardBenefits() {
         </div>
     )
 }
-
-// function TabelHarga() {
-//     const harga = [
-//         {
-//             name: 'English Master (EM)',
-//             prices: [
-//                 {
-//                     duration: '4 bulan',
-//                     rupiah: 'Rp. 6.500.000'
-//                 },
-//             ],
-//             fasilitas: [
-//                 'Camp/asrama English Area',
-//                 'Assessment Test',
-//                 'Qualified & Experienced Teacher',
-//                 '4x Main Class & 2x Camp Class',
-//                 'Senin – Jumat',
-//                 'Extra Program',
-//                 'Modul Pembelajaran',
-//                 'Kaos LC, Jaket LC, Batik',
-//                 'Grammar, Speaking, Pronunciation',
-//                 'LIBURAN KE BALI',
-//             ],
-//             notes: ``,
-//             populer: false,
-//             link: `https://cs.kampunginggrislc.com?paket=em/emp`,
-//         },
-//         {
-//             name: 'English Master Plus (EMP)',
-//             prices: [
-//                 {
-//                     duration: '6 bulan',
-//                     rupiah: 'Rp. 9.500.000'
-//                 },
-//             ],
-//             fasilitas: [
-//                 'Camp/asrama English Area',
-//                 'Assessment Test',
-//                 'Qualified & Experienced Teacher',
-//                 '4x Main Class & 2x Camp Class',
-//                 'Senin – Jumat',
-//                 'Extra Program',
-//                 'Modul Pembelajaran',
-//                 'Kaos LC, Jaket LC, Batik',
-//                 'Grammar, Speaking, Pronunciation',
-//                 'LIBURAN KE BALI',
-//                 `Academic English`,
-//                 `TOEFL Preparation`,
-//                 `Real Test TOEFL`,
-//             ],
-//             notes: ``,
-//             populer: false,
-//             link: `https://cs.kampunginggrislc.com?paket=em/emp`,
-//         },
-//     ]
-//     return (
-//         <div className='flex flex-col items-center lg:flex-row lg:items-start gap-[20px]'>
-//             {harga.map((item, index) => (
-//                 <div key={index} className='relative lg:w-[450px] rounded-xl shadow-xl bg-white p-4 overflow-hidden'>
-//                     {item.populer && <div className='absolute top-[20px] left-[120px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
-//                     <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
-//                     <div className="flex flex-col items-center py-2 my-2 border-[1px]">
-//                         {item.prices.map((price, indexx) => (
-//                             <p key={indexx}>{price.duration} <span className='harga'>{price.rupiah}</span></p>
-//                         ))
-//                         }
-//                     </div>
-//                     <div >
-//                         <p className='text-left font-bold'>Fasilitas</p>
-//                         <ul>
-//                             {item.fasilitas.map((i, indexxx) => (
-//                                 <li key={indexxx} className="flex items-center space-x-1 text-left">
-//                                     <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-//                                     <span>{HTMLReactParser(i)}</span>
-//                                 </li>
-//                             ))
-//                             }
-//                         </ul>
-//                         <p className='text-left py-6'>{HTMLReactParser(item.notes)}</p>
-//                     </div>
-//                     <button
-//                         className="btn bg-primaryLC hover:bg-red-600 hover:font-bold text-white w-full rounded-2xl"
-//                         onClick={() => {
-//                             window.location.href = `${item.link}`
-//                         }}
-//                     >
-//                         Daftar Program
-//                     </button>
-//                 </div>
-//             ))
-//             }
-//         </div>
-//     )
-// }
-
+function Galeri(props: any) {
+    return (
+        <div key={props.key} className="w-full">
+            <div className="w-[350px]">
+                <Image alt='fasilitas kampung inggris lc pare' src={props.src} width={720} height={450} className='rounded-xl w-[720px]' />
+            </div>
+            <p className="text-center mt-2">{props.desc}</p>
+        </div>
+    )
+}
 const keseruan = [
-    '/keseruan/em/1.webp',
-    '/keseruan/em/2.webp',
-    '/keseruan/em/3.webp',
-    '/keseruan/em/4.webp',
-    '/keseruan/em/5.webp',
-    '/keseruan/em/6.webp',
-    '/keseruan/em/7.webp',
-    '/keseruan/em/8.webp',
-    '/keseruan/em/9.webp',
-    '/keseruan/em/10.webp',
-    '/keseruan/em/11.webp',
+    {
+        src: '/keseruan/em/1.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/2.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/3.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/4.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/5.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/6.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/7.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/8.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/9.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/10.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/keseruan/em/11.webp',
+        desc: 'desc'
+    },
 ]
 
 const fasilitas = [
-    '/fasilitas/5.webp',
-    '/fasilitas/em/1.webp',
-    '/fasilitas/6.webp',
-    '/fasilitas/em/2.webp',
-    '/fasilitas/em/3.webp',
-    '/fasilitas/em/4.webp',
-    '/fasilitas/em/5.webp',
-    '/fasilitas/8.webp',
-    '/fasilitas/em/6.webp',
-    '/fasilitas/em/7.webp',
+    {
+        src: '/fasilitas/5.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/em/1.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/6.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/em/3.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/em/4.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/em/5.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/em/6.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/em/7.webp',
+        desc: 'desc'
+    },
+    {
+        src: '/fasilitas/8.webp',
+        desc: 'desc'
+    },
 ]
 
 const alumni = [
@@ -317,6 +291,18 @@ const alumni = [
     },
 ]
 
+const iconCheck = () => {
+    return (
+        <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 448 512"
+            width={20}
+            height={20}
+        >
+            <path d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z" />
+        </svg>
+    )
+}
 export default function EnglishMaster() {
     return (
         <section>
@@ -327,47 +313,49 @@ export default function EnglishMaster() {
                 </div>
                 <div className="w-full lg:w-2/3 lg:pl-20 px-[1rem]">
                     <div id="overview">
-                        <h2 className={title()}>Gambaran Umum</h2>
+                        {/* <h2 className={title()}>Gambaran Umum</h2> */}
                         <h3 className={subtitle()}>Apakah kamu termasuk kriteria dibawah ini?</h3>
-                        <p className={text()}>Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!
-                            Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!
-                            Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!
+                        <p className={text()}>
+                            <span className="flex gap-2">{iconCheck()}Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!</span>
+                            <span className="flex gap-2">{iconCheck()}Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!</span>
+                            <span className="flex gap-2">{iconCheck()}Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!</span>
                         </p>
                         <p className={text()}>
                             <span className="font-bold italic mt-4">Berarti kamu harus!</span> <br />
-                            Bukan hanya belajar teori tapi juga praktek <br />
-                            Bukan hanya praktek sekali, tapi juga setiap hari <br />
-                            Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback
+                            <span className="flex gap-2">{iconCheck()}Bukan hanya belajar teori tapi juga praktek</span>
+                            <span className="flex gap-2">{iconCheck()}Bukan hanya praktek sekali, tapi juga setiap hari</span>
+                            <span className="flex gap-2">{iconCheck()}Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback</span>
                         </p>
                     </div>
 
                     <div id="keuntungan" className="mt-10">
-                        <h2 className={title()}>Keuntungan</h2>
+                        {/* <h2 className={title()}>Keuntungan</h2> */}
                         <h3 className={subtitle()}>Kenalin nih Kampung Inggris LC <span className="lg:hidden">(Language Center)</span></h3>
                         <p className={text()}>Lembaga kursus bahasa inggris yang bukan hanya berfokus pada pemberian materi saja,
                             tapi juga <span className="font-bold italic mt-4">menekankan pada praktek</span> . Karena kami sadar untuk menguasai bahasa itu bukan hanya sekedar teori saja
                             tapi harus dibiasakan untuk praktek setiap hari, dan praktek bareng teman saja nggak cukup tapi harus berada
-                            <span className="font-bold italic mt-4"> di lingkungan yang tepat </span>dan dengan teman yang sudah bisa dan siap saling mendukung,
-                            karena itulah LC hadir dengan membawa konsep:
+                            <span className="font-bold italic mt-4"> di lingkungan yang tepat </span>dan dengan teman yang sudah bisa dan siap saling mendukung
                         </p>
+                        <p className="mt-4"></p>
+                        <h3 className={subtitle()}>Karena itulah LC hadir dengan membawa konsep:</h3>
                         <p className="mt-4"></p>
                         <CardBenefits />
                     </div>
 
                     <div id="galeri" className="mt-10">
-                        <h2 className={title()}>Galeri</h2>
+                        {/* <h2 className={title()}>Galeri</h2> */}
                         <h3 className={subtitle()}>Seperti ini kan suasana pembelajaran yang kamu inginkan?</h3>
                         <div className='scrollbar flex gap-[20px] overflow-x-auto w-full py-6'>
                             {
                                 keseruan.map((item, index) => (
-                                    <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl w-[80%]' />
+                                    <Galeri key={index} src={item.src} desc={item.desc} />
                                 ))
                             }
                         </div>
                     </div>
 
                     <div id="alumni" className="mt-10">
-                        <h2 className={title()}>Alumni</h2>
+                        {/* <h2 className={title()}>Alumni</h2> */}
                         <h3 className={subtitle()}>Ini nih kata alumni yang sudah belajar di LC!</h3>
                         {/* <Alumni /> */}
                         <div className='scrollbar flex gap-[20px] overflow-x-auto w-full py-6'>
@@ -387,12 +375,12 @@ export default function EnglishMaster() {
                     </div>
 
                     <div id="fasilitas" className="mt-10">
-                        <h2 className={title()}>Fasilitas</h2>
+                        {/* <h2 className={title()}>Fasilitas</h2> */}
                         <h3 className={subtitle()}>Di lingkungan yang mendukung ini kamu akan belajar</h3>
                         <div className='scrollbar flex gap-[20px] overflow-x-auto w-full py-6'>
                             {
                                 fasilitas.map((item, index) => (
-                                    <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl w-[80%]' />
+                                    <Galeri key={index} src={item.src} desc={item.desc} />
                                 ))
                             }
                         </div>
