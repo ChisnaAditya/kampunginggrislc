@@ -11,25 +11,25 @@ export default function ListContent() {
     const [fasilitasActive, setFasilitasActive] = useState("");
 
     const listenScroll = () => {
-        if (window.scrollY <= 1000) {
+        if (window.scrollY <= 1200) {
             setOverviewActive("border-primaryLC")
         } else {
             setOverviewActive("")
         }
 
-        if (window.scrollY > 1000 && window.scrollY < 1800) {
+        if (window.scrollY > 1200 && window.scrollY < 1900) {
             setBenefitsActive("border-primaryLC")
         } else {
             setBenefitsActive("")
         }
 
-        if (window.scrollY > 1800 && window.scrollY < 2200) {
+        if (window.scrollY > 1900 && window.scrollY < 2600) {
             setGalleryActive("border-primaryLC")
         } else {
             setGalleryActive("")
         }
 
-        if (window.scrollY > 2200 && window.scrollY < 2800) {
+        if (window.scrollY > 2600 && window.scrollY < 2800) {
             setAlumniActive("border-primaryLC")
         } else {
             setAlumniActive("")
@@ -52,28 +52,38 @@ export default function ListContent() {
             <ul className="text-[#7A7979] text-[18px]">
                 <li className="flex items-center">
                     <div className={`border-l-4 ${overviewActive} py-5 px-3`}></div>
-                    <p>Gambaran Umum</p>
+                    <Link href="#overview">
+                        <p>Gambaran Umum</p>
+                    </Link>
                 </li>
                 <li className="flex items-center">
                     <div className={`border-l-4 ${benefitsActive} py-5 px-3`}></div>
-                    <p>Keuntungan</p>
+                    <Link href="#keuntungan">
+                        <p>Keuntungan</p>
+                    </Link>
                 </li>
                 <li className="flex items-center">
                     <div className={`border-l-4 ${galleryActive} py-5 px-3`}></div>
-                    <p>Galeri</p>
+                    <Link href="#galeri">
+                        <p>Galeri</p>
+                    </Link>
                 </li>
                 <li className="flex items-center">
                     <div className={`border-l-4 ${alumniActive} py-5 px-3`}></div>
-                    <p>Alumni Kami</p>
+                    <Link href="#alumni">
+                        <p>Alumni Kami</p>
+                    </Link>
                 </li>
                 <li className="flex items-center">
                     <div className={`border-l-4 ${fasilitasActive} py-5 px-3`}></div>
-                    <p>Fasilitas</p>
+                    <Link href="#fasilitas">
+                        <p>Fasilitas</p>
+                    </Link>
                 </li>
                 <li className="mt-5">
-                    <Link href="#tabel-program">
+                    <Link href="https://registrasi.kampunginggris.id/?br_code=PARE">
                         <button className="btn bg-primaryLC hover:bg-primaryLC/80 hover:font-bold text-white w-40 rounded-2xl">
-                            Daftar Program
+                            Daftar Sekarang
                         </button>
                     </Link>
                 </li>

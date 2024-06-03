@@ -1,12 +1,9 @@
 "use client"
 
 import { useState } from "react"
-import Image from "next/image"
 import HTMLReactParser from "html-react-parser";
 
 export default function Faq() {
-    const [isOpenSatu, setIsOpenSatu] = useState(true)
-
     const faqContent = [
         {
             title: 'Berapa usia minimal untuk join program english master dan english master plus?',
@@ -71,11 +68,11 @@ export default function Faq() {
         }
         return (
             <div onClick={handleOpen} className="border-[0.5px] border-[#232323] p-4 rounded-xl">
-                <div className="flex items-center justify-start gap-4 px-4 py-2 cursor-pointer">
+                <div className="flex items-center justify-start gap-4 lg:px-4 lg:py-2 cursor-pointer">
                     <div>
                         <IconPlus />
                     </div>
-                    <h3 className="text-md lg:text-[22px] font-bold ">{HTMLReactParser(prop.title)}</h3>
+                    <h3 className="text-md leading-tight lg:text-[22px] font-bold ">{HTMLReactParser(prop.title)}</h3>
                 </div>
                 {isActive &&
                     <div className="px-5 pb-5 text-[12px] lg:text-[18px]">
@@ -86,29 +83,7 @@ export default function Faq() {
         )
     }
     return (
-        <div className="flex flex-col gap-5 w-[1100px]">
-            {/* <div onClick={() => setIsOpenSatu(!isOpenSatu)} className="border-[1px] border-[#232323] rounded-2xl">
-                <div className="flex items-center justify-start gap-4 px-4 py-2 cursor-pointer">
-                    <div>
-                        <IconPlus />
-                    </div>
-                    <h3 className="text-md lg:text-[24px] font-bold ">Apa beda <span className="italic">main class</span> dan <span className="italic">camp class</span>?</h3>
-                </div>
-                {isOpenSatu &&
-                    <div className="px-5 pb-5 text-[12px] lg:text-[18px]">
-                        <p className="italic">Main Class</p>
-                        <ul className="list-disc list-inside">
-                            <li>Lokasi : Gedung kelas</li>
-                            <li>Materi: Merupakan materi kelas yg utama di program intensif seperti: <span className="italic"> grammar, speaking</span> dan <span className="italic">pronunciation</span></li>
-                        </ul>
-                        <p className="mt-10 italic">Camp Class</p>
-                        <ul className="list-disc list-inside">
-                            <li>Lokasi: <span className="italic">Camp</span> masing-masing</li>
-                            <li>Materi: Merupakan kelas pendukung dari main class seperti: hafalan <span className="italic">vocab</span>, latihan <span className="italic">conversation</span>, <span className="italic">review</span> materi</li>
-                        </ul>
-                    </div>
-                }
-            </div> */}
+        <div className="flex flex-col px-[1rem] gap-5 lg:w-[1100px]">
             {faqContent.map((item, index) => (
                 <Accordion key={index} title={item.title} content={item.content} />
             ))

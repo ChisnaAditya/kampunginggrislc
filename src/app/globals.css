@@ -17,6 +17,14 @@
     background-size: cover;
 }
 
+.bg-pattern-tanyacs {
+    background-color: #ffffff;
+    opacity: 1;
+    background-image: radial-gradient(#EA1E24 2px, transparent 2px), radial-gradient(#EA1E24 2px, #ffffff 2px);
+    background-size: 80px 80px;
+    background-position: 0 0, 40px 40px;
+}
+
 .headline {
     font-size: 2rem;
     font-weight: 700;
@@ -49,6 +57,27 @@
     font-weight: 600;
 }
 
+.scrollbar {
+    scrollbar-width: none;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    /* border-radius: 10px; */
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar {
+    /* width: thin; */
+    background-color: #F5F5F5;
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+    /* border-radius: 10px; */
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #EA1E24;
+}
+
 @media only screen and (max-width: 768px) {
     .headline {
         font-size: 1.5rem;
@@ -64,5 +93,13 @@
         margin-right: auto;
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+
+    .text-icon {
+        font-size: 16px;
+    }
+
+    .p {
+        font-size: 12px;
     }
 }

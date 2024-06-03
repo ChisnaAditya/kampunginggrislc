@@ -17,19 +17,22 @@ export const metadata: Metadata = {
 
 function HeroSection() {
     return (
-        <div className="flex justify-between bg-secondaryLC w-full">
-            <div className="w-full">
-                <article className="pl-[10rem] pt-[5rem]">
+        <div className="flex flex-col lg:flex-row justify-between bg-secondaryLC w-full">
+            <div className="w-full p-[1rem]">
+                <article className="lg:pl-[8rem] lg:pt-[5rem]">
                     <Image
                         alt="logo kampung inggris lc"
                         src='/logo-white.webp'
                         width={150}
                         height={150}
                         priority
+                        className="hidden lg:block"
                     />
-                    <h1 className="text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Lingkungan Ideal untuk Menguasai Bahasa Inggris dari Dasar hingga Mahir!</h1>
-                    <p className="text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">Gak cuma teori, nikmati praktik bahasa Inggris setiap hari + BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</p>
-                    <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
+                    <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Belajar Bahasa Inggris dari Basic Sampai Mahir di Lingkungan yang Mendukung</h1>
+                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Bukan hanya sekedar belajar teori tapi kamu bisa praktek ngomong inggris setiap hari, eits dapat bonus liburan ke Bali juga lho!</p>
+                    <Link href="#harga">
+                        <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">JOIN NOW</button>
+                    </Link>
                 </article>
             </div>
             <div className="w-full">
@@ -40,6 +43,11 @@ function HeroSection() {
                     height={450}
                     priority
                 />
+                <div className="p-5">
+                    <Link href="#harga">
+                        <button className="lg:hidden w-full text-bold bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-xl border-none">JOIN NOW</button>
+                    </Link>
+                </div>
             </div>
         </div>
     )
@@ -81,7 +89,7 @@ function CardBenefits() {
     return (
         <div className="flex flex-col gap-4">
             {content.map((item, index) => (
-                <div key={index} className="flex gap-4">
+                <div key={index} className="flex flex-col lg:flex-row gap-4">
                     <div className="w-[50px]">
                         <Image
                             alt="kampung inggris lc benefits"
@@ -91,7 +99,7 @@ function CardBenefits() {
                         />
                     </div>
                     <div className="w-full">
-                        <h1 className="text-[18px] lg:text-[22px] text-center lg:text-left font-bold italic">{item.title}</h1>
+                        <h1 className="text-[18px] lg:text-[22px] text-left font-bold italic">{item.title}</h1>
                         <p className="text-[16px] lg:text-[18px]">{HTMLReactParser(item.desc)}</p>
                     </div>
                 </div>
@@ -157,7 +165,7 @@ function TabelHarga() {
     return (
         <div className='flex flex-col items-center lg:flex-row lg:items-start gap-[20px]'>
             {harga.map((item, index) => (
-                <div key={index} className='relative w-[450px] rounded-xl shadow-xl bg-white p-4 overflow-hidden'>
+                <div key={index} className='relative lg:w-[450px] rounded-xl shadow-xl bg-white p-4 overflow-hidden'>
                     {item.populer && <div className='absolute top-[20px] left-[120px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
                     <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
                     <div className="flex flex-col items-center py-2 my-2 border-[1px]">
@@ -166,7 +174,7 @@ function TabelHarga() {
                         ))
                         }
                     </div>
-                    <div className="">
+                    <div >
                         <p className='text-left font-bold'>Fasilitas</p>
                         <ul>
                             {item.fasilitas.map((i, indexxx) => (
@@ -310,15 +318,15 @@ export default function EnglishMaster() {
     return (
         <section>
             <HeroSection />
-            <div className="flex justify-center w-[1300px] mx-auto mt-10">
+            <div className="flex justify-center lg:w-[1300px] mx-auto mt-10">
                 <div className="sticky self-start top-5 hidden lg:block">
                     <ListContent />
                 </div>
-                <div className="w-2/3 pl-20">
-                    <div className="overview">
+                <div className="w-full lg:w-2/3 lg:pl-20 px-[1rem]">
+                    <div id="overview">
                         <h2 className={title()}>Gambaran Umum</h2>
                         <h3 className={subtitle()}>Apakah kamu termasuk kriteria dibawah ini?</h3>
-                        <p className={text()}>Udah belajar bahasa inggris bertahun tahun tapi masih belum bisa!
+                        <p className={text()}>Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!
                             Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!
                             Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!
                         </p>
@@ -330,36 +338,36 @@ export default function EnglishMaster() {
                         </p>
                     </div>
 
-                    <div className="keuntungan mt-10">
+                    <div id="keuntungan" className="mt-10">
                         <h2 className={title()}>Keuntungan</h2>
-                        <h3 className={subtitle()}>Kenalin nih Kampung Inggris LC</h3>
+                        <h3 className={subtitle()}>Kenalin nih Kampung Inggris LC <span className="lg:hidden">(Language Center)</span></h3>
                         <p className={text()}>Lembaga kursus bahasa inggris yang bukan hanya berfokus pada pemberian materi saja,
-                            tapi juga menekankan pada praktek. Karena kami sadar untuk menguasai bahasa itu bukan hanya sekedar teori saja
+                            tapi juga <span className="font-bold italic mt-4">menekankan pada praktek</span> . Karena kami sadar untuk menguasai bahasa itu bukan hanya sekedar teori saja
                             tapi harus dibiasakan untuk praktek setiap hari, dan praktek bareng teman saja nggak cukup tapi harus berada
-                            dilingkungan yang tepat dan dengan teman yang sudah bisa dan siap saling mendukung,
+                            <span className="font-bold italic mt-4"> di lingkungan yang tepat </span>dan dengan teman yang sudah bisa dan siap saling mendukung,
                             karena itulah LC hadir dengan membawa konsep:
                         </p>
                         <p className="mt-4"></p>
                         <CardBenefits />
                     </div>
 
-                    <div className="galery mt-10">
+                    <div id="galeri" className="mt-10">
                         <h2 className={title()}>Galeri</h2>
                         <h3 className={subtitle()}>Seperti ini kan suasana pembelajaran yang kamu inginkan?</h3>
-                        <div className='flex gap-[20px] overflow-x-auto w-full py-6 pl-6'>
+                        <div className='scrollbar flex gap-[20px] overflow-x-auto w-full py-6'>
                             {
                                 keseruan.map((item, index) => (
-                                    <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl' />
+                                    <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl w-[80%]' />
                                 ))
                             }
                         </div>
                     </div>
 
-                    <div className="alumni mt-10">
+                    <div id="alumni" className="mt-10">
                         <h2 className={title()}>Alumni</h2>
                         <h3 className={subtitle()}>Ini nih kata alumni yang sudah belajar di LC!</h3>
                         {/* <Alumni /> */}
-                        <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
+                        <div className='scrollbar flex gap-[20px] overflow-x-auto w-full py-6'>
                             {
                                 alumni.map((item, index) => (
                                     <CardTestimoni
@@ -375,13 +383,13 @@ export default function EnglishMaster() {
                         </div>
                     </div>
 
-                    <div className="Fasilitas mt-10">
+                    <div id="fasilitas" className="mt-10">
                         <h2 className={title()}>Fasilitas</h2>
                         <h3 className={subtitle()}>Di lingkungan yang mendukung ini kamu akan belajar</h3>
-                        <div className='flex gap-[20px] overflow-x-auto w-full py-6 pl-6'>
+                        <div className='scrollbar flex gap-[20px] overflow-x-auto w-full py-6'>
                             {
                                 fasilitas.map((item, index) => (
-                                    <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl' />
+                                    <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl w-[80%]' />
                                 ))
                             }
                         </div>
@@ -389,18 +397,18 @@ export default function EnglishMaster() {
                 </div>
             </div>
             <div className="flex flex-col items-center mx-auto mt-10 py-10">
-                <h2 className={`${subtitle()} mb-5 text-center`}>
+                <h2 id="harga" className={`${subtitle()} mb-5 text-center`}>
                     <span className="italic">Set Your English Journey</span>
                     <br />
                     Pilih Paket Belajarmu Di Sini!
                 </h2>
                 <TabelHarga />
-                <div className="flex flex-col items-center justify-center w-full mx-auto my-10 rounded-lg border-[1px] py-20">
-                    <h2 className='text-[16px] lg:text-[28px] font-bold'>
-                        Bingung Menentukan Paket Pilihan? <br />
-                        <span><p className='text-[24px] font-normal text-center'>Tanya cs kami</p></span>
+                <div className="flex flex-col items-center justify-center w-full mx-auto my-10  py-5 lg:py-20 bg-pattern-tanyacs">
+                    <h2 className='text-[24px] lg:text-[28px] font-bold shadow-green-800'>
+                        Bingung Menentukan Paket Pilihan?
                     </h2>
-                    <svg className=' fill-black w-[80px] animate-bounce' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Double down"><path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" /><path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" /></g></svg>
+                    <p className='text-[24px] font-normal text-center'>Tanya cs kami</p>
+                    <svg className=' fill-green-700 w-[60px] lg:w-[70px] animate-bounce' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Double down"><path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" /><path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" /></g></svg>
                     <Link
                         className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none rounded-2xl px-10"
                         href={`https://cs.kampunginggrislc.com/`}
@@ -408,7 +416,7 @@ export default function EnglishMaster() {
                         Tanya CS
                     </Link>
                 </div>
-                <h2 className={`${subtitle()} mb-5`}>Frequently Asked Questions (FAQ) </h2>
+                <h2 id="faq" className={`${subtitle()} mb-5 text-center`}>Frequently Asked Questions (FAQ) </h2>
                 <FAQ />
             </div>
         </section>
