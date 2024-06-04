@@ -30,7 +30,7 @@ function HeroSection() {
                         className="hidden lg:block"
                     />
                     <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Lingkungan Ideal untuk Menguasai Bahasa Inggris dari Dasar hingga Mahir!</h1>
-                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Gak cuma teori, nikmati praktik bahasa Inggris setiap hari + <b>BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</b></p>
+                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Gak cuma teori, nikmati praktik bahasa Inggris setiap hari + <b className="font-bold">BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</b></p>
                     <Link href="#harga">
                         <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">JOIN NOW</button>
                     </Link>
