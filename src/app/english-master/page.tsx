@@ -49,7 +49,7 @@ function HeroSection() {
                     width={720}
                     height={450}
                     priority
-                    className="scale-[1.1]"
+                    className="scale-[1.01]"
                 />
             </div>
         </div>
