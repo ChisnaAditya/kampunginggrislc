@@ -20,7 +20,7 @@ function HeroSection() {
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-between bg-secondaryLC w-full">
             <div className="w-full p-[1rem]">
-                <article className="lg:pl-[8rem] lg:pt-[5rem]">
+                <article className="lg:pl-[8rem] lg:pt-[2rem]">
                     <Image
                         alt="logo kampung inggris lc"
                         src='/logo-white.webp'
@@ -29,8 +29,8 @@ function HeroSection() {
                         priority
                         className="hidden lg:block"
                     />
-                    <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Belajar Bahasa Inggris dari Basic Sampai Mahir di Lingkungan yang Mendukung</h1>
-                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Bukan hanya sekedar belajar teori tapi kamu bisa praktek ngomong inggris setiap hari, eits dapat bonus liburan ke Bali juga lho!</p>
+                    <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Lingkungan Ideal untuk Menguasai Bahasa Inggris dari Dasar hingga Mahir!</h1>
+                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Gak cuma teori, nikmati praktik bahasa inggris setiap hari + BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</p>
                     <Link href="#harga">
                         <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">JOIN NOW</button>
                     </Link>
@@ -49,6 +49,7 @@ function HeroSection() {
                     width={720}
                     height={450}
                     priority
+                    className="scale-[1.1]"
                 />
             </div>
         </div>
@@ -187,6 +188,10 @@ const fasilitas = [
         desc: 'desc'
     },
     {
+        src: '/fasilitas/4.webp',
+        desc: 'desc'
+    },
+    {
         src: '/fasilitas/em/5.webp',
         desc: 'desc'
     },
@@ -315,17 +320,17 @@ export default function EnglishMaster() {
                     <div id="overview">
                         {/* <h2 className={title()}>Gambaran Umum</h2> */}
                         <h3 className={subtitle()}>Apakah kamu termasuk kriteria dibawah ini?</h3>
-                        <p className={text()}>
-                            <span className="flex gap-2"><div>{iconCheck()}</div>Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!</span>
-                            <span className="flex gap-2"><div>{iconCheck()}</div>Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!</span>
-                            <span className="flex gap-2"><div>{iconCheck()}</div>Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!</span>
-                        </p>
-                        <p className={text()}>
-                            <span className="font-bold italic mt-4">Berarti kamu harus!</span> <br />
-                            <span className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya belajar teori tapi juga praktek</span>
-                            <span className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya praktek sekali, tapi juga setiap hari</span>
-                            <span className="flex gap-2"><div>{iconCheck()}</div>Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback</span>
-                        </p>
+                        <div className={text()}>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!</div>
+                        </div>
+                        <div className={text()}>
+                            <div className="font-bold italic mt-4">Berarti kamu harus!</div> <br />
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya belajar teori tapi juga praktek</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya praktek sekali, tapi juga setiap hari</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback</div>
+                        </div>
                     </div>
 
                     <div id="keuntungan" className="mt-10">
