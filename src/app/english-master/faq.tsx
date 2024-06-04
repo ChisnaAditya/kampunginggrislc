@@ -7,7 +7,7 @@ export default function Faq() {
     const faqContent = [
         {
             title: 'Berapa usia minimal untuk join program english master dan english master plus?',
-            content: 'Minimal untuk usia 17 tahun dan maksimal usia 50 tahun',
+            content: 'Minimal untuk SMA dan maksimal usia 50 tahun',
         },
         {
             title: 'Fasilitas apa saja yang didapat di program english master dan english master plus?',
@@ -32,8 +32,8 @@ export default function Faq() {
         {
             title: 'Ada berapa kali pertemuan dalam 1 minggu?',
             content: `Perhari akan ada 2x kelas asrama dan 4x kelas utama dengan materi yang sudah terintegrasi.
-            Untuk 1 minggu ada 5 hari efektif yaitu dari Senin-Kamis (materi) dan Jum’at (ujian) sedangkan di hari Sabtu dan Minggu libur.
-            sehingga dalam 1 minggu akan ada 30 kali pertemuan.`,
+            Untuk 1 minggu ada 5 hari efektif yaitu dari Senin-Kamis (materi) dan Jum’at (ujian). 
+            Di hari Sabtu digunakan untuk kegiatan extra program sedangkan Minggu libur. Sehingga dalam 1 minggu akan ada 24 kali pembelajaran dan ujian dengan materi yang berbeda`,
         },
         {
             title: 'Fasilitas campnya apa saja?',
@@ -46,6 +46,22 @@ export default function Faq() {
         {
             title: 'Apakah bisa request 1 kamar dengan teman/saudara?',
             content: 'Maaf, peserta tidak diperbolehkan request kamar agar bisa saling sosialisasi satu sama lain, selain itu pembagian kelasnya akan diatur oleh tim kami berdasarkan hasil assessment test.',
+        },
+        {
+            title: 'Apa perbedaan program intensive dengan EM 4 bulan atau EMP 6 bulan?',
+            content: 'Tentu semakin lama durasi maka materinya semakin detail dan levelnya akan semakin naik. Untuk EM 4 bulan & EMP 6 bulan ada benefit tambahan study tour ke Bali selama 5 hari. Sedangkan,  program EMP 6 Bulan mendapat Materi TOEFL ITP sekaligus real Test TOEFL ITP',
+        },
+        {
+            title: 'Bagaimana transportasi selama disini?',
+            content: 'Peserta bisa menyewa sepeda atau bisa berjalan kaki bersama peserta lainnya.',
+        },
+        {
+            title: 'Apakah bisa dapat sertifikat?',
+            content: 'Bisa. Peserta akan dapat sertifikat program dan tambahan sertifikat TOEFL ITP khusus EMP 6 bulan.',
+        },
+        {
+            title: 'Bagaimana akomodasi selama trip ke Bali?',
+            content: 'Akomodasi sudah termasuk dalam biaya program. Transport, penginapan dan konsumsi sudah ditanggung.',
         },
     ]
     function IconPlus() {
