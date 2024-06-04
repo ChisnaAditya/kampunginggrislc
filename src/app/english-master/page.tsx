@@ -30,7 +30,7 @@ function HeroSection() {
                         className="hidden lg:block"
                     />
                     <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Lingkungan Ideal untuk Menguasai Bahasa Inggris dari Dasar hingga Mahir!</h1>
-                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Gak cuma teori, nikmati praktik bahasa Inggris setiap hari + BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</p>
+                    <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Gak cuma teori, nikmati praktik bahasa Inggris setiap hari + <b>BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</b></p>
                     <Link href="#harga">
                         <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">JOIN NOW</button>
                     </Link>
@@ -60,12 +60,12 @@ function CardBenefits() {
         {
             icon: '/icon/A4@4x.webp',
             title: 'Asrama English Area',
-            desc: 'Disini kamu bukan hanya belajar teori saja tapi juga bisa praktek ngomong setiap hari dengan teman di lingkungan yang mendukung.'
+            desc: 'Disini kamu bukan hanya belajar teori saja tapi juga bisa praktik ngomong setiap hari dengan teman di lingkungan yang mendukung.'
         },
         {
             icon: '/icon/A5@4x.webp',
             title: 'Teacher pendamping asrama',
-            desc: 'Bukan hanya belajar bareng teman, tapi akan ada teachers yang akan membantu kamu praktek ngomong inggris, memberikan feedback jika kamu melakukan kesalahan.'
+            desc: 'Bukan hanya belajar bareng teman, tapi akan ada teachers yang akan membantu kamu praktik ngomong inggris, memberikan feedback jika kamu melakukan kesalahan.'
         },
         {
             icon: '/icon/A1@4x.webp',
@@ -75,7 +75,7 @@ function CardBenefits() {
         {
             icon: '/icon/B6@4x.webp',
             title: 'Belajar All Skill',
-            desc: 'Bukan hanya belajar speaking tapi juga skill grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktek speaking lebih mudah. dan di kelas speaking, grammar, pronunciation dan vocab kamu akan belajar listening, speaking, reading dan juga writing.'
+            desc: 'Bukan hanya belajar speaking tapi juga skill grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. dan di kelas speaking, grammar, pronunciation dan vocab kamu akan belajar listening, speaking, reading dan juga writing.'
         },
         {
             icon: '/icon/B1@4x.webp',
@@ -122,90 +122,90 @@ function Galeri(props: any) {
 const keseruan = [
     {
         src: '/keseruan/em/1.webp',
-        desc: 'desc'
+        desc: 'Real Test TOEFL ITP'
     },
     {
         src: '/keseruan/em/2.webp',
-        desc: 'desc'
+        desc: 'Suasana Speaking Class'
     },
     {
         src: '/keseruan/em/3.webp',
-        desc: 'desc'
+        desc: 'Suasana Grammar Class'
     },
     {
         src: '/keseruan/em/4.webp',
-        desc: 'desc'
+        desc: 'After weekly exam'
     },
     {
         src: '/keseruan/em/5.webp',
-        desc: 'desc'
+        desc: 'LC goes to Bali'
     },
     {
         src: '/keseruan/em/6.webp',
-        desc: 'desc'
+        desc: 'Fun Outbound'
     },
     {
         src: '/keseruan/em/7.webp',
-        desc: 'desc'
+        desc: 'LC goes to Bali'
     },
     {
         src: '/keseruan/em/8.webp',
-        desc: 'desc'
+        desc: 'Games'
     },
     {
         src: '/keseruan/em/9.webp',
-        desc: 'desc'
+        desc: 'Class meeting'
     },
     {
         src: '/keseruan/em/10.webp',
-        desc: 'desc'
+        desc: 'LC goes to Bali'
     },
-    {
-        src: '/keseruan/em/11.webp',
-        desc: 'desc'
-    },
+    // {
+    //     src: '/keseruan/em/11.webp',
+    //     desc: 'desc'
+    // },
 ]
 
 const fasilitas = [
     {
         src: '/fasilitas/5.webp',
-        desc: 'desc'
+        desc: 'Taman Kampung Inggris LC'
     },
     {
         src: '/fasilitas/em/1.webp',
-        desc: 'desc'
+        desc: 'Hall Gedung Utama'
     },
-    {
-        src: '/fasilitas/6.webp',
-        desc: 'desc'
-    },
+    // {
+    //     src: '/fasilitas/6.webp',
+    //     desc: 'desc'
+    // },
     {
         src: '/fasilitas/em/3.webp',
-        desc: 'desc'
+        desc: 'Frontliner Kampung Inggris LC'
     },
     {
         src: '/fasilitas/em/4.webp',
-        desc: 'desc'
+        desc: 'Lorong asrama'
     },
     {
         src: '/fasilitas/4.webp',
-        desc: 'desc'
+        desc: 'Lab Bahasa'
     },
-    {
-        src: '/fasilitas/em/5.webp',
-        desc: 'desc'
-    },
+    // {
+    //     src: '/fasilitas/em/5.webp',
+    //     desc: 'desc'
+    // },
     {
         src: '/fasilitas/em/6.webp',
-        desc: 'desc'
+        desc: 'Lorong gedung belajar Southern Point'
     },
     {
         src: '/fasilitas/em/7.webp',
-        desc: 'desc'
+        desc: 'Gedung belajar Eastern Point'
     },
     {
         src: '/fasilitas/8.webp',
-        desc: 'desc'
+        desc: 'Gedung belajar Southern Point'
     },
 ]
 
@@ -323,13 +323,13 @@ export default function EnglishMaster() {
                         <div className={text()}>
                             <div className="flex gap-2"><div>{iconCheck()}</div>Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!</div>
                             <div className="flex gap-2"><div>{iconCheck()}</div>Tau artinya kalau orang lain ngomong pakai bahasa inggris, tapi nggak bisa balasnya!</div>
-                            <div className="flex gap-2"><div>{iconCheck()}</div>Udah tau teorinya tapi nggak punya teman prakteknya, alhasil lupa lagi dah!</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Udah tau teorinya tapi nggak punya teman praktiknya, alhasil lupa lagi dah!</div>
                         </div>
                         <div className={text()}>
                             <div className="font-bold italic mt-4">Berarti kamu harus!</div> <br />
-                            <div className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya belajar teori tapi juga praktek</div>
-                            <div className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya praktek sekali, tapi juga setiap hari</div>
-                            <div className="flex gap-2"><div>{iconCheck()}</div>Cari lingkungan yang mendukung, supaya ada teman praktek dan ada yg memberikan feedback</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya belajar teori tapi juga praktik</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Bukan hanya praktik sekali, tapi juga setiap hari</div>
+                            <div className="flex gap-2"><div>{iconCheck()}</div>Cari lingkungan yang mendukung, supaya ada teman praktik dan ada yg memberikan feedback</div>
                         </div>
                     </div>
 
@@ -337,8 +337,8 @@ export default function EnglishMaster() {
                         {/* <h2 className={title()}>Keuntungan</h2> */}
                         <h3 className={subtitle()}>Kenalin nih Kampung Inggris LC <span className="lg:hidden">(Language Center)</span></h3>
                         <p className={text()}>Lembaga kursus bahasa inggris yang bukan hanya berfokus pada pemberian materi saja,
-                            tapi juga <span className="font-bold italic mt-4">menekankan pada praktek</span> . Karena kami sadar untuk menguasai bahasa itu bukan hanya sekedar teori saja
-                            tapi harus dibiasakan untuk praktek setiap hari, dan praktek bareng teman saja nggak cukup tapi harus berada
+                            tapi juga <span className="font-bold italic mt-4">menekankan pada praktik</span> . Karena kami sadar untuk menguasai bahasa itu bukan hanya sekedar teori saja
+                            tapi harus dibiasakan untuk praktik setiap hari, dan praktik bareng teman saja nggak cukup tapi harus berada
                             <span className="font-bold italic mt-4"> di lingkungan yang tepat </span>dan dengan teman yang sudah bisa dan siap saling mendukung
                         </p>
                         <p className="mt-4"></p>
