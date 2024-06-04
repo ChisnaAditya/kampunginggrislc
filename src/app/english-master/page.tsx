@@ -112,7 +112,7 @@ function CardBenefits() {
 function Galeri(props: any) {
     return (
         <div key={props.keyy} className="w-full">
-            <div className="w-[350px]">
+            <div className="w-[300px]">
                 <Image alt='fasilitas kampung inggris lc pare' src={props.src} width={720} height={450} className='rounded-xl w-[720px]' />
             </div>
             <p className="text-center mt-2">{props.desc}</p>
