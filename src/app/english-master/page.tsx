@@ -7,6 +7,7 @@ import { CardTestimoni } from "@/components/Programs/CardTestimoni";
 import { title, subtitle, text } from "@/components/primitives";
 import Link from "next/link";
 import HTMLReactParser from "html-react-parser/lib/index";
+import YoutubePlayer from "@/components/YoutubePlayer";
 
 export const metadata: Metadata = {
     title: "English Master Program - Kampung Inggris LC",
@@ -393,6 +394,10 @@ export default function EnglishMaster() {
                 </div>
             </div>
             <div className="flex flex-col items-center mx-auto mt-10 py-10">
+                <div className="w-full lg:w-[70%] mx-auto pb-10 px-[1rem]">
+                    <YoutubePlayer videoId="zE6Xr5o2axc" />
+                </div>
+
                 <h2 id="harga" className={`${subtitle()} mb-5 text-center`}>
                     <span className="italic">Set Your English Journey</span>
                     <br />
