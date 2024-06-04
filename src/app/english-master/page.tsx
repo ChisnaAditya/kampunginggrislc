@@ -42,7 +42,7 @@ function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <div className="lg:w-[80%]">
+            <div className="lg:w-[80%] overflow-hidden">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     src='/hero/Hero Image EMEMP.png'
