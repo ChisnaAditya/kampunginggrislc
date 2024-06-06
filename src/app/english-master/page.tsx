@@ -75,8 +75,8 @@ function CardBenefits() {
         },
         {
             icon: '/icon/B6@4x.webp',
-            title: 'Belajar All Skill',
-            desc: 'Bukan hanya belajar speaking tapi juga skill grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. dan di kelas speaking, grammar, pronunciation dan vocab kamu akan belajar listening, speaking, reading dan juga writing.'
+            title: 'Belajar All Materi',
+            desc: 'Bukan hanya belajar speaking tapi juga grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. dan di kelas speaking, grammar, pronunciation dan vocab kamu akan belajar listening, speaking, reading dan juga writing.'
         },
         {
             icon: '/icon/B1@4x.webp',
