@@ -545,8 +545,8 @@ export default function Pare() {
                     </Link>
                 </div>
             </div> */}
-            <div className="flex flex-col lg:flex-row min-h-screen lg:mt-[80px] bg-secondaryLC">
-                <div className="w-full flex flex-col justify-center">
+            <div className="flex flex-col-reverse lg:flex-row min-h-screen lg:mt-[80px] bg-secondaryLC">
+                <div className="w-full flex flex-col justify-center p-[1rem] lg:p-0">
                     <article className="lg:pl-[7rem]">
                         {/* <Image
                             alt="logo kampung inggris lc"
@@ -569,13 +569,23 @@ export default function Pare() {
                         </Link>
                     </div>
                 </div>
-                <div className='w-full relative'>
+                <div className='w-full lg:hidden'>
+                    <Image
+                        priority
+                        alt='hero image kampung inggris lc pare'
+                        src='/hero/hero-pare-v2.png'
+                        width={500}
+                        height={500}
+                    // className='object-cover'
+                    />
+                </div>
+                <div className='hidden w-full lg:block relative'>
                     <Image
                         priority
                         alt='hero image kampung inggris lc pare'
                         src='/hero/hero-pare-v2.png'
                         fill
-                        className='object-cover'
+                        className='object-contain lg:object-cover'
                     />
                 </div>
             </div>
