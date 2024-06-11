@@ -508,7 +508,7 @@ export default function Pare() {
 
     return (
         <section>
-            <div className="flex flex-col px-[1rem] lg:flex-row lg:px-[3rem] gap-[40px] justify-center items-center min-h-screen mx-auto bg-pare">
+            {/* <div className="flex flex-col px-[1rem] lg:flex-row lg:px-[3rem] gap-[40px] justify-center items-center min-h-screen mx-auto bg-pare">
                 <div className="left w-full h-full">
                     <Image
                         alt='hero image kampung inggris lc pare'
@@ -520,23 +520,56 @@ export default function Pare() {
                 </div>
                 <div className="text-center w-full h-full">
                     <h1 className='headline leading-[1.2em] text-white mb-4'>MENGAPA 53.333+ SISWA DAN ALUMNI LC PUAS DAN MEREKOMENDASIKAN BELAJAR DI KAMPUNG INGGRIS LC?</h1>
-                    {/* <h2 className='subheadline'>Subheadline</h2> */}
                     <Link href="#paket" className="btn border-none bg-yellow-300 hover:scale-[1.07] text-black text-[1.2rem] font-bold w-full lg:w-1/2 rounded-2xl shadow-lg">
                         DAFTAR SEKARANG
                     </Link>
                 </div>
+            </div> */}
+            <div className="flex flex-col lg:flex-row min-h-screen  bg-secondaryLC">
+                <div className="w-full flex flex-col justify-center">
+                    <article className="lg:pl-[8rem]">
+                        <Image
+                            alt="logo kampung inggris lc"
+                            src='/logo-white.webp'
+                            width={150}
+                            height={150}
+                            priority
+                            className="hidden lg:block"
+                        />
+                        <h1 className="text-[28px] lg:text-[40px] text-black font-extrabold leading-tight">53.333++ Member Sudah Merasakan Asiknya English Boarding Course Kampung Inggris LC</h1>
+                        <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-8">Nikmati kursus bahasa Inggris paket lengkap plus asrama dengan fasilitas English area 24/7</p>
+                        <Link href="#harga">
+                            <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">DAFTAR SEKARANG</button>
+                        </Link>
+
+                    </article>
+                    <div className="p-5">
+                        <Link href="#harga">
+                            <button className="lg:hidden w-full text-bold bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-xl border-none">DAFTAR SEKARANG</button>
+                        </Link>
+                    </div>
+                </div>
+                <div className='w-full relative'>
+                    <Image
+                        priority
+                        alt='hero image kampung inggris lc pare'
+                        src='/hero/hero-pare-v2.png'
+                        fill
+                        className='object-cover'
+                    />
+                </div>
             </div>
             <div className="text-center mt-10 max-w-[1200px] mx-auto px-[1rem]">
-                <h2 className='subheadline text-primaryLC'>KAMPUNG INGGRIS LC – LANGUAGE CENTER</h2>
+                {/* <h2 className='subheadline text-primaryLC'>KAMPUNG INGGRIS LC – LANGUAGE CENTER</h2>
                 <p className='paragraph mb-10'>Adalah salah satu lembaga kursus bahasa inggris <b>TERBESAR</b> dan <b>TERFAVORIT</b> di
                     kampung Inggris Pare. Lebih dari <b>53.333+</b> alumni dari berbagai daerah di
                     indonesia sudah merasakan metode <b>UNIK</b>  yang terbukti membuat mereka <b>PUAS</b> dan
-                    <b>MAU</b> merekomendasikan LC.
+                    <b> MAU</b> merekomendasikan LC.
                 </p>
                 <div className="w-full lg:w-[70%] mx-auto">
                     <YoutubePlayer videoId="zE6Xr5o2axc" />
-                </div>
-                <h2 className='subheadline my-10'>ALASAN 53.333+ ALUMNI MEMILIH KAMPUNG INGGRIS LC</h2>
+                </div> */}
+                <h2 className='subheadline my-10'>Ini Dia Alasan Mereka Memilih Kampung Inggris LC</h2>
                 <div className='flex flex-wrap gap-[40px]'>
                     {
                         benefits.map((benefit, index) => (
@@ -549,35 +582,23 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>PERUSAHAAN PERNAH BELAJAR DI KAMPUNG INGGRIS LC</h2>
-                <div className='flex flex-wrap items-start justify-center lg:px-32'>
-                    {
-                        company.map((item, index) => (
-                            <CompanyLogo
-                                key={index}
-                                alt={item.name}
-                                src={item.src}
-                            />
-                        ))
-                    }
-                </div>
-                <h2 className='subheadline mt-10'>MEREKA SUDAH BELAJAR DI KAMPUNG INGGRIS LC</h2>
+                <h2 className='subheadline mt-10'>Fasilitas yang Bisa Kamu Nikmati di LC</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
-                        rombongan.map((item, index) => (
-                            <Image key={index} alt={item.name} src={item.src} width={720} height={450} className='rounded-xl' />
+                        fasilitas.map((item, index) => (
+                            <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl' />
                         ))
                     }
                 </div>
-                <h2 className='subheadline my-10'>7 METODE INI BIKIN RIBUAN MEMBER LANCAR BERBAHASA INGGRIS</h2>
-                <div className='flex flex-wrap gap-[40px]'>
+                <h2 className='subheadline mt-10'>Teacher Berpengalaman yang Akan Membimbingmu</h2>
+                <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
-                        metode.map((item, index) => (
-                            <KotakIkon
+                        tutor.map((item, index) => (
+                            <CardTutor
                                 key={index}
-                                src={item.icon}
-                                title={item.title}
-                                desc={item.desc}
+                                avatar={item.avatar}
+                                name={item.name}
+                                bio={item.bio}
                             />
                         ))
                     }
@@ -597,24 +618,36 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>YUK KENALAN SAMA TEACHER KAMPUNG INGGRIS LC</h2>
-                <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
+                <h2 className='subheadline my-10'>7 METODE INI BIKIN RIBUAN MEMBER LANCAR BERBAHASA INGGRIS</h2>
+                <div className='flex flex-wrap gap-[40px]'>
                     {
-                        tutor.map((item, index) => (
-                            <CardTutor
+                        metode.map((item, index) => (
+                            <KotakIkon
                                 key={index}
-                                avatar={item.avatar}
-                                name={item.name}
-                                bio={item.bio}
+                                src={item.icon}
+                                title={item.title}
+                                desc={item.desc}
                             />
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>INI FASILITAS DAN KESERUAN YANG BISA KAMU NIKMATI DI KAMPUNG INGGRIS LC</h2>
+                <h2 className='subheadline mt-10'>MEREKA SUDAH BELAJAR DI KAMPUNG INGGRIS LC</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
-                        fasilitas.map((item, index) => (
-                            <Image key={index} alt='fasilitas kampung inggris lc pare' src={item} width={720} height={450} className='rounded-xl' />
+                        rombongan.map((item, index) => (
+                            <Image key={index} alt={item.name} src={item.src} width={720} height={450} className='rounded-xl' />
+                        ))
+                    }
+                </div>
+                <h2 className='subheadline mt-10'>PERUSAHAAN PERNAH BELAJAR DI KAMPUNG INGGRIS LC</h2>
+                <div className='flex flex-wrap items-start justify-center lg:px-32'>
+                    {
+                        company.map((item, index) => (
+                            <CompanyLogo
+                                key={index}
+                                alt={item.name}
+                                src={item.src}
+                            />
                         ))
                     }
                 </div>
