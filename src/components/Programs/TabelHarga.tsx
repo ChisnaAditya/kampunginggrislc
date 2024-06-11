@@ -63,7 +63,7 @@ export default function TabelHarga() {
     return (
         <div className='flex flex-col items-center lg:flex-row lg:items-start gap-[20px]'>
             {harga.map((item, index) => (
-                <div key={index} className='relative lg:w-[450px] rounded-xl shadow-xl bg-white p-4 overflow-hidden'>
+                <div key={index} className=' relative lg:w-[450px] rounded-xl shadow-xl bg-white p-4 overflow-hidden'>
                     {item.populer && <div className='absolute top-[20px] left-[120px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
                     <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
                     <div className="flex flex-col items-center py-2 my-2 border-[1px]">

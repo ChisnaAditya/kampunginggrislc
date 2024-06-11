@@ -176,27 +176,29 @@ function TabelHarga() {
     return (
         <div className='flex flex-col items-center lg:flex-row lg:items-start gap-[20px]'>
             {harga.map((item, index) => (
-                <div key={index} className='relative w-[350px] rounded-xl shadow-lg bg-white p-4 overflow-hidden'>
-                    {item.populer && <div className='absolute top-[20px] left-[120px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
-                    <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
-                    <div className="flex flex-col items-center py-2 my-2 border-[1px]">
-                        {item.prices.map((price, indexx) => (
-                            <p key={indexx}>{price.duration} <span className='harga'>{price.rupiah}</span></p>
-                        ))
-                        }
-                    </div>
-                    <div className="">
-                        <p className='text-left font-bold'>Fasilitas</p>
-                        <ul>
-                            {item.fasilitas.map((i, indexxx) => (
-                                <li key={indexxx} className="flex items-center space-x-1 text-left">
-                                    <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                    <span>{HTMLReactParser(i)}</span>
-                                </li>
+                <div key={index} className='flex flex-col justify-between w-[350px] h-[670px] rounded-xl shadow-lg bg-white p-4 overflow-hidden'>
+                    <div>
+                        {item.populer && <div className='absolute top-[20px] left-[120px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
+                        <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
+                        <div className="flex flex-col items-center py-2 my-2 border-[1px]">
+                            {item.prices.map((price, indexx) => (
+                                <p key={indexx}>{price.duration} <span className='harga'>{price.rupiah}</span></p>
                             ))
                             }
-                        </ul>
-                        <p className='text-left py-6'>{HTMLReactParser(item.notes)}</p>
+                        </div>
+                        <div className="">
+                            <p className='text-left font-bold'>Fasilitas</p>
+                            <ul>
+                                {item.fasilitas.map((i, indexxx) => (
+                                    <li key={indexxx} className="flex items-center space-x-1 text-left">
+                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
+                                        <span>{HTMLReactParser(i)}</span>
+                                    </li>
+                                ))
+                                }
+                            </ul>
+                            <p className='text-left py-6'>{HTMLReactParser(item.notes)}</p>
+                        </div>
                     </div>
                     <Link
                         className="btn bg-primaryLC hover:bg-red-600 hover:font-bold text-white w-full rounded-2xl"
@@ -541,26 +543,26 @@ export default function Pare() {
                     </Link>
                 </div>
             </div> */}
-            <div className="flex flex-col lg:flex-row min-h-screen  bg-secondaryLC">
+            <div className="flex flex-col lg:flex-row min-h-screen lg:mt-[80px] bg-secondaryLC">
                 <div className="w-full flex flex-col justify-center">
                     <article className="lg:pl-[7rem]">
-                        <Image
+                        {/* <Image
                             alt="logo kampung inggris lc"
                             src='/logo-white.webp'
                             width={150}
                             height={150}
                             priority
                             className="hidden lg:block"
-                        />
+                        /> */}
                         <h1 className="text-[28px] lg:text-[40px] text-black font-extrabold leading-tight">53.333++ Member Sudah Merasakan Asiknya <i>English Boarding Course</i> Kampung Inggris LC</h1>
                         <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-8">Nikmati kursus bahasa Inggris paket lengkap plus asrama dengan fasilitas <i>English area 24/7</i></p>
-                        <Link href="#harga">
+                        <Link href="#paket">
                             <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">DAFTAR SEKARANG</button>
                         </Link>
 
                     </article>
                     <div className="p-5">
-                        <Link href="#harga">
+                        <Link href="#paket">
                             <button className="lg:hidden w-full text-bold bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-xl border-none">DAFTAR SEKARANG</button>
                         </Link>
                     </div>
@@ -672,7 +674,7 @@ export default function Pare() {
                 <div id='paket' className='px-[1rem]'>
                     <h2 className='subheadline text-secondaryLC text-center'>YUK PILIH PAKET PROGRAM SESUAI KEBUTUHANMU</h2>
                     <TabelHarga />
-                    <div className="flex flex-col items-center mt-4">
+                    <div className="flex flex-col items-center mt-10">
                         <h2 className='text-secondaryLC text-center text-[28px] font-bold'>Siap Mahir Bahasa Inggris?</h2>
                         <p className='p text-white'>Daftar program sekarang</p>
                         <svg className=' fill-white w-[80px] animate-bounce' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Double down"><path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" /><path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" /></g></svg>
