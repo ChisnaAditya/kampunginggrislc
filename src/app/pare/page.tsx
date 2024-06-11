@@ -176,9 +176,9 @@ function TabelHarga() {
     return (
         <div className='flex flex-col items-center lg:flex-row lg:items-start gap-[20px]'>
             {harga.map((item, index) => (
-                <div key={index} className='flex flex-col justify-between w-[350px] h-[670px] rounded-xl shadow-lg bg-white p-4 overflow-hidden'>
-                    <div>
-                        {item.populer && <div className='absolute top-[20px] left-[120px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
+                <div key={index} className='flex flex-col justify-between w-[350px] h-[700px] rounded-xl shadow-lg bg-white p-4 overflow-hidden'>
+                    <div className='relative'>
+                        {item.populer && <div className='absolute top-[10px] left-[110px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
                         <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
                         <div className="flex flex-col items-center py-2 my-2 border-[1px]">
                             {item.prices.map((price, indexx) => (
@@ -200,12 +200,14 @@ function TabelHarga() {
                             <p className='text-left py-6'>{HTMLReactParser(item.notes)}</p>
                         </div>
                     </div>
-                    <Link
-                        className="btn bg-primaryLC hover:bg-red-600 hover:font-bold text-white w-full rounded-2xl"
-                        href={item.link}
-                    >
-                        Daftar Program
-                    </Link>
+                    <div >
+                        <Link
+                            className="btn bg-primaryLC hover:bg-red-600 hover:font-bold text-white w-full rounded-2xl "
+                            href={item.link}
+                        >
+                            Daftar Program
+                        </Link>
+                    </div>
                 </div>
             ))
             }
@@ -520,7 +522,7 @@ export default function Pare() {
                     <Link href="#testimoni"><p className="hover:text-primaryLC">Testimoni</p></Link>
                     <Link href="#paket"><p className="hover:text-primaryLC">Program</p></Link>
                     <Link href={`https://cs.kampunginggrislc.com/`}>
-                        <button className="btn bg-green-600 hover:bg-green-600/80 hover:font-bold text-white w-40 border-none rounded-2xl">
+                        <button className="btn bg-primaryLC hover:bg-primaryLC/80 hover:font-bold text-white w-40 border-none rounded-2xl">
                             Konsultasi CS
                         </button>
                     </Link>
@@ -587,7 +589,7 @@ export default function Pare() {
                 <div className="w-full lg:w-[70%] mx-auto">
                     <YoutubePlayer videoId="zE6Xr5o2axc" />
                 </div>
-                <h2 id='keuntungan' className='subheadline my-10'>Ini Dia Alasan Mereka Memilih Kampung Inggris LC</h2>
+                <h2 id='keuntungan' className='subheadline my-10'>Ini Dia Alasan Mereka Memilih <br /> Kampung Inggris LC</h2>
                 <div className='flex flex-wrap gap-[40px]'>
                     {
                         benefits.map((benefit, index) => (
@@ -608,7 +610,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>Teacher Berpengalaman yang Akan Membimbingmu</h2>
+                <h2 className='subheadline mt-10'>Teacher Berpengalaman yang <br /> Akan Membimbingmu</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
                         tutor.map((item, index) => (
@@ -621,7 +623,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 id='testimoni' className='subheadline mt-10'>TEMUI ALUMNI YANG SUKSES DAN DAPETIN INSPIRASI DI SINI</h2>
+                <h2 id='testimoni' className='subheadline mt-10'>TEMUI ALUMNI YANG SUKSES DAN DAPETIN <br /> INSPIRASI DI SINI</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
                         alumni.map((item, index) => (
@@ -636,7 +638,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline my-10'>7 METODE INI BIKIN RIBUAN MEMBER LANCAR BERBAHASA INGGRIS</h2>
+                <h2 className='subheadline my-10'>7 METODE INI BIKIN RIBUAN MEMBER <br /> LANCAR BERBAHASA INGGRIS</h2>
                 <div className='flex flex-wrap gap-[40px]'>
                     {
                         metode.map((item, index) => (
@@ -649,7 +651,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>MEREKA SUDAH BELAJAR DI KAMPUNG INGGRIS LC</h2>
+                <h2 className='subheadline mt-10'>MEREKA SUDAH BELAJAR DI <br /> KAMPUNG INGGRIS LC</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
                         rombongan.map((item, index) => (
@@ -657,7 +659,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>Perusahaan Ini Juga Belajar di KAMPUNG INGGRIS LC</h2>
+                <h2 className='subheadline mt-10'>Perusahaan Ini Juga Belajar di <br /> KAMPUNG INGGRIS LC</h2>
                 <div className='flex flex-wrap items-start justify-center lg:px-32'>
                     {
                         company.map((item, index) => (
@@ -672,9 +674,9 @@ export default function Pare() {
             </div>
             <div className="mt-10 lg:px-20 py-10 bg-black">
                 <div id='paket' className='px-[1rem]'>
-                    <h2 className='subheadline text-secondaryLC text-center'>YUK PILIH PAKET PROGRAM SESUAI KEBUTUHANMU</h2>
+                    <h2 className='subheadline text-white text-center'>YUK PILIH PAKET PROGRAM <br /> SESUAI KEBUTUHANMU</h2>
                     <TabelHarga />
-                    <div className="flex flex-col items-center mt-10">
+                    {/* <div className="flex flex-col items-center mt-10">
                         <h2 className='text-secondaryLC text-center text-[28px] font-bold'>Siap Mahir Bahasa Inggris?</h2>
                         <p className='p text-white'>Daftar program sekarang</p>
                         <svg className=' fill-white w-[80px] animate-bounce' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Double down"><path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" /><path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" /></g></svg>
@@ -684,14 +686,26 @@ export default function Pare() {
                         >
                             Daftar Sekarang
                         </Link>
-                    </div>
-                    <div className="flex justify-between items-center lg:w-3/4 mx-auto mt-10 border-[0.5px] rounded-xl p-4">
-                        <h2 className='text-secondaryLC text-[16px] lg:text-[28px] font-bold'>
-                            Butuh info program lebih detail? <br />
-                            <span><p className='p text-white font-normal'>Tanya cs kami</p></span>
+                    </div> */}
+                    <div className="flex justify-between items-center lg:w-3/4 mx-auto mt-10 rounded-xl p-4">
+                        <h2 className='text-white text-[16px] lg:text-[28px] font-bold'>
+                            Siap Mahir Bahasa Inggris? <br />
+                            {/* <span><p className='p text-white font-normal'>Tanya cs kami</p></span> */}
                         </h2>
                         <Link
-                            className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none w-1/4 rounded-2xl"
+                            className="btn bg-primaryLC hover:bg-red-800 hover:font-bold text-white border-none rounded-2xl w-[200px]"
+                            href={`https://registrasi.kampunginggris.id/?br_code=PARE`}
+                        >
+                            Daftar Sekarang
+                        </Link>
+                    </div>
+                    <div className="flex justify-between items-center lg:w-3/4 mx-auto rounded-xl p-4">
+                        <h2 className='text-white text-[16px] lg:text-[28px] font-bold'>
+                            Butuh info program lebih detail? <br />
+                            {/* <span><p className='p text-white font-normal'>Tanya cs kami</p></span> */}
+                        </h2>
+                        <Link
+                            className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none w-1/4 rounded-2xl w-[200px]"
                             href={`https://cs.kampunginggrislc.com/`}
                         >
                             Hubungi CS
