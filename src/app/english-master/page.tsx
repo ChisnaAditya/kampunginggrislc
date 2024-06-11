@@ -30,7 +30,7 @@ function HeroSection() {
                         priority
                         className="hidden lg:block"
                     />
-                    <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Lingkungan Ideal untuk Menguasai Bahasa Inggris dari Dasar hingga Mahir!</h1>
+                    <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Belajar Bahasa Inggris dari Basic hingga Mahir di Lingkungan yang Mendukung</h1>
                     <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-5">Gak cuma teori, nikmati praktik bahasa Inggris setiap hari + <b className="font-bold">BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP</b></p>
                     <Link href="#harga">
                         <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">JOIN NOW</button>
@@ -71,17 +71,17 @@ function CardBenefits() {
         {
             icon: '/icon/A1@4x.webp',
             title: 'Pembelajaran Intensive',
-            desc: 'Dengan pembelajaran intensive 6x pertemuan/hari di hari senin-jumat, bukan hanya mahir bahasa inggris tapi soft skill kedisiplinanmu juga akan terasah.'
-        },
-        {
-            icon: '/icon/B6@4x.webp',
-            title: 'Belajar All Materi',
-            desc: 'Bukan hanya belajar speaking tapi juga grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. dan di kelas speaking, grammar, pronunciation dan vocab kamu akan belajar listening, speaking, reading dan juga writing.'
+            desc: 'Dengan pembelajaran intensive 6x pertemuan/hari di hari senin-kamis, bukan hanya mahir bahasa inggris tapi soft skill kedisiplinanmu juga akan terasah.'
         },
         {
             icon: '/icon/B1@4x.webp',
             title: 'Exam setiap pekan',
             desc: 'Akan ada examination atau ujian setiap hari jumat, yang bertujuan untuk melihat perkembangan bahasa inggrismu selama satu minggu kebelakang, dan pemberian feedback yang harus kamu tingkatkan di minggu depan.'
+        },
+        {
+            icon: '/icon/B6@4x.webp',
+            title: 'Belajar All Materi',
+            desc: 'Bukan hanya belajar speaking tapi juga grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. Dan di kelas speaking, grammar, pronunciation dan vocab kamu bisa <b>TINGKATKAN</b> skill Listening, Speaking dan juga Writing.'
         },
         {
             icon: '/icon/B5@4x.webp',
