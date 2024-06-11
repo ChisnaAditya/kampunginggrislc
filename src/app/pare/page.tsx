@@ -508,6 +508,22 @@ export default function Pare() {
 
     return (
         <section>
+            <nav className="z-[2] fixed hidden lg:flex lg:items-center w-full h-[80px] bg-black text-white text-[18px] font-normal">
+                <div className="basis-2/6 container lg:pl-[7rem]">
+                    <Image alt="logo" src="/logo-black.webp" width={100} height={100} />
+                </div>
+                <ul className="flex justify-end items-center gap-6 basis-4/6 lg:pr-[30px]">
+                    <Link href="#keuntungan"><p className="hover:text-primaryLC">Keuntungan</p></Link>
+                    <Link href="#fasilitas"><p className="hover:text-primaryLC">Fasilitas</p></Link>
+                    <Link href="#testimoni"><p className="hover:text-primaryLC">Testimoni</p></Link>
+                    <Link href="#paket"><p className="hover:text-primaryLC">Program</p></Link>
+                    <Link href={`https://cs.kampunginggrislc.com/`}>
+                        <button className="btn bg-green-600 hover:bg-green-600/80 hover:font-bold text-white w-40 border-none rounded-2xl">
+                            Konsultasi CS
+                        </button>
+                    </Link>
+                </ul>
+            </nav>
             {/* <div className="flex flex-col px-[1rem] lg:flex-row lg:px-[3rem] gap-[40px] justify-center items-center min-h-screen mx-auto bg-pare">
                 <div className="left w-full h-full">
                     <Image
@@ -527,7 +543,7 @@ export default function Pare() {
             </div> */}
             <div className="flex flex-col lg:flex-row min-h-screen  bg-secondaryLC">
                 <div className="w-full flex flex-col justify-center">
-                    <article className="lg:pl-[8rem]">
+                    <article className="lg:pl-[7rem]">
                         <Image
                             alt="logo kampung inggris lc"
                             src='/logo-white.webp'
@@ -536,8 +552,8 @@ export default function Pare() {
                             priority
                             className="hidden lg:block"
                         />
-                        <h1 className="text-[28px] lg:text-[40px] text-black font-extrabold leading-tight">53.333++ Member Sudah Merasakan Asiknya English Boarding Course Kampung Inggris LC</h1>
-                        <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-8">Nikmati kursus bahasa Inggris paket lengkap plus asrama dengan fasilitas English area 24/7</p>
+                        <h1 className="text-[28px] lg:text-[40px] text-black font-extrabold leading-tight">53.333++ Member Sudah Merasakan Asiknya <i>English Boarding Course</i> Kampung Inggris LC</h1>
+                        <p className="text-[20px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-1 lg:py-8">Nikmati kursus bahasa Inggris paket lengkap plus asrama dengan fasilitas <i>English area 24/7</i></p>
                         <Link href="#harga">
                             <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none w-[367px]">DAFTAR SEKARANG</button>
                         </Link>
@@ -560,7 +576,7 @@ export default function Pare() {
                 </div>
             </div>
             <div className="text-center mt-10 max-w-[1200px] mx-auto px-[1rem]">
-                {/* <h2 className='subheadline text-primaryLC'>KAMPUNG INGGRIS LC – LANGUAGE CENTER</h2>
+                <h2 className='subheadline text-primaryLC'>KAMPUNG INGGRIS LC – LANGUAGE CENTER</h2>
                 <p className='paragraph mb-10'>Adalah salah satu lembaga kursus bahasa inggris <b>TERBESAR</b> dan <b>TERFAVORIT</b> di
                     kampung Inggris Pare. Lebih dari <b>53.333+</b> alumni dari berbagai daerah di
                     indonesia sudah merasakan metode <b>UNIK</b>  yang terbukti membuat mereka <b>PUAS</b> dan
@@ -568,8 +584,8 @@ export default function Pare() {
                 </p>
                 <div className="w-full lg:w-[70%] mx-auto">
                     <YoutubePlayer videoId="zE6Xr5o2axc" />
-                </div> */}
-                <h2 className='subheadline my-10'>Ini Dia Alasan Mereka Memilih Kampung Inggris LC</h2>
+                </div>
+                <h2 id='keuntungan' className='subheadline my-10'>Ini Dia Alasan Mereka Memilih Kampung Inggris LC</h2>
                 <div className='flex flex-wrap gap-[40px]'>
                     {
                         benefits.map((benefit, index) => (
@@ -582,7 +598,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>Fasilitas yang Bisa Kamu Nikmati di LC</h2>
+                <h2 id='fasilitas' className='subheadline mt-10'>Fasilitas yang Bisa Kamu Nikmati di LC</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
                         fasilitas.map((item, index) => (
@@ -603,7 +619,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>TEMUI ALUMNI YANG SUKSES DAN DAPETIN INSPIRASI DI SINI</h2>
+                <h2 id='testimoni' className='subheadline mt-10'>TEMUI ALUMNI YANG SUKSES DAN DAPETIN INSPIRASI DI SINI</h2>
                 <div className='flex gap-[20px] overflow-x-auto w-full py-6'>
                     {
                         alumni.map((item, index) => (
@@ -639,7 +655,7 @@ export default function Pare() {
                         ))
                     }
                 </div>
-                <h2 className='subheadline mt-10'>PERUSAHAAN PERNAH BELAJAR DI KAMPUNG INGGRIS LC</h2>
+                <h2 className='subheadline mt-10'>Perusahaan Ini Juga Belajar di KAMPUNG INGGRIS LC</h2>
                 <div className='flex flex-wrap items-start justify-center lg:px-32'>
                     {
                         company.map((item, index) => (
@@ -669,7 +685,7 @@ export default function Pare() {
                     </div>
                     <div className="flex justify-between items-center lg:w-3/4 mx-auto mt-10 border-[0.5px] rounded-xl p-4">
                         <h2 className='text-secondaryLC text-[16px] lg:text-[28px] font-bold'>
-                            Bingung Menentukan Paket Pilihan? <br />
+                            Butuh info program lebih detail? <br />
                             <span><p className='p text-white font-normal'>Tanya cs kami</p></span>
                         </h2>
                         <Link
