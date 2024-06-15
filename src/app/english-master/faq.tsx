@@ -10,6 +10,10 @@ export default function Faq() {
             content: 'Minimal untuk SMA dan maksimal usia 50 tahun',
         },
         {
+            title: 'Apakah english master dapat Real Test TOEFL?',
+            content: 'Real test toefl hanya bisa kamu dapatin jika kamu ambil program English Master Plus 6 Bulan',
+        },
+        {
             title: 'Fasilitas apa saja yang didapat di program english master dan english master plus?',
             content: 'Selain fasilitas belajar yang lengkap, program ini juga menyediakan asrama, toolkit belajar, akomodasi selama di Bali dan REAL TEST TOEFL untuk program english master plus.',
         },

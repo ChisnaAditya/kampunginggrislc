@@ -21,7 +21,7 @@ function HeroSection() {
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-between bg-secondaryLC w-full">
             <div className="w-full p-[1rem]">
-                <article className="lg:pl-[8rem] lg:pt-[2rem]">
+                <article className="lg:pl-[5rem] lg:pt-[2rem]">
                     <Image
                         alt="logo kampung inggris lc"
                         src='/logo-white.webp'
@@ -313,7 +313,7 @@ export default function EnglishMaster() {
     return (
         <section>
             <HeroSection />
-            <div className="flex justify-center lg:w-[1300px] mx-auto mt-10">
+            <div className="flex justify-center mx-auto mt-10">
                 <div className="sticky self-start top-5 hidden lg:block">
                     <ListContent />
                 </div>
