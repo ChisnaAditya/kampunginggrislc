@@ -23,12 +23,6 @@ export default function Tutor() {
     const swiperRef = useRef(null)
     const tutorContent = [
         {
-            avatar: tutor_1,
-            bio: 'Having 10 years of experience in teaching General English, Academic English, Academic Vocabulary, Grammar for Speaking, English for Specific Purposes, IELTS, and TOEFL.',
-            name: 'Mr. Soni',
-
-        },
-        {
             avatar: tutor_2,
             bio: 'Having 7 years of experience in teaching general English, English for specific purpose, TOEFL, Achieved TOEFL 560.',
             name: 'Mr. Al',

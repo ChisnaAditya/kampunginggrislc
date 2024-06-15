@@ -9,6 +9,16 @@ import Link from "next/link";
 import HTMLReactParser from "html-react-parser/lib/index";
 import YoutubePlayer from "@/components/YoutubePlayer";
 
+import tutor_1 from "../../assets/teachers/1.png"
+import tutor_2 from "../../assets/teachers/2.png"
+import tutor_3 from "../../assets/teachers/3.png"
+import tutor_4 from "../../assets/teachers/4.png"
+import tutor_5 from "../../assets/teachers/5.png"
+import tutor_6 from "../../assets/teachers/6.png"
+import tutor_7 from "../../assets/teachers/7.png"
+import tutor_8 from "../../assets/teachers/8.png"
+import tutor_9 from "../../assets/teachers/9.png"
+
 export const metadata: Metadata = {
     title: "English Master Program - Kampung Inggris LC",
     description: "Paket buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
@@ -110,13 +120,102 @@ function CardBenefits() {
         </div>
     )
 }
+function Tutor() {
+    const tutorContent = [
+        {
+            avatar: tutor_2,
+            bio: 'Having 7 years of experience in teaching general English, English for specific purpose, TOEFL, Achieved TOEFL 560.',
+            name: 'Mr. Al',
+
+        },
+        {
+            avatar: tutor_3,
+            bio: 'Having 7 years of experience in teaching grammar, TOEFL.',
+            name: 'Mr. Naja',
+
+        },
+        {
+            avatar: tutor_4,
+            bio: 'Having 6 years of experience in teaching speaking, IELTS.',
+            name: 'Ms. Iva',
+
+        },
+        {
+            avatar: tutor_5,
+            bio: 'Having 5 years of experience in teaching general English, TOEFL, IELTS, Academic vocabulary.',
+            name: 'Ms. Liha',
+
+        },
+        {
+            avatar: tutor_6,
+            bio: 'Having 5 years of experience in teaching general English, TOEFL, Academic vocabulary, Achieved TOEFL 520.',
+            name: 'Mr. Lubis',
+
+        },
+        {
+            avatar: tutor_7,
+            bio: 'Having 5 years of experience in teaching general English, TOEFL, IELTS, Achieved TOEFL 560.',
+            name: 'Ms. Eva',
+        },
+        {
+            avatar: tutor_8,
+            bio: 'Having 4 years of experience in teaching general English, English for specific purpose, Academic vocabulary, IELTS, TOEFL.',
+            name: 'Ms. Pooja',
+        },
+        {
+            avatar: tutor_9,
+            bio: '4 Years Experience in Pronunciation, Speaking, Grammar, Listening for TOEFL.',
+            name: 'Mr. Alen',
+        },
+    ]
+    return (
+        <div>
+            {
+                tutorContent.map((item, index) => (
+                    <div key={index} className="flex flex-col justify-start w-full lg:h-[400px]">
+                        <Image
+                            alt="avatar"
+                            src={item.avatar}
+                            className="avatar rounded-full mx-auto"
+                            width={200}
+                            height={200}
+                        />
+                        <div>
+                            <p className='text-center text-xl mt-10 font-bold'>{item.name}</p>
+                        </div>
+                        <p className='text-center italic my-2'>{item.bio.substring(0, 50)} <span>...</span>
+                            {/* <br />
+                            <span
+                                className='font-bold text-warning cursor-pointer hover:text-warning/80'
+                                onClick={() => (document.getElementById(`${item.name}`) as HTMLFormElement).showModal()}>
+                                Read more
+                            </span> */}
+                        </p>
+
+                        {/* <dialog id={item.name} className="modal">
+                            <div className="modal-box">
+                                <h3 className="font-bold text-lg">{item.name}</h3>
+                                <p className="py-4">{item.bio}</p>
+                                <div className="modal-action">
+                                    <form method="dialog">
+                                        <button className="btn">Close</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog> */}
+                    </div>
+                ))
+            }
+        </div >
+    )
+}
 function Galeri(props: any) {
     return (
         <div key={props.keyy} className="w-full">
             <div className="w-[300px]">
                 <Image alt='fasilitas kampung inggris lc pare' src={props.src} width={720} height={450} className='rounded-xl w-[720px]' />
             </div>
-            <p className="text-center mt-2">{props.desc}</p>
+            <p className="text-center text-slate-500 text-xs italic mt-2">{props.desc}</p>
         </div>
     )
 }
@@ -297,6 +396,54 @@ const alumni = [
     },
 ]
 
+const tutor = [
+    {
+        avatar: tutor_2,
+        bio: 'Having 7 years of experience in teaching general English, English for specific purpose, TOEFL, Achieved TOEFL 560.',
+        name: 'Mr. Al',
+
+    },
+    {
+        avatar: tutor_3,
+        bio: 'Having 7 years of experience in teaching grammar, TOEFL.',
+        name: 'Mr. Naja',
+
+    },
+    {
+        avatar: tutor_4,
+        bio: 'Having 6 years of experience in teaching speaking, IELTS.',
+        name: 'Ms. Iva',
+
+    },
+    {
+        avatar: tutor_5,
+        bio: 'Having 5 years of experience in teaching general English, TOEFL, IELTS, Academic vocabulary.',
+        name: 'Ms. Liha',
+
+    },
+    {
+        avatar: tutor_6,
+        bio: 'Having 5 years of experience in teaching general English, TOEFL, Academic vocabulary, Achieved TOEFL 520.',
+        name: 'Mr. Lubis',
+
+    },
+    {
+        avatar: tutor_7,
+        bio: 'Having 5 years of experience in teaching general English, TOEFL, IELTS, Achieved TOEFL 560.',
+        name: 'Ms. Eva',
+    },
+    {
+        avatar: tutor_8,
+        bio: 'Having 4 years of experience in teaching general English, English for specific purpose, Academic vocabulary, IELTS, TOEFL.',
+        name: 'Ms. Pooja',
+    },
+    {
+        avatar: tutor_9,
+        bio: '4 Years Experience in Pronunciation, Speaking, Grammar, Listening for TOEFL.',
+        name: 'Mr. Alen',
+    },
+]
+
 const iconCheck = () => {
     return (
         <svg
@@ -360,6 +507,32 @@ export default function EnglishMaster() {
                         </div>
                     </div>
 
+                    <div id="tutor" className="mt-10">
+                        {/* <h2 className={title()}>Tutor</h2> */}
+                        <h3 className={subtitle()}>Teacher berpengalaman Kampung Inggris LC yang akan membimbingmu</h3>
+                        <div className='scrollbar flex overflow-x-auto w-full '>
+                            {
+                                tutor.map((item, index) => (
+                                    <div key={index} className="w-full mt-6">
+                                        <div className="flex flex-col justify-start w-[300px]">
+                                            <Image
+                                                alt="avatar"
+                                                src={item.avatar}
+                                                className="avatar rounded-full mx-auto"
+                                                width={200}
+                                                height={200}
+                                            />
+                                            <div>
+                                                <p className='text-center text-xl mt-10 font-bold'>{item.name}</p>
+                                            </div>
+                                            <p className='text-center italic my-2'>{item.bio}</p>
+                                        </div>
+                                    </div>
+                                ))
+                            }
+                        </div>
+                    </div>
+
                     <div id="alumni" className="mt-10">
                         {/* <h2 className={title()}>Alumni</h2> */}
                         <h3 className={subtitle()}>Ini nih kata alumni yang sudah belajar di LC!</h3>
@@ -378,6 +551,9 @@ export default function EnglishMaster() {
                                 ))
                             }
                         </div>
+                        <div className="py-5">
+                            <YoutubePlayer videoId="zE6Xr5o2axc" />
+                        </div>
                     </div>
 
                     <div id="fasilitas" className="mt-10">
@@ -394,9 +570,9 @@ export default function EnglishMaster() {
                 </div>
             </div>
             <div className="flex flex-col items-center mx-auto mt-10 py-10">
-                <div className="w-full lg:w-[70%] mx-auto pb-10 px-[1rem]">
+                {/* <div className="w-full lg:w-[70%] mx-auto pb-10 px-[1rem]">
                     <YoutubePlayer videoId="zE6Xr5o2axc" />
-                </div>
+                </div> */}
 
                 <h2 id="harga" className={`${subtitle()} mb-5 text-center`}>
                     <span className="italic">Set Your English Journey</span>
