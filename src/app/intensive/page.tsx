@@ -63,10 +63,13 @@ function TabelHarga() {
                 <div key={index} className='flex flex-col justify-between w-[400px]  rounded-xl shadow-lg bg-white p-4 overflow-hidden'>
                     <div className='relative'>
                         {item.populer && <div className='absolute top-[10px] left-[110px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
-                        <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3>
-                        <div className="flex flex-col items-center py-2 my-2 border-[1px]">
+                        {/* <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3> */}
+                        <div className="flex flex-col items-center py-2 my-2 border-[1px] rounded-lg">
                             {item.prices.map((price, indexx) => (
-                                <p key={indexx}>{price.duration} <span className='harga'>{price.rupiah}</span></p>
+                                <div key={indexx} className="flex items-center justify-between px-2 gap-10 w-full ">
+                                    <p>{price.duration}</p>
+                                    <p className="harga">{price.rupiah}</p>
+                                </div>
                             ))
                             }
                         </div>
