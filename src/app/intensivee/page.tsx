@@ -4,11 +4,11 @@ import Alumni from "./alumni";
 import Tutor from "./tutor";
 import Goals from "./goals";
 import Tabels from "./tabels";
+import TabelIntensive from "@/components/Harga/intensive";
 import FAQ from "./faq";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
-import HTMLReactParser from "html-react-parser/lib/index";
 
 export const metadata: Metadata = {
     title: "Program IEP (Intensive English Program) - Kampung Inggris LC",
@@ -16,89 +16,6 @@ export const metadata: Metadata = {
     verification: {
         google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA"
     },
-}
-
-function TabelHarga() {
-    const harga = [
-        {
-            name: 'Intensive',
-            prices: [
-                {
-                    duration: '3 bulan',
-                    rupiah: 'Rp. 4.200.000'
-                },
-                {
-                    duration: '2 bulan',
-                    rupiah: 'Rp. 2.975.000'
-                },
-                {
-                    duration: '1 bulan',
-                    rupiah: 'Rp. 1.600.000'
-                },
-                {
-                    duration: '2 minggu',
-                    rupiah: 'Rp. 950.000'
-                },
-            ],
-            fasilitas: [
-                'Camp/asrama English Area',
-                'Assessment Test',
-                'Qualified & Experienced Teacher',
-                '4x Main Class & 2x Camp Class',
-                'Senin – Jumat',
-                'Extra Program',
-                'Modul Pembelajaran',
-                'Kaos LC, Sertifikat LC',
-                'Grammar, Speaking, Pronunciation',
-            ],
-            notes: ``,
-            populer: false,
-            link: `https://cs.kampunginggrislc.com?paket=intensive`,
-        },
-    ]
-    return (
-        <div className='flex flex-col items-center lg:flex-row lg:items-start gap-[20px]'>
-            {harga.map((item, index) => (
-                <div key={index} className='flex flex-col justify-between w-[400px]  rounded-xl shadow-lg bg-white p-4 overflow-hidden'>
-                    <div className='relative'>
-                        {item.populer && <div className='absolute top-[10px] left-[110px] transform rotate-45 text-center bg-secondaryLC shadow-lg p-1 w-full'>POPULER</div>}
-                        {/* <h3 className='text-icon text-center text-primaryLC'>{item.name}</h3> */}
-                        <div className="flex flex-col items-center py-2 my-2 border-[1px]">
-                            {item.prices.map((price, indexx) => (
-                                <div key={indexx} className="flex items-center justify-between px-2 gap-10 w-full ">
-                                    <p>{price.duration}</p>
-                                    <p className="harga">{price.rupiah}</p>
-                                </div>
-                            ))
-                            }
-                        </div>
-                        <div className="">
-                            <p className='text-left font-bold'>Fasilitas</p>
-                            <ul>
-                                {item.fasilitas.map((i, indexxx) => (
-                                    <li key={indexxx} className="flex items-center space-x-1 text-left">
-                                        <svg className="flex-shrink-0 w-5 h-5 text-green-500 dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd"></path></svg>
-                                        <span>{HTMLReactParser(i)}</span>
-                                    </li>
-                                ))
-                                }
-                            </ul>
-                            <p className='text-left py-6'>{HTMLReactParser(item.notes)}</p>
-                        </div>
-                    </div>
-                    <div >
-                        <Link
-                            className="btn bg-primaryLC hover:bg-red-600 hover:font-bold text-white w-full rounded-2xl "
-                            href={item.link}
-                        >
-                            Daftar Program
-                        </Link>
-                    </div>
-                </div>
-            ))
-            }
-        </div>
-    )
 }
 
 export default function Intensive() {
@@ -125,20 +42,21 @@ export default function Intensive() {
             {/* Start Hero */}
             <div className="flex flex-col lg:flex-row w-full lg:h-screen bg-white">
                 <div className="z-[2] container flex flex-col justify-center basis-1/2 py-5 lg:pl-[150px] ">
+                    <Image alt="Intensive English Program - jumbotron mobile" src='/hero-iep.png' width={720} height={676} className="lg:hidden pb-4" priority />
                     <h1 className="text-[28px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]"> <span className="italic text-primaryLC">Upgrade English Skills </span> untuk Peluang yang Lebih Baik</h1>
                     <p className="text-[16px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">
                         Investasi terbaik untuk masa
                         depan yang lebih cerah, belajar
                         bahasa Inggris secara intensif
                         di LC <span className="italic font-extralight">can open new doors.</span></p>
-                    <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
+                    <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensivee">
                         <button aria-label="btn-registrasi" className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
                     </Link>
                 </div>
                 <div className="basis-1/2 pb-10">
-                    <Image alt="Intensive English Program - jumbotron mobile" src='/hero-iep.png' width={720} height={676} className="lg:mx-auto" priority />
+                    <Image alt="Intensive English Program - jumbotron mobile" src='/hero-iep.png' width={720} height={676} className="hidden lg:block lg:mx-auto" priority />
                     <div className="px-5">
-                        <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare">
+                        <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensivee">
                             <button aria-label="btn-registrasi" className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-full border-none w-full">JOIN NOW</button>
                         </Link>
                     </div>
@@ -232,7 +150,7 @@ export default function Intensive() {
                     <Tabels />
                 </div>
                 <div className="lg:hidden">
-                    <TabelHarga />
+                    <TabelIntensive />
                 </div>
             </div>
             <div className="container flex flex-col items-center justify-center py-20">
@@ -246,7 +164,7 @@ export default function Intensive() {
                     <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
                         <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
                     </h2>
-                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare">
+                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensivee">
                         <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
                     </Link>
                 </article>
