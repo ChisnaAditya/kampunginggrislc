@@ -30,7 +30,7 @@ export default function TabelHarga() {
             ],
             notes: ``,
             populer: false,
-            link: `https://cs.kampunginggrislc.com?paket=em/emp`,
+            link: `https://cs.kampunginggrislc.com?paket=em/emp&utm_content=em`,
         },
         {
             name: 'English Master Plus (EMP)',
@@ -57,7 +57,7 @@ export default function TabelHarga() {
             ],
             notes: ``,
             populer: false,
-            link: `https://cs.kampunginggrislc.com?paket=em/emp`,
+            link: `https://cs.kampunginggrislc.com?paket=em/emp&utm_content=em`,
         },
     ]
     return (
