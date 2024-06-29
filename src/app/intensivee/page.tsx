@@ -9,6 +9,7 @@ import FAQ from "./faq";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import TanyaCS from "./tanyacs";
 
 export const metadata: Metadata = {
     title: "Program IEP (Intensive English Program) - Kampung Inggris LC",
@@ -153,21 +154,13 @@ export default function Intensive() {
                     <TabelIntensive />
                 </div>
             </div>
+            <TanyaCS />
             <div className="container flex flex-col items-center justify-center py-20">
                 <article className="prose text-center mb-10 lg:mb-20">
                     <h1 id="faq"></h1>
                     <h1 className="text-[24px] lg:text-[32px]"><span className="italic">Frequently Asked Questions</span> <br />(FAQ) </h1>
                 </article>
                 <FAQ />
-                <article className="text-center mt-10">
-                    <h1></h1>
-                    <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
-                        <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
-                    </h2>
-                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensivee">
-                        <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
-                    </Link>
-                </article>
             </div>
         </div >
     )

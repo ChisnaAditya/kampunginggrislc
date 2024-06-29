@@ -10,6 +10,7 @@ import FAQ from "./faq";
 import { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
+import TanyaCS from "./tanyacs";
 
 export const metadata: Metadata = {
     title: "Intensive English Program - Kampung Inggris LC",
@@ -28,12 +29,12 @@ export default function Intensive() {
                     <Image alt="Intensive English Program - jumbotron mobile" src='/jumbotron-mobile.png' width={500} height={500} className="lg:hidden" priority />
                     <h1 className="px-[1rem] lg:px-0 text-[32px] lg:text-[48px] text-black font-extrabold leading-tight lg:leading-[58.09px]">Kamu Mau Mahir Bahasa Inggris Dalam Waktu Relatif Cepat?</h1>
                     <p className="px-[1rem] lg:px-0 text-[24px] lg:text-[32px] text-black font-light lg:leading-[38.73px] py-5">Yuk kursus Bahasa Inggris di LC untuk hasil yang lebih maksimal!</p>
-                    <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensive">
+                    <Link aria-label="link-registrasi" href="#harga">
                         <button aria-label="btn-registrasi" className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]">JOIN NOW</button>
                     </Link>
                     {/* <Image alt="Intensive English Program - jumbotron mobile" src='/jumbotron-mobile.png' width={500} height={500} className="lg:hidden" priority /> */}
                     <div className="px-[1rem] lg:px-0 pb-4">
-                        <Link aria-label="link-registrasi" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensive">
+                        <Link aria-label="link-registrasi" href="#harga">
                             <button aria-label="btn-registrasi" className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[20px] rounded-full border-none w-full">JOIN NOW</button>
                         </Link>
                     </div>
@@ -129,9 +130,10 @@ export default function Intensive() {
                 <div className="hidden lg:block lg:overflow-x-scroll">
                     <Tabels />
                 </div>
-                <div className="lg:hidden">
+                <div id="harga" className="lg:hidden">
                     <TabelIntensive />
                 </div>
+                <TanyaCS />
             </div>
             <div className="container flex flex-col items-center justify-center py-20">
                 <article className="prose text-center mb-10 lg:mb-20">
@@ -139,15 +141,6 @@ export default function Intensive() {
                     <h1 className="text-[24px] lg:text-[32px] italic">Frequently Asked Questions <br />(FAQ) </h1>
                 </article>
                 <FAQ />
-                <article className="text-center mt-10">
-                    <h1></h1>
-                    <h2 className="text-[24px] lg:text-[32px] font-bold mb-10">
-                        <span>Mau tanya lebih lanjut tentang <span className="italic">Intensive English Program</span>?</span>
-                    </h2>
-                    <Link aria-label="link-tanyacs" href="https://cs.kampunginggrislc.com/?cabang=pare&utm_content=intensive">
-                        <button aria-label="btn-tanyacs" className="btn w-[180px] h-[50px] bg-primaryLC hover:bg-primaryLC/80 text-white rounded-2xl">Hubungi CS Kami</button>
-                    </Link>
-                </article>
             </div>
         </div >
     )

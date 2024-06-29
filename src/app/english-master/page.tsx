@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import ListContent from "./listcontent";
 import TabelHarga from "@/components/Programs/TabelHarga";
+import TanyaCS from "./tanyacs";
 import FAQ from "./faq";
 import { CardTestimoni } from "@/components/Programs/CardTestimoni";
 import { title, subtitle, text } from "@/components/primitives";
@@ -19,9 +20,10 @@ import tutor_7 from "../../assets/teachers/7.png"
 import tutor_8 from "../../assets/teachers/8.png"
 import tutor_9 from "../../assets/teachers/9.png"
 
+
 export const metadata: Metadata = {
     title: "English Master Program - Kampung Inggris LC",
-    description: "Paket buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
+    description: "Paket favorit buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
     verification: {
         google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA"
     },
@@ -580,22 +582,11 @@ export default function EnglishMaster() {
                     Pilih Paket Belajarmu Di Sini!
                 </h2>
                 <TabelHarga />
-                <div className="flex flex-col items-center justify-center w-full mx-auto my-10  py-5 lg:py-20 bg-pattern-tanyacs">
-                    <h2 className='text-[24px] lg:text-[28px] text-center px-[2rem] font-bold shadow-green-800'>
-                        Bingung Menentukan Paket Pilihan?
-                    </h2>
-                    <p className='text-[20px] font-normal text-center'>Tanya cs kami</p>
-                    <svg className=' fill-green-700 w-[60px] lg:w-[70px] animate-bounce' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><g data-name="Double down"><path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" /><path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" /></g></svg>
-                    <Link
-                        className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none rounded-2xl px-10"
-                        href={`https://cs.kampunginggrislc.com/?utm_content=em`}
-                    >
-                        Tanya CS
-                    </Link>
-                </div>
+                <TanyaCS />
                 <h2 id="faq" className={`${subtitle()} mb-5 text-center px-[1rem] italic`}>Frequently Asked Questions (FAQ) </h2>
                 <FAQ />
             </div>
+
         </section>
     )
 }
