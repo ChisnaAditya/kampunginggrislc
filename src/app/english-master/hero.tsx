@@ -34,7 +34,7 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            {heroToefl === "toefl" ? <div className="overflow-hidden">
+            {heroToefl === "toefl" ? <div className="w-full overflow-hidden">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     // src='/hero/Hero Image EMEMP.png'
