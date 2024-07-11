@@ -29,7 +29,7 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <div className="w-full overflow-x-hidden">
+            <div className="w-full overflow-hidden">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     // src='/hero/Hero Image EMEMP.png'
