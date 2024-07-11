@@ -1,14 +1,9 @@
 'use client'
 
-import { useSearchParams } from 'next/navigation'
 import Image from "next/image"
 import Link from 'next/link'
 
 export default function HeroSection() {
-    const searchParams = useSearchParams()
-
-    const heroToefl = searchParams.get('hero')
-
     return (
         <div className="flex flex-col-reverse lg:flex-row justify-between bg-secondaryLC w-full">
             <div className="w-full p-[1rem]">
@@ -34,7 +29,7 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            {heroToefl === "toefl" ? <div className="w-full overflow-hidden">
+            <div className="w-full overflow-hidden">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     // src='/hero/Hero Image EMEMP.png'
@@ -44,18 +39,7 @@ export default function HeroSection() {
                     priority
                     className="scale-[1.01]"
                 />
-            </div> :
-                <div className="lg:w-[80%] overflow-hidden">
-                    <Image
-                        alt="hero image program em/emp kampung inggris lc"
-                        src='/hero/Hero Image EMEMP.png'
-                        width={720}
-                        height={450}
-                        priority
-                        className="scale-[1.01]"
-                    />
-                </div>
-            }
+            </div>
         </div>
     )
 }
