@@ -29,15 +29,15 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <div className="w-full overflow-hidden">
+            <div className="w-full">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     // src='/hero/Hero Image EMEMP.png'
                     src='/hero/Hero EM EMP TOEFL.webp'
-                    width={720}
-                    height={450}
+                    width={810}
+                    height={1024}
                     priority
-                    className="scale-[1.01]"
+                    className="scale-[1.1] z-10"
                 />
             </div>
         </div>
