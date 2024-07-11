@@ -29,7 +29,7 @@ export default function HeroSection() {
                     </Link>
                 </div>
             </div>
-            <div className="w-full">
+            <div className="w-full overflow-x-hidden">
                 <Image
                     alt="hero image program em/emp kampung inggris lc"
                     // src='/hero/Hero Image EMEMP.png'
@@ -37,7 +37,7 @@ export default function HeroSection() {
                     width={810}
                     height={1024}
                     priority
-                    className="scale-[1.1] z-10"
+                    className="scale-[1.1]"
                 />
             </div>
         </div>
