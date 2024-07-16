@@ -24,7 +24,7 @@ import tutor_9 from "../../assets/teachers/9.png"
 
 export const metadata: Metadata = {
     title: "English Master Program - Kampung Inggris LC",
-    description: "Paket favorit buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
+    description: "Paket terbaik dan favorit di Kampung Inggris LC buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
     verification: {
         google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA"
     },

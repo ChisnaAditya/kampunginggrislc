@@ -13,10 +13,10 @@ export default function Modal() {
                     <button onClick={() => setIsOpen(!open)} className="text-xl text-white p-2 w-auto h-auto cursor-pointer">x</button>
                     <Image
                         alt="popup"
-                        src="https://files.kampunginggrislc.com/2024/04/LC_29-APRIL-2024_HC-FEED.webp"
+                        src="https://files.kampunginggrislc.com/2024/07/Pop-up-EM-EMP.webp"
                         width={500}
                         height={500}
-                        onClick={() => window.open("https://kampunginggrislc.com/holiday-ceria-2024")}
+                        onClick={() => window.location.href = ("https://program.kampunginggrislc.com/english-master?utm_medium=popup-em")}
                     />
                 </div>
             </dialog>
