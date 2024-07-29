@@ -442,7 +442,7 @@ export default function EnglishMaster() {
   return (
     <section>
       <HeroSection />
-      <div className="flex justify-center mx-auto mt-10">
+      <div className="flex justify-center mx-auto mt-10 max-w-7xl">
         <div className="sticky self-start top-5 hidden lg:block">
           <ListContent />
         </div>
