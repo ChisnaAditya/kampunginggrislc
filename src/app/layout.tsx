@@ -1,10 +1,8 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
-import Modal from "@/components/Modal";
 import { Metadata } from "next";
 import Script from "next/script";
 import { Suspense } from "react";
-import Analytics from "@/components/Analytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -12,11 +10,9 @@ export const metadata: Metadata = {
   title: "Program Kampung Inggris LC",
   description: "Kursus Bahasa Inggris Terfavorit di Kampung Inggris",
   verification: {
-    google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA"
+    google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA",
   },
-}
-
-
+};
 
 export default function RootLayout({
   children,
@@ -26,7 +22,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Suspense>
-        <Analytics />
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-HMS8J1N0MY" />
         <Script id="google-analytics">
           {`
@@ -37,27 +32,7 @@ export default function RootLayout({
           gtag('config', 'G-HMS8J1N0MY');
         `}
         </Script>
-        <Script src="https://www.googletagmanager.com/gtag/js?id=G-SC1KTK3NMP" />
-        <Script id="google-analytics">
-          {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
- 
-          gtag('config', 'G-SC1KTK3NMP');
-        `}
-        </Script>
-        <Script src="https://www.googletagmanager.com/ns.html?id=GTM-KG8RRC8G" />
-        <Script id="google-tag-manager">
-          {`
-          (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-          new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-          j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-          'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-          })(window,document,'script','dataLayer','GTM-KG8RRC8G')
-          `}
-        </Script>
-        <Script id='tiktok-pixel'>
+        <Script id="tiktok-pixel">
           {`
           !function (w, d, t) {
             w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
@@ -67,7 +42,7 @@ export default function RootLayout({
           }(window, document, 'ttq');
         `}
         </Script>
-        <Script id='meta-pixel'>
+        <Script id="meta-pixel">
           {`
           !function(f,b,e,v,n,t,s){
             if(f.fbq)return;
@@ -100,9 +75,7 @@ export default function RootLayout({
         </Script>
       </Suspense>
       <body className={inter.className}>
-        <div className="flex flex-col justify-between h-screen">
-          {children}
-        </div>
+        <div className="flex flex-col justify-between h-screen">{children}</div>
       </body>
     </html>
   );

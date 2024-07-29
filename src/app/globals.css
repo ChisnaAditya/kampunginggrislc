@@ -3,86 +3,100 @@
 @tailwind utilities;
 
 .bg-jumbotron {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-image: url('/jumbotron.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-image: url("/jumbotron.png");
 }
 
 .bg-pare {
-    background: linear-gradient(305deg, rgb(35, 164, 85, 0.9) 0%, rgb(240, 232, 81, 0.9) 100%), url('/hero/bg-hero-pare.webp');
-    /* background-blend-mode: multiply; */
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  background: linear-gradient(
+      305deg,
+      rgb(35, 164, 85, 0.9) 0%,
+      rgb(240, 232, 81, 0.9) 100%
+    ),
+    url("/hero/bg-hero-pare.webp");
+  /* background-blend-mode: multiply; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.bg-em {
+  background: linear-gradient(360deg, #fccf00 80%, #fffbe7 100%),
+    url("/hero/hero-em-gapyear.png");
+  /* background-blend-mode: multiply; */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .bg-pattern-tanyacs {
-    background-color: #ffffff;
-    opacity: 1;
-    background-image: radial-gradient(#EA1E24 2px, transparent 2px), radial-gradient(#EA1E24 2px, #ffffff 2px);
-    background-size: 80px 80px;
-    background-position: 0 0, 40px 40px;
+  background-color: #ffffff;
+  opacity: 1;
+  background-image: radial-gradient(#ea1e24 2px, transparent 2px),
+    radial-gradient(#ea1e24 2px, #ffffff 2px);
+  background-size: 80px 80px;
+  background-position: 0 0, 40px 40px;
 }
 
 .headline {
-    font-size: 2rem;
-    font-weight: 700;
-    text-transform: uppercase;
+  font-size: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .subheadline {
-    font-size: 30px;
-    font-weight: 700;
-    text-transform: uppercase;
-    line-height: 1.2em;
-    /* width: 50%; */
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  text-transform: uppercase;
+  line-height: 1.2em;
+  /* width: 50%; */
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .text-icon {
-    font-size: 20px;
-    font-weight: 700;
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .p {
-    font-size: 16px;
+  font-size: 16px;
 }
 
 .harga {
-    font-size: 20px;
-    font-weight: 600;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .scrollbar {
-    scrollbar-width: none;
+  scrollbar-width: none;
 }
 
 @media only screen and (max-width: 768px) {
-    .headline {
-        font-size: 1.5rem;
-    }
+  .headline {
+    font-size: 1.5rem;
+  }
 
-    .subheadline {
-        font-size: 24px;
-        font-weight: 700;
-        text-transform: uppercase;
-        line-height: 1.2em;
-        width: 100%;
-        margin-left: auto;
-        margin-right: auto;
-        padding-top: 10px;
-        padding-bottom: 10px;
-    }
+  .subheadline {
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 1.2em;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
 
-    .text-icon {
-        font-size: 16px;
-    }
+  .text-icon {
+    font-size: 16px;
+  }
 
-    .p {
-        font-size: 12px;
-    }
+  .p {
+    font-size: 12px;
+  }
 }
