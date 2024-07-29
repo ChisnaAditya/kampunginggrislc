@@ -16,14 +16,14 @@ export default function HeroSection() {
             height={100}
             priority
           />
-          <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+          <h1 className="text-slate-900 font-extrabold text-2xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             Belajar Bahasa Inggris
           </h1>
-          <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+          <p className="text-slate-900 font-extrabold text-2xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             {" "}
             dari <span className="text-primaryLC">Basic hingga Mahir</span>
           </p>
-          <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+          <p className="text-slate-900 font-extrabold text-2xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             di Lingkungan yang Mendukung
           </p>
           <h2 className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
