@@ -52,7 +52,7 @@ export default function HeroSection() {
           priority
           className="hidden sm:block xl:scale-[1.1]"
         />
-        <Image
+        {/* <Image
           alt="hero image program em/emp kampung inggris lc"
           // src='/hero/Hero Image EMEMP.png'
           src="/hero/hero-em-gapyear-mobile.webp"
@@ -60,7 +60,7 @@ export default function HeroSection() {
           height={400}
           priority
           className="sm:hidden"
-        />
+        /> */}
       </div>
     </div>
   );
