@@ -16,14 +16,11 @@ export default function HeroSection() {
             height={100}
             priority
           />
-          <h1 className="text-slate-900 font-extrabold text-2xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
-            Belajar Bahasa Inggris
+          <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+            Belajar Bahasa Inggris dari{" "}
+            <span className="text-primaryLC">Basic hingga Mahir</span>
           </h1>
-          <p className="text-slate-900 font-extrabold text-2xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
-            {" "}
-            dari <span className="text-primaryLC">Basic hingga Mahir</span>
-          </p>
-          <p className="text-slate-900 font-extrabold text-2xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+          <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             di Lingkungan yang Mendukung
           </p>
           <h2 className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
@@ -54,17 +51,8 @@ export default function HeroSection() {
           width={1280}
           height={1280}
           priority
-          className="hidden sm:block xl:scale-[1.1]"
+          className="sm:block xl:scale-[1.1]"
         />
-        {/* <Image
-          alt="hero image program em/emp kampung inggris lc"
-          // src='/hero/Hero Image EMEMP.png'
-          src="/hero/hero-em-gapyear-mobile.webp"
-          width={200}
-          height={200}
-          priority
-          className="sm:hidden mx-auto"
-        /> */}
       </div>
     </div>
   );
