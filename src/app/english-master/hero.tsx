@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <div className="flex flex-col lg:flex-row items-center justify-between bg-em w-full">
+    <div className="flex flex-col lg:flex-row items-center justify-between w-full bg-gradient-to-b from-yellow-200 to-secondaryLC">
       <div className="w-full p-[1rem]">
         <article className="lg:pl-[5rem] lg:pt-[2rem]">
           <Image
@@ -56,8 +56,8 @@ export default function HeroSection() {
           alt="hero image program em/emp kampung inggris lc"
           // src='/hero/Hero Image EMEMP.png'
           src="/hero/hero-em-gapyear-mobile.webp"
-          width={1280}
-          height={1280}
+          width={400}
+          height={400}
           priority
           className="sm:hidden"
         />
