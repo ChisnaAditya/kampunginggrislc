@@ -21,8 +21,10 @@ export default function HeroSection() {
           </h1>
           <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             {" "}
-            dari <span className="text-primaryLC">Basic hingga Mahir</span>di
-            Lingkungan yang Mendukung
+            dari <span className="text-primaryLC">Basic hingga Mahir</span>
+          </p>
+          <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+            di Lingkungan yang Mendukung
           </p>
           <h2 className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
             Gak cuma teori, nikmati praktik bahasa Inggris setiap hari +{" "}
