@@ -17,31 +17,33 @@ export default function HeroSection() {
             priority
           />
           <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
-            Belajar Bahasa Inggris dari{" "}
-            <span className="text-primaryLC">Basic hingga Mahir</span> di
-            Lingkungan yang Mendukung
+            Belajar Bahasa Inggris
           </h1>
-
+          <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+            {" "}
+            dari <span className="text-primaryLC">Basic hingga Mahir</span>di
+            Lingkungan yang Mendukung
+          </p>
           <h2 className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
             Gak cuma teori, nikmati praktik bahasa Inggris setiap hari +{" "}
             <b className="font-bold">
               BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP
             </b>
           </h2>
-
           <Link href="#harga">
             <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none">
               JOIN NOW
             </button>
           </Link>
         </article>
-
-        <Link href="#harga">
-          <button className="lg:hidden w-full text-bold bg-primaryLC hover:bg-primaryLC/80 text-slate-50 text-[24px] rounded-xl border-none">
-            JOIN NOW
-          </button>
-        </Link>
       </div>
+
+      <Link href="#harga">
+        <button className="lg:hidden w-[300px] mb-4 text-bold bg-primaryLC hover:bg-primaryLC/80 text-slate-50 text-[24px] rounded-xl border-none">
+          JOIN NOW
+        </button>
+      </Link>
+
       <div className="w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
