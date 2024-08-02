@@ -127,6 +127,12 @@ export default function TabelHarga() {
             className="btn bg-red-600 hover:bg-red-600 hover:font-bold text-white w-full rounded-2xl"
             onClick={() => {
               window.location.href = `${item.link}`;
+              window.gtag("event", "Click_TanyaCS", {
+                event_category: "click",
+                event_label: "Click_TanyaCS",
+                value: 99,
+              });
+              console.log("clicked tanyacs");
             }}
           >
             Daftar Program

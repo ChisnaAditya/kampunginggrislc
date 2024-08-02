@@ -45,12 +45,20 @@ export default function TanyaCS() {
           <path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" />
         </g>
       </svg>
-      <Link
+      <button
         className="btn bg-green-700 hover:bg-green-800 hover:font-bold text-white border-none rounded-2xl px-10"
-        href={`https://cs.kampunginggrislc.com?${urlParam}&utm_content=intensivee&paket=intensive`}
+        onClick={() => {
+          window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=intensivee&paket=intensive`;
+          window.gtag("event", "Click_TanyaCS", {
+            event_category: "click",
+            event_label: "Click_TanyaCS",
+            value: 99,
+          });
+          console.log("clicked tanyacs");
+        }}
       >
         Tanya CS
-      </Link>
+      </button>
     </div>
   );
 }

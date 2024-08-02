@@ -76,10 +76,7 @@ export default function Intensive() {
             Inggris secara intensif di LC{" "}
             <span className="italic font-extralight">can open new doors.</span>
           </p>
-          <Link
-            aria-label="link-registrasi"
-            href="https://cs.kampunginggrislc.com/?paket=intensive&utm_content=intensivee"
-          >
+          <Link aria-label="link-registrasi" href="#goals">
             <button
               aria-label="btn-registrasi"
               className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-full border-none w-[367px]"
@@ -98,10 +95,7 @@ export default function Intensive() {
             priority={true}
           />
           <div className="px-5">
-            <Link
-              aria-label="link-registrasi"
-              href="https://cs.kampunginggrislc.com/?paket=intensive&utm_content=intensivee"
-            >
+            <Link aria-label="link-registrasi" href="#goals">
               <button
                 aria-label="btn-registrasi"
                 className="lg:hidden btn bg-primaryLC hover:bg-primaryLC/80 text-white text-[24px] rounded-full border-none w-full"

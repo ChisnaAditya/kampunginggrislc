@@ -20,10 +20,10 @@ import teacher_9 from "../../assets/kampung-inggris-lc-pare-teacher-9.webp";
 
 export default function Teachers() {
   const teachers = [
-    {
-      id: 11,
-      img: teacher_1,
-    },
+    // {
+    //   id: 11,
+    //   img: teacher_1,
+    // },
     {
       id: 21,
       img: teacher_2,
@@ -60,7 +60,7 @@ export default function Teachers() {
   return (
     <div className="flex flex-col py-10 bg-base min-h-screen items-center justify-center">
       <article className="container prose flex flex-col w-full text-center">
-        <h1 className="text-2xl">
+        <h1 className="text-4xl sm:text-5xl lg:text-6xl tracking-tight">
           Yuk Kenalan Sama{" "}
           <span className="italic text-primaryLC">Teacher </span> Kampung
           Inggris LC
