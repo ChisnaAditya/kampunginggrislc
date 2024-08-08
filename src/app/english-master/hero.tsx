@@ -46,11 +46,23 @@ export default function HeroSection() {
         JOIN NOW
       </Link>
 
-      <div className="w-[80%] mx-auto overflow-hidden">
+      <div className="hidden sm:block w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
           src="/hero/hero-em-gapyear.webp"
-          // src="/hero/Hero Image EM.svg"
+          // src="/hero/Hero Image EM mobile.webp"
+          className="sm:scale-[1.01] xl:scale-[1.1]"
+          width={810}
+          height={1024}
+          priority
+        />
+      </div>
+
+      <div className="sm:hidden w-[80%] mx-auto overflow-hidden">
+        <Image
+          alt="hero image program em/emp kampung inggris lc"
+          // src="/hero/hero-em-gapyear.webp"
+          src="/hero/Hero Image EM mobile.webp"
           className="sm:scale-[1.01] xl:scale-[1.1]"
           width={810}
           height={1024}
