@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-export const CardTestimoni = (props: any) => {
+export default function CardTestimoni(props: any) {
   return (
     <div className="w-[300px] lg:w-[500px] flex flex-col justify-between flex-shrink-0 rounded-xl shadow-lg border-[1.5px] p-4">
       <div className="p italic text-justify mb-2">{props.testi}</div>
@@ -23,4 +23,4 @@ export const CardTestimoni = (props: any) => {
       </div>
     </div>
   );
-};
+}

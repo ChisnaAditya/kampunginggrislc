@@ -14,7 +14,6 @@ export default function HeroSection() {
             className="mx-auto"
             width={100}
             height={100}
-            priority
           />
           <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             Belajar Bahasa Inggris dari{" "}
@@ -46,12 +45,11 @@ export default function HeroSection() {
       <div className="w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
-          // src='/hero/Hero Image EMEMP.png'
           src="/hero/hero-em-gapyear.webp"
-          width={1280}
-          height={1280}
-          priority
           className="sm:block xl:scale-[1.1]"
+          width={1000}
+          height={1000}
+          priority
         />
       </div>
     </div>

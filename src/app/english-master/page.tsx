@@ -1,15 +1,15 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import HeroSection from "./hero";
+// import HeroSection from "./hero";
 import ListContent from "./listcontent";
-import TabelHarga from "@/components/Programs/TabelHarga";
-import TanyaCS from "./tanyacs";
+// import TanyaCS from "./tanyacs";
 import FAQ from "./faq";
-import { CardTestimoni } from "@/components/Programs/CardTestimoni";
+// import { TabelHarga } from "@/components/Programs/TabelHarga";
+// import { CardTestimoni } from "@/components/Programs/CardTestimoni";
 import { title, subtitle, text } from "@/components/primitives";
-import Link from "next/link";
 import HTMLReactParser from "html-react-parser/lib/index";
 import YoutubePlayer from "@/components/YoutubePlayer";
+import dynamic from "next/dynamic";
 
 import tutor_1 from "../../assets/teachers/1.png";
 import tutor_2 from "../../assets/teachers/2.png";
@@ -20,6 +20,25 @@ import tutor_6 from "../../assets/teachers/6.png";
 import tutor_7 from "../../assets/teachers/7.png";
 import tutor_8 from "../../assets/teachers/8.png";
 import tutor_9 from "../../assets/teachers/9.png";
+
+const HeroSection = dynamic(() => import("./hero"), {
+  loading: () => <p>Loading...</p>,
+});
+const TanyaCS = dynamic(() => import("./tanyacs"), {
+  loading: () => <p>Loading...</p>,
+});
+const CardTestimoni = dynamic(
+  () => import("../../components/Programs/CardTestimoni"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const TabelHarga = dynamic(
+  () => import("../../components/Programs/TabelHarga"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
 
 export const metadata: Metadata = {
   title: "English Master Program - Kampung Inggris LC",
