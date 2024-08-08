@@ -42,7 +42,7 @@ export default function HeroSection() {
         </button>
       </Link>
 
-      <div className="hidden sm:block w-[80%] mx-auto overflow-hidden">
+      <div className="w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
           src="/hero/hero-em-gapyear.webp"
