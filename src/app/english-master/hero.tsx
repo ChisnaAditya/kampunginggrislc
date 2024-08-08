@@ -29,8 +29,8 @@ export default function HeroSection() {
             </b>
           </h2>
           <Link
-            href="#harga"
-            aria-label="harga"
+            href="#overview"
+            aria-label="overview"
             className="hidden text-center w-[300px] lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none"
           >
             JOIN NOW
@@ -39,8 +39,8 @@ export default function HeroSection() {
       </div>
 
       <Link
-        href="#harga"
-        aria-label="harga"
+        href="#overview"
+        aria-label="overview"
         className="lg:hidden w-[300px] mb-4 text-center text-bold bg-primaryLC hover:bg-primaryLC/80 text-slate-50 text-[24px] rounded-xl border-none"
       >
         JOIN NOW
@@ -52,8 +52,8 @@ export default function HeroSection() {
           // src="/hero/hero-em-gapyear.webp"
           src="/hero/Hero Image EM mobile.webp"
           className="sm:scale-[1.01] xl:scale-[1.1]"
-          width={810}
-          height={1024}
+          width={405}
+          height={512}
           priority
         />
       </div>

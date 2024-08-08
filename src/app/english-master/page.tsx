@@ -1,14 +1,7 @@
 import { Metadata } from "next";
 import Image from "next/image";
-// import HeroSection from "./hero";
-import ListContent from "./listcontent";
-// import TanyaCS from "./tanyacs";
-import FAQ from "./faq";
-// import { TabelHarga } from "@/components/Programs/TabelHarga";
-// import { CardTestimoni } from "@/components/Programs/CardTestimoni";
 import { title, subtitle, text } from "@/components/primitives";
 import HTMLReactParser from "html-react-parser/lib/index";
-import YoutubePlayer from "@/components/YoutubePlayer";
 import dynamic from "next/dynamic";
 
 import tutor_1 from "../../assets/teachers/1.png";
@@ -24,11 +17,26 @@ import tutor_9 from "../../assets/teachers/9.png";
 const HeroSection = dynamic(() => import("./hero"), {
   loading: () => <p>Loading...</p>,
 });
+const ListContent = dynamic(() => import("./listcontent"), {
+  loading: () => <p>Loading...</p>,
+});
+const CardBenefits = dynamic(() => import("./benefits"), {
+  loading: () => <p>Loading...</p>,
+});
+const Galeri = dynamic(() => import("./galeri"), {
+  loading: () => <p>Loading...</p>,
+});
 const TanyaCS = dynamic(() => import("./tanyacs"), {
   loading: () => <p>Loading...</p>,
 });
 const CardTestimoni = dynamic(
   () => import("../../components/Programs/CardTestimoni"),
+  {
+    loading: () => <p>Loading...</p>,
+  }
+);
+const YoutubePlayer = dynamic(
+  () => import("../../components/YoutubePlayer/index"),
   {
     loading: () => <p>Loading...</p>,
   }
@@ -39,6 +47,9 @@ const TabelHarga = dynamic(
     loading: () => <p>Loading...</p>,
   }
 );
+const FAQ = dynamic(() => import("./faq"), {
+  loading: () => <p>Loading...</p>,
+});
 
 export const metadata: Metadata = {
   title: "English Master Program - Kampung Inggris LC",
@@ -48,170 +59,82 @@ export const metadata: Metadata = {
     google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA",
   },
 };
-
-function CardBenefits() {
-  const content = [
-    {
-      icon: "/icon/A4@4x.webp",
-      title: "Asrama English Area",
-      desc: "Disini kamu bukan hanya belajar teori saja tapi juga bisa praktik ngomong setiap hari dengan teman di lingkungan yang mendukung.",
-    },
-    {
-      icon: "/icon/A5@4x.webp",
-      title: "Teacher pendamping asrama",
-      desc: "Bukan hanya belajar bareng teman, tapi akan ada teachers yang akan membantu kamu praktik ngomong inggris, memberikan feedback jika kamu melakukan kesalahan.",
-    },
-    {
-      icon: "/icon/A1@4x.webp",
-      title: "Pembelajaran Intensive",
-      desc: "Dengan pembelajaran intensive 6x pertemuan/hari di hari senin-kamis, bukan hanya mahir bahasa inggris tapi soft skill kedisiplinanmu juga akan terasah.",
-    },
-    {
-      icon: "/icon/B1@4x.webp",
-      title: "Exam setiap pekan",
-      desc: "Akan ada examination atau ujian setiap hari jumat, yang bertujuan untuk melihat perkembangan bahasa inggrismu selama satu minggu kebelakang, dan pemberian feedback yang harus kamu tingkatkan di minggu depan.",
-    },
-    {
-      icon: "/icon/B6@4x.webp",
-      title: "Belajar All Materi",
-      desc: "Bukan hanya belajar speaking tapi juga grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. Dan di kelas speaking, grammar, pronunciation dan vocab kamu bisa <b>TINGKATKAN</b> skill Listening, Speaking dan juga Writing.",
-    },
-    {
-      icon: "/icon/B5@4x.webp",
-      title: "Event Pendukung",
-      desc: "Bukan hanya belajar teori, di kampung inggris LC juga ada event yang bisa menunjang kemampuan publik speaking dan ke PD-an mu.",
-    },
-  ];
-  return (
-    <div className="flex flex-col gap-4">
-      {content.map((item, index) => (
-        <div key={index} className="flex flex-col lg:flex-row gap-4">
-          <div className="w-[50px]">
-            <Image
-              alt="kampung inggris lc benefits"
-              width={50}
-              height={50}
-              src={item.icon}
-            />
-          </div>
-          <div className="w-full">
-            <h1 className="text-[18px] lg:text-[22px] text-left font-bold italic">
-              {item.title}
-            </h1>
-            <p className="text-[16px] lg:text-[18px]">
-              {HTMLReactParser(item.desc)}
-            </p>
-          </div>
-        </div>
-      ))}
-    </div>
-  );
-}
-function Tutor() {
-  const tutorContent = [
-    {
-      avatar: tutor_2,
-      bio: "Having 7 years of experience in teaching general English, English for specific purpose, TOEFL, Achieved TOEFL 560.",
-      name: "Mr. Al",
-    },
-    {
-      avatar: tutor_3,
-      bio: "Having 7 years of experience in teaching grammar, TOEFL.",
-      name: "Mr. Naja",
-    },
-    // {
-    //     avatar: tutor_4,
-    //     bio: 'Having 6 years of experience in teaching speaking, IELTS.',
-    //     name: 'Ms. Iva',
-
-    // },
-    {
-      avatar: tutor_5,
-      bio: "Having 5 years of experience in teaching general English, TOEFL, IELTS, Academic vocabulary.",
-      name: "Ms. Liha",
-    },
-    {
-      avatar: tutor_6,
-      bio: "Having 5 years of experience in teaching general English, TOEFL, Academic vocabulary, Achieved TOEFL 520.",
-      name: "Mr. Lubis",
-    },
-    {
-      avatar: tutor_7,
-      bio: "Having 5 years of experience in teaching general English, TOEFL, IELTS, Achieved TOEFL 560.",
-      name: "Ms. Eva",
-    },
-    {
-      avatar: tutor_8,
-      bio: "Having 4 years of experience in teaching general English, English for specific purpose, Academic vocabulary, IELTS, TOEFL.",
-      name: "Ms. Pooja",
-    },
-    {
-      avatar: tutor_9,
-      bio: "4 Years Experience in Pronunciation, Speaking, Grammar, Listening for TOEFL.",
-      name: "Mr. Alen",
-    },
-  ];
-  return (
-    <div>
-      {tutorContent.map((item, index) => (
-        <div
-          key={index}
-          className="flex flex-col justify-start w-full lg:h-[400px]"
-        >
-          <Image
-            alt="avatar"
-            src={item.avatar}
-            className="avatar rounded-full mx-auto"
-            width={200}
-            height={200}
-          />
-          <div>
-            <p className="text-center text-xl mt-10 font-bold">{item.name}</p>
-          </div>
-          <p className="text-center italic my-2">
-            {item.bio.substring(0, 50)} <span>...</span>
-            {/* <br />
-                            <span
-                                className='font-bold text-warning cursor-pointer hover:text-warning/80'
-                                onClick={() => (document.getElementById(`${item.name}`) as HTMLFormElement).showModal()}>
-                                Read more
-                            </span> */}
-          </p>
-
-          {/* <dialog id={item.name} className="modal">
-                            <div className="modal-box">
-                                <h3 className="font-bold text-lg">{item.name}</h3>
-                                <p className="py-4">{item.bio}</p>
-                                <div className="modal-action">
-                                    <form method="dialog">
-                                        <button className="btn">Close</button>
-                                    </form>
-                                </div>
-                            </div>
-                        </dialog> */}
-        </div>
-      ))}
-    </div>
-  );
-}
-function Galeri(props: any) {
-  return (
-    <div key={props.keyy} className="w-full">
-      <div className="w-[300px]">
-        <Image
-          alt="fasilitas kampung inggris lc pare"
-          src={props.src}
-          width={720}
-          height={450}
-          className="rounded-xl w-[720px]"
-        />
-      </div>
-      <p className="text-center text-slate-500 text-xs italic mt-2">
-        {props.desc}
-      </p>
-    </div>
-  );
-}
+// function CardBenefits() {
+//   const content = [
+//     {
+//       icon: "/icon/A4@4x.webp",
+//       title: "Asrama English Area",
+//       desc: "Disini kamu bukan hanya belajar teori saja tapi juga bisa praktik ngomong setiap hari dengan teman di lingkungan yang mendukung.",
+//     },
+//     {
+//       icon: "/icon/A5@4x.webp",
+//       title: "Teacher pendamping asrama",
+//       desc: "Bukan hanya belajar bareng teman, tapi akan ada teachers yang akan membantu kamu praktik ngomong inggris, memberikan feedback jika kamu melakukan kesalahan.",
+//     },
+//     {
+//       icon: "/icon/A1@4x.webp",
+//       title: "Pembelajaran Intensive",
+//       desc: "Dengan pembelajaran intensive 6x pertemuan/hari di hari senin-kamis, bukan hanya mahir bahasa inggris tapi soft skill kedisiplinanmu juga akan terasah.",
+//     },
+//     {
+//       icon: "/icon/B1@4x.webp",
+//       title: "Exam setiap pekan",
+//       desc: "Akan ada examination atau ujian setiap hari jumat, yang bertujuan untuk melihat perkembangan bahasa inggrismu selama satu minggu kebelakang, dan pemberian feedback yang harus kamu tingkatkan di minggu depan.",
+//     },
+//     {
+//       icon: "/icon/B6@4x.webp",
+//       title: "Belajar All Materi",
+//       desc: "Bukan hanya belajar speaking tapi juga grammar supaya tatanan bahasa kamu benar, pronunciation cara pengucapan yang benar, dan vocabulary untuk memperkaya kosakata bahasa inggris supaya praktik speaking lebih mudah. Dan di kelas speaking, grammar, pronunciation dan vocab kamu bisa <b>TINGKATKAN</b> skill Listening, Speaking dan juga Writing.",
+//     },
+//     {
+//       icon: "/icon/B5@4x.webp",
+//       title: "Event Pendukung",
+//       desc: "Bukan hanya belajar teori, di kampung inggris LC juga ada event yang bisa menunjang kemampuan publik speaking dan ke PD-an mu.",
+//     },
+//   ];
+//   return (
+//     <div className="flex flex-col gap-4">
+//       {content.map((item, index) => (
+//         <div key={index} className="flex flex-col lg:flex-row gap-4">
+//           <div className="w-[50px]">
+//             <Image
+//               alt="kampung inggris lc benefits"
+//               width={50}
+//               height={50}
+//               src={item.icon}
+//             />
+//           </div>
+//           <div className="w-full">
+//             <h1 className="text-[18px] lg:text-[22px] text-left font-bold italic">
+//               {item.title}
+//             </h1>
+//             <p className="text-[16px] lg:text-[18px]">
+//               {HTMLReactParser(item.desc)}
+//             </p>
+//           </div>
+//         </div>
+//       ))}
+//     </div>
+//   );
+// }
+// function Galeri(props: any) {
+//   return (
+//     <div key={props.keyy} className="w-full">
+//       <div className="w-[300px]">
+//         <Image
+//           alt="fasilitas kampung inggris lc pare"
+//           src={props.src}
+//           width={720}
+//           height={450}
+//           className="rounded-xl w-[720px]"
+//         />
+//       </div>
+//       <p className="text-center text-slate-500 text-xs italic mt-2">
+//         {props.desc}
+//       </p>
+//     </div>
+//   );
+// }
 const keseruan = [
   {
     src: "/keseruan/em/1.webp",
@@ -609,10 +532,6 @@ export default function EnglishMaster() {
         </div>
       </div>
       <div className="flex flex-col items-center mx-auto mt-10 py-10">
-        {/* <div className="w-full lg:w-[70%] mx-auto pb-10 px-[1rem]">
-                    <YoutubePlayer videoId="zE6Xr5o2axc" />
-                </div> */}
-
         <h2 id="harga" className={`${subtitle()} mb-5 text-center`}>
           <span className="italic">Set Your English Journey</span>
           <br />
