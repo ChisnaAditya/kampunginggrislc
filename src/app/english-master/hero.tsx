@@ -15,11 +15,11 @@ export default function HeroSection() {
             width={100}
             height={100}
           />
-          <h1 className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+          <h1 className="text-slate-900 font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             Belajar Bahasa Inggris dari{" "}
             <span className="text-primaryLC">Basic hingga Mahir</span>
           </h1>
-          <p className="text-slate-900 font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
+          <p className="text-slate-900 font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             di Lingkungan yang Mendukung
           </p>
           <h2 className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
@@ -28,24 +28,29 @@ export default function HeroSection() {
               BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP
             </b>
           </h2>
-          <Link href="#harga">
-            <button className="hidden lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none">
-              JOIN NOW
-            </button>
+          <Link
+            href="#harga"
+            aria-label="harga"
+            className="hidden text-center w-[300px] lg:btn lg:bg-primaryLC hover:bg-primaryLC/80 lg:text-white  lg:text-[24px] lg:rounded-2xl border-none"
+          >
+            JOIN NOW
           </Link>
         </article>
       </div>
 
-      <Link href="#harga">
-        <button className="lg:hidden w-[300px] mb-4 text-bold bg-primaryLC hover:bg-primaryLC/80 text-slate-50 text-[24px] rounded-xl border-none">
-          JOIN NOW
-        </button>
+      <Link
+        href="#harga"
+        aria-label="harga"
+        className="lg:hidden w-[300px] mb-4 text-center text-bold bg-primaryLC hover:bg-primaryLC/80 text-slate-50 text-[24px] rounded-xl border-none"
+      >
+        JOIN NOW
       </Link>
 
       <div className="w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
-          src="/hero/hero-em-gapyear.webp"
+          // src="/hero/hero-em-gapyear.webp"
+          src="/hero/Hero Image EM.svg"
           className="sm:scale-[1.01] xl:scale-[1.1]"
           width={810}
           height={1024}
