@@ -468,9 +468,9 @@ export default function EnglishMaster() {
         <div className="w-full lg:w-2/3 lg:pl-20 px-[1rem]">
           <div id="overview">
             {/* <h2 className={title()}>Gambaran Umum</h2> */}
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Apakah kamu termasuk kriteria dibawah ini?
-            </h3>
+            </h2>
             <div className={text()}>
               <div className="flex gap-2">
                 <div>{iconCheck()}</div>Udah belajar bahasa Inggris bertahun
@@ -505,10 +505,10 @@ export default function EnglishMaster() {
 
           <div id="keuntungan" className="mt-10">
             {/* <h2 className={title()}>Keuntungan</h2> */}
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Kenalin nih Kampung Inggris LC{" "}
               <span className="lg:hidden">(Language Center)</span>
-            </h3>
+            </h2>
             <p className={text()}>
               Lembaga kursus bahasa inggris yang bukan hanya berfokus pada
               pemberian materi saja, tapi juga{" "}
@@ -525,18 +525,18 @@ export default function EnglishMaster() {
               dan dengan teman yang sudah bisa dan siap saling mendukung
             </p>
             <p className="mt-4"></p>
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Karena itulah LC hadir dengan membawa konsep:
-            </h3>
+            </h2>
             <p className="mt-4"></p>
             <CardBenefits />
           </div>
 
           <div id="galeri" className="mt-10">
             {/* <h2 className={title()}>Galeri</h2> */}
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Seperti ini kan suasana pembelajaran yang kamu inginkan?
-            </h3>
+            </h2>
             <div className="scrollbar flex gap-[20px] overflow-x-auto w-full py-6">
               {keseruan.map((item, index) => (
                 <Galeri key={index} src={item.src} desc={item.desc} />
@@ -546,9 +546,9 @@ export default function EnglishMaster() {
 
           <div id="tutor" className="mt-10">
             {/* <h2 className={title()}>Tutor</h2> */}
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Teacher berpengalaman Kampung Inggris LC yang akan membimbingmu
-            </h3>
+            </h2>
             <div className="scrollbar flex overflow-x-auto w-full ">
               {tutor.map((item, index) => (
                 <div key={index} className="w-full mt-6">
@@ -574,9 +574,9 @@ export default function EnglishMaster() {
 
           <div id="alumni" className="mt-10">
             {/* <h2 className={title()}>Alumni</h2> */}
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Ini nih kata alumni yang sudah belajar di LC!
-            </h3>
+            </h2>
             {/* <Alumni /> */}
             <div className="scrollbar flex gap-[20px] overflow-x-auto w-full py-6">
               {alumni.map((item, index) => (
@@ -597,9 +597,9 @@ export default function EnglishMaster() {
 
           <div id="fasilitas" className="mt-10">
             {/* <h2 className={title()}>Fasilitas</h2> */}
-            <h3 className={subtitle()}>
+            <h2 className={subtitle()}>
               Di lingkungan yang mendukung ini kamu akan belajar
-            </h3>
+            </h2>
             <div className="scrollbar flex gap-[20px] overflow-x-auto w-full py-6">
               {fasilitas.map((item, index) => (
                 <Galeri key={index} src={item.src} desc={item.desc} />

@@ -46,8 +46,9 @@ export default function HeroSection() {
         <Image
           alt="hero image program em/emp kampung inggris lc"
           src="/hero/hero-em-gapyear.webp"
-          width={1000}
-          height={1000}
+          className="sm:scale-[1.01] xl:scale-[1.1]"
+          width={810}
+          height={1024}
           priority
         />
       </div>
