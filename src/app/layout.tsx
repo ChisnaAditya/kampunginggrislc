@@ -21,6 +21,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <body className={inter.className}>
+        <Providers>
+          <div className="flex flex-col justify-between h-screen">
+            {children}
+          </div>
+        </Providers>
+      </body>
       <Script
         strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-HMS8J1N0MY"
@@ -75,13 +82,6 @@ export default function RootLayout({
         })(window, document, "clarity", "script", "lctya7ukcs")
           `}
       </Script>
-      <body className={inter.className}>
-        <Providers>
-          <div className="flex flex-col justify-between h-screen">
-            {children}
-          </div>
-        </Providers>
-      </body>
     </html>
   );
 }

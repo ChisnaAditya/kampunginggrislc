@@ -42,11 +42,10 @@ export default function HeroSection() {
         </button>
       </Link>
 
-      <div className="w-[80%] mx-auto overflow-hidden">
+      <div className="hidden sm:block w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
           src="/hero/hero-em-gapyear.webp"
-          className="sm:block xl:scale-[1.1]"
           width={1000}
           height={1000}
           priority
