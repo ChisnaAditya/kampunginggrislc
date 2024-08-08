@@ -49,8 +49,8 @@ export default function HeroSection() {
       <div className="w-[80%] mx-auto overflow-hidden">
         <Image
           alt="hero image program em/emp kampung inggris lc"
-          // src="/hero/hero-em-gapyear.webp"
-          src="/hero/Hero Image EM.svg"
+          src="/hero/hero-em-gapyear.webp"
+          // src="/hero/Hero Image EM.svg"
           className="sm:scale-[1.01] xl:scale-[1.1]"
           width={810}
           height={1024}
