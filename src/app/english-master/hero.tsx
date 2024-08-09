@@ -65,7 +65,6 @@ export default function HeroSection() {
           className="sm:scale-[1.01] xl:scale-[1.1]"
           width={810}
           height={1024}
-          loading="lazy"
         />
       </div>
     </div>
