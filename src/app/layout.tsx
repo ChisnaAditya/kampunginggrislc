@@ -21,6 +21,15 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <Script strategy="lazyOnload" id="microsoft-clarity">
+        {`
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "lctya7ukcs")
+          `}
+      </Script>
       <body className={inter.className}>
         <Providers>
           <div className="flex flex-col justify-between h-screen">
@@ -29,10 +38,10 @@ export default function RootLayout({
         </Providers>
       </body>
       <Script
-        strategy="afterInteractive"
+        strategy="lazyOnload"
         src="https://www.googletagmanager.com/gtag/js?id=G-HMS8J1N0MY"
       />
-      <Script strategy="afterInteractive" id="google-analytics">
+      <Script strategy="lazyOnload" id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -41,7 +50,7 @@ export default function RootLayout({
           gtag('config', 'G-HMS8J1N0MY');
         `}
       </Script>
-      <Script strategy="afterInteractive" id="tiktok-pixel">
+      <Script strategy="lazyOnload" id="tiktok-pixel">
         {`
           !function (w, d, t) {
             w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
@@ -51,7 +60,7 @@ export default function RootLayout({
           }(window, document, 'ttq');
         `}
       </Script>
-      <Script strategy="afterInteractive" id="meta-pixel">
+      <Script strategy="lazyOnload" id="meta-pixel">
         {`
           !function(f,b,e,v,n,t,s){
             if(f.fbq)return;
@@ -71,15 +80,6 @@ export default function RootLayout({
           (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '1881998885434766');
           fbq('track', 'PageView');
-          `}
-      </Script>
-      <Script strategy="afterInteractive" id="microsoft-clarity">
-        {`
-          (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "lctya7ukcs")
           `}
       </Script>
     </html>
