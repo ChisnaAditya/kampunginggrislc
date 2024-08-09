@@ -22,12 +22,12 @@ export default function HeroSection() {
           <p className="text-slate-900 font-extrabold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-center lg:text-left">
             di Lingkungan yang Mendukung
           </p>
-          <h2 className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
+          <p className="py-4 text-lg sm:text-xl lg:text-2xl text-slate-800 text-center lg:text-left max-w-xl">
             Gak cuma teori, nikmati praktik bahasa Inggris setiap hari +{" "}
-            <b className="font-bold">
+            <span className="font-bold">
               BONUS LIBURAN KE BALI DAN REAL TEST TOEFL ITP
-            </b>
-          </h2>
+            </span>
+          </p>
           <Link
             href="#overview"
             aria-label="overview"
@@ -51,7 +51,6 @@ export default function HeroSection() {
           alt="hero image program em/emp kampung inggris lc"
           // src="/hero/hero-em-gapyear.webp"
           src="/hero/Hero Image EM mobile.webp"
-          className="sm:scale-[1.01] xl:scale-[1.1]"
           width={405}
           height={512}
           priority
@@ -66,7 +65,7 @@ export default function HeroSection() {
           className="sm:scale-[1.01] xl:scale-[1.1]"
           width={810}
           height={1024}
-          priority
+          loading="lazy"
         />
       </div>
     </div>

@@ -44,6 +44,7 @@ export default function CardBenefits() {
               width={50}
               height={50}
               src={item.icon}
+              // loading="lazy"
             />
           </div>
           <div className="w-full">

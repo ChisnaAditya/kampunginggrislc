@@ -12,10 +12,11 @@ export default function CardTestimoni(props: any) {
             width={70}
             height={70}
             className="rounded-full w-[50px] h-[50px] lg:w-[70px] lg:h-[70px]"
+            loading="lazy"
           />
         </figure>
         <div className="flex flex-col justify-between ">
-          <h3 className="text-icon text-left text-red-600">{props.name}</h3>
+          <p className="text-icon text-left text-red-600">{props.name}</p>
           <p className="p text-left leading-none">
             {props.job} <br /> {props.program}
           </p>

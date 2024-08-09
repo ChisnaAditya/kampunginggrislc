@@ -21,15 +21,6 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <Script strategy="lazyOnload" id="microsoft-clarity">
-        {`
-          (function(c,l,a,r,i,t,y){
-            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-        })(window, document, "clarity", "script", "lctya7ukcs")
-          `}
-      </Script>
       <body className={inter.className}>
         <Providers>
           <div className="flex flex-col justify-between h-screen">
@@ -38,10 +29,13 @@ export default function RootLayout({
         </Providers>
       </body>
       <Script
-        strategy="lazyOnload"
+        // strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-HMS8J1N0MY"
       />
-      <Script strategy="lazyOnload" id="google-analytics">
+      <Script
+        // strategy="afterInteractive"
+        id="google-analytics"
+      >
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -80,6 +74,15 @@ export default function RootLayout({
           (window, document,'script','https://connect.facebook.net/en_US/fbevents.js');
           fbq('init', '1881998885434766');
           fbq('track', 'PageView');
+          `}
+      </Script>
+      <Script strategy="lazyOnload" id="microsoft-clarity">
+        {`
+          (function(c,l,a,r,i,t,y){
+            c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+            t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+            y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+        })(window, document, "clarity", "script", "lctya7ukcs")
           `}
       </Script>
     </html>

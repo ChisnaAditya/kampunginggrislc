@@ -9,6 +9,7 @@ export default function Galeri(props: any) {
           width={720}
           height={450}
           className="rounded-xl w-[720px]"
+          loading="lazy"
         />
       </div>
       <p className="text-center text-slate-500 text-xs italic mt-2">

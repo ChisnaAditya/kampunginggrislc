@@ -1,7 +1,6 @@
 import { Metadata } from "next";
 import Image from "next/image";
-import { title, subtitle, text } from "@/components/primitives";
-import HTMLReactParser from "html-react-parser/lib/index";
+import { subtitle, text } from "@/components/primitives";
 import dynamic from "next/dynamic";
 
 import tutor_1 from "../../assets/teachers/1.png";
@@ -15,23 +14,23 @@ import tutor_8 from "../../assets/teachers/8.png";
 import tutor_9 from "../../assets/teachers/9.png";
 
 const HeroSection = dynamic(() => import("./hero"), {});
-const ListContent = dynamic(() => import("./listcontent"), {});
+const ListContent = dynamic(() => import("./listcontent"), { ssr: false });
 const CardBenefits = dynamic(() => import("./benefits"), {});
-const Galeri = dynamic(() => import("./galeri"), {});
-const TanyaCS = dynamic(() => import("./tanyacs"), {});
+const Galeri = dynamic(() => import("./galeri"), { ssr: false });
+const TanyaCS = dynamic(() => import("./tanyacs"), { ssr: false });
 const CardTestimoni = dynamic(
   () => import("../../components/Programs/CardTestimoni"),
-  {}
+  { ssr: false }
 );
 const YoutubePlayer = dynamic(
   () => import("../../components/YoutubePlayer/index"),
-  {}
+  { ssr: false }
 );
 const TabelHarga = dynamic(
   () => import("../../components/Programs/TabelHarga"),
-  {}
+  { ssr: false }
 );
-const FAQ = dynamic(() => import("./faq"), {});
+const FAQ = dynamic(() => import("./faq"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "English Master Program - Kampung Inggris LC",
@@ -297,7 +296,6 @@ export default function EnglishMaster() {
         </div>
         <div className="w-full lg:w-2/3 lg:pl-20 px-[1rem]">
           <div id="overview">
-            {/* <h2 className={title()}>Gambaran Umum</h2> */}
             <h2 className={subtitle()}>
               Apakah kamu termasuk kriteria dibawah ini?
             </h2>
@@ -334,7 +332,6 @@ export default function EnglishMaster() {
           </div>
 
           <div id="keuntungan" className="mt-10">
-            {/* <h2 className={title()}>Keuntungan</h2> */}
             <h2 className={subtitle()}>
               Kenalin nih Kampung Inggris LC{" "}
               <span className="lg:hidden">(Language Center)</span>
@@ -363,7 +360,6 @@ export default function EnglishMaster() {
           </div>
 
           <div id="galeri" className="mt-10">
-            {/* <h2 className={title()}>Galeri</h2> */}
             <h2 className={subtitle()}>
               Seperti ini kan suasana pembelajaran yang kamu inginkan?
             </h2>
@@ -375,7 +371,6 @@ export default function EnglishMaster() {
           </div>
 
           <div id="tutor" className="mt-10">
-            {/* <h2 className={title()}>Tutor</h2> */}
             <h2 className={subtitle()}>
               Teacher berpengalaman Kampung Inggris LC yang akan membimbingmu
             </h2>
@@ -389,6 +384,7 @@ export default function EnglishMaster() {
                       className="avatar rounded-full mx-auto"
                       width={200}
                       height={200}
+                      loading="lazy"
                     />
                     <div>
                       <p className="text-center text-xl mt-10 font-bold">
@@ -403,11 +399,9 @@ export default function EnglishMaster() {
           </div>
 
           <div id="alumni" className="mt-10">
-            {/* <h2 className={title()}>Alumni</h2> */}
             <h2 className={subtitle()}>
               Ini nih kata alumni yang sudah belajar di LC!
             </h2>
-            {/* <Alumni /> */}
             <div className="scrollbar flex gap-[20px] overflow-x-auto w-full py-6">
               {alumni.map((item, index) => (
                 <CardTestimoni
@@ -426,7 +420,6 @@ export default function EnglishMaster() {
           </div>
 
           <div id="fasilitas" className="mt-10">
-            {/* <h2 className={title()}>Fasilitas</h2> */}
             <h2 className={subtitle()}>
               Di lingkungan yang mendukung ini kamu akan belajar
             </h2>
