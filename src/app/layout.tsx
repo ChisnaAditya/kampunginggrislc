@@ -29,13 +29,10 @@ export default function RootLayout({
         </Providers>
       </body>
       <Script
-        // strategy="afterInteractive"
+        strategy="afterInteractive"
         src="https://www.googletagmanager.com/gtag/js?id=G-HMS8J1N0MY"
       />
-      <Script
-        // strategy="afterInteractive"
-        id="google-analytics"
-      >
+      <Script strategy="afterInteractive" id="google-analytics">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}

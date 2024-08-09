@@ -1,15 +1,3 @@
-// import Hero from "@/components/Hero";
-// import CTA from "@/components/CTA";
-// import Testimonials from "@/components/Testimonials";
-// import Manfaat from "@/components/Manfaat";
-// import Keseruan from "@/components/Keseruan";
-// import Alumni from "@/components/Alumni";
-// import Fasilitas from "@/components/Fasilitas";
-// import Metode from "@/components/Metode";
-// import Company from "@/components/Company";
-// import Teachers from "@/components/Teachers";
-// import Program from "@/components/Program";
-// import Modal from "@/components/Modal";
 import dynamic from "next/dynamic";
 
 const Hero = dynamic(() => import("../components/Hero/index"), {
@@ -63,7 +51,7 @@ export default function Home() {
       <Company />
       <Teachers />
       <Program />
-      <Modal />
+      {/* <Modal /> */}
     </main>
   );
 }
