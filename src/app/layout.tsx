@@ -41,6 +41,20 @@ export default function RootLayout({
           gtag('config', 'G-HMS8J1N0MY');
         `}
       </Script>
+
+      <Script
+        strategy="afterInteractive"
+        src="https://www.googletagmanager.com/gtag/js?id=G-HLMY8B25W9"
+      />
+      <Script strategy="afterInteractive" id="google-analytics">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HLMY8B25W9');
+        `}
+      </Script>
+
       <Script strategy="lazyOnload" id="tiktok-pixel">
         {`
           !function (w, d, t) {

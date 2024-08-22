@@ -55,14 +55,12 @@ export default function ListContent() {
         <li className="flex items-center">
           <div className={`border-l-4 ${overviewActive} py-5 px-3`}></div>
           <Link href="#overview" aria-label="overview">
-            {/* <p>Gambaran Umum</p> */}
             <p>Apakah Kamu?</p>
           </Link>
         </li>
         <li className="flex items-center">
           <div className={`border-l-4 ${benefitsActive} py-5 px-3`}></div>
           <Link href="#keuntungan" aria-label="keuntungan">
-            {/* <p>Keuntungan</p> */}
             <p>Solusi</p>
           </Link>
         </li>
