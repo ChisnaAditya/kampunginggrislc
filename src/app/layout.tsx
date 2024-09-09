@@ -7,8 +7,9 @@ import { Providers } from "./providers";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Program Kampung Inggris LC",
-  description: "Kursus Bahasa Inggris Terfavorit di Kampung Inggris",
+  title: "Kampung Inggris LC | Program Belajar",
+  description:
+    "Info, biaya, dan pendaftaran paket program belajar di Kampung Inggris LC",
   verification: {
     google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA",
   },
@@ -20,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="scroll-smooth">
       <body className={inter.className}>
         <Providers>
           <div className="flex flex-col justify-between h-screen">

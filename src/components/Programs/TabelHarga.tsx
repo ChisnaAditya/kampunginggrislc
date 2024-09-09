@@ -115,8 +115,8 @@ export default function TabelHarga() {
           )}
           <h3 className="text-icon text-center text-red-600">{item.name}</h3>
           <div className="flex flex-col items-center py-2 my-2 border-[1px]">
-            {item.prices.map((price, indexx) => (
-              <p key={indexx}>
+            {item.prices.map((price, index) => (
+              <p key={index}>
                 {price.duration} <span className="harga">{price.rupiah}</span>
               </p>
             ))}
@@ -124,9 +124,9 @@ export default function TabelHarga() {
           <div>
             <p className="text-left font-bold">Fasilitas</p>
             <ul>
-              {item.fasilitas.map((i, indexxx) => (
+              {item.fasilitas.map((i, index) => (
                 <li
-                  key={indexxx}
+                  key={index}
                   className="flex items-center space-x-1 text-left"
                 >
                   <span className="flex gap-2 items-center">

@@ -1,8 +1,8 @@
 import dynamic from "next/dynamic";
 
-const Hero = dynamic(() => import("../components/Hero/index"), {
-  loading: () => <p>Loading...</p>,
-});
+// const Hero = dynamic(() => import("../components/Hero/index"), {
+//   loading: () => <p>Loading...</p>,
+// });
 const CTA = dynamic(() => import("../components/CTA/index"), {
   loading: () => <p>Loading...</p>,
 });
@@ -30,17 +30,19 @@ const Company = dynamic(() => import("../components/Company/index"), {
 const Teachers = dynamic(() => import("../components/Teachers/index"), {
   loading: () => <p>Loading...</p>,
 });
-const Program = dynamic(() => import("../components/Program/index"), {
-  loading: () => <p>Loading...</p>,
-});
+// const Program = dynamic(() => import("../components/Program/index"), {
+//   loading: () => <p>Loading...</p>,
+// });
 const Modal = dynamic(() => import("../components/Modal/index"), {
   loading: () => <p>Loading...</p>,
 });
+const Hero = dynamic(() => import("../components/Home/hero"), {});
+const Program = dynamic(() => import("../components/Home/program"), {});
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      {/* <Hero />
       <CTA />
       <Testimonials />
       <Manfaat />
@@ -51,7 +53,9 @@ export default function Home() {
       <Company />
       <Teachers />
       <Program />
-      {/* <Modal /> */}
+      <Modal /> */}
+      <Hero />
+      <Program />
     </main>
   );
 }
