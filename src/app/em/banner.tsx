@@ -1,5 +1,9 @@
+"use client";
+
 import Image from "next/image";
 import { Button } from "@nextui-org/react";
+import { useEffect, useState } from "react";
+import { useSearchParams } from "next/navigation";
 
 const ArrorLeft = () => {
   return (
@@ -27,6 +31,31 @@ const ArrorLeft = () => {
 };
 
 export default function Banner() {
+  const [urlParam, setUrlParam] = useState("");
+  const searchParams = useSearchParams();
+  const utm_source = searchParams.get("utm_source") || ("" as string);
+  const utm_medium = searchParams.get("utm_medium") || ("" as string);
+  const utm_campaign = searchParams.get("utm_campaign") || ("" as string);
+
+  const setToLocalStorage = () => {
+    if (localStorage.getItem("utm_source") !== null) {
+      localStorage.setItem("utm_source", utm_source);
+    }
+    if (localStorage.getItem("utm_source") !== null) {
+      localStorage.setItem("utm_medium", utm_medium);
+    }
+    if (localStorage.getItem("utm_source") !== null) {
+      localStorage.setItem("utm_campaign", utm_campaign);
+    }
+  };
+
+  useEffect(() => {
+    setUrlParam(
+      `utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`
+    );
+    setToLocalStorage();
+  }, [utm_source, utm_medium, utm_campaign]);
+
   return (
     <div className="flex items-center justify-center my-20 rounded-xl shadow-xl bg-pattern-banner bg-no-repeat bg-cover">
       <div>
@@ -37,6 +66,9 @@ export default function Banner() {
         <Button
           className="text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-green-600"
           endContent={<ArrorLeft />}
+          onPress={() =>
+            (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
+          }
         >
           Konsultasi Gratis
         </Button>

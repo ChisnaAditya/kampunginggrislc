@@ -199,7 +199,7 @@ export default function TabelHarga() {
                 <Divider />
               </div>
               <div className="flex flex-col items-end">
-                <p className="font-semibold text-red-500">Rp6.500.000</p>
+                <p className="font-semibold text-primaryLC">Rp6.500.000</p>
                 <p>4 bulan</p>
               </div>
             </div>
@@ -231,7 +231,10 @@ export default function TabelHarga() {
             <div className="pt-10">
               <Button
                 variant="bordered"
-                className="w-full bg-red-00 text-red-500 font-bold text-lg"
+                className="w-full bg-red-00 text-primaryLC font-bold text-lg"
+                onPress={() =>
+                  (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
+                }
               >
                 Daftar Program
               </Button>
@@ -276,7 +279,10 @@ export default function TabelHarga() {
             <div className="pt-10">
               <Button
                 variant="bordered"
-                className="w-full bg-red-00 text-red-500 font-bold text-lg"
+                className="w-full bg-red-00 text-primaryLC font-bold text-lg"
+                onPress={() =>
+                  (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
+                }
               >
                 Daftar Program
               </Button>

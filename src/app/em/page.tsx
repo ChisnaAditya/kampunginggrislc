@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import FAQ from "./faq";
 import Banner from "./banner";
-import { Navbar } from "@nextui-org/react";
+
 const HeroSection = dynamic(() => import("./hero"), {});
 const Paket = dynamic(() => import("./paket"), {});
 const Overview = dynamic(() => import("./overview"), {});
@@ -23,7 +23,6 @@ export const metadata: Metadata = {
 export default function EnglishMaster() {
   return (
     <div className="bg-slate-50">
-      <Navbar />
       <HeroSection />
       <section className="max-w-7xl mx-auto">
         <Paket />
