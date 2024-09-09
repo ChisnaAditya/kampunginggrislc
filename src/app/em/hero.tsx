@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col sm:flex-row items-center justify-evenly sm:pt-20 bg-gradient-to-r from-yellow-300 to-amber-400">
+    <section className="flex flex-col-reverse sm:flex-row items-center justify-evenly sm:pt-20 bg-gradient-to-r from-yellow-300 to-amber-400">
       <div className="flex flex-col gap-4 p-4 sm:p-0">
         <p className="hidden sm:block bg-gradient-to-r from-slate-400 via-red-300 to-amber-200 bg-clip-text text-transparent">
           #DrivesYourSuccess
@@ -35,7 +35,7 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="hidden sm:block drop-shadow-2xl animate-appearance-in">
+      <div className="drop-shadow-2xl animate-appearance-in">
         <Image
           alt="hero image program english master kampung inggris lc"
           src="/hero/hero-em-gapyear.webp"

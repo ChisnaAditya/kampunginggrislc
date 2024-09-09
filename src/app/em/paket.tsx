@@ -193,7 +193,7 @@ export default function TabelHarga() {
         </p>
         <div className="flex gap-4 pt-5 overflow-scroll">
           <div className="shadow-xl rounded-xl p-4">
-            <div className="flex justify-between border-[1px] border-red-200 p-2 mb-5 w-[280px] sm:w-full">
+            <div className="flex justify-between border-[1px] border-red-200 p-2 mb-5 w-[250px] sm:w-full">
               <div>
                 <h3 className="text-2xl font-bold">EM</h3>
                 <Divider />
@@ -241,7 +241,7 @@ export default function TabelHarga() {
             </div>
           </div>
           <div className="shadow-xl rounded-xl p-4">
-            <div className="flex justify-between border-[1px] border-green-200 p-2 mb-5 w-[280px] sm:w-full">
+            <div className="flex justify-between border-[1px] border-green-200 p-2 mb-5 w-[250px] sm:w-full">
               <div>
                 <h3 className="text-2xl font-bold">EMP</h3>
                 <Divider />
