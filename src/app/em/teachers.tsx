@@ -50,8 +50,8 @@ export default function Teachers() {
         }}
       >
         {tutor.map((item, index) => (
-          <SwiperSlide>
-            <div key={index}>
+          <SwiperSlide key={item.toString()}>
+            <div>
               <Image
                 alt=""
                 src={item}
