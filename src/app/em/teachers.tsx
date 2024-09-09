@@ -21,7 +21,7 @@ export default function Teachers() {
     "/tutor/em/15.png",
   ];
   return (
-    <section className="sm:pt-20 bg-pattern-teacher-em bg-contain bg-no-repeat">
+    <section className="p-4 sm:pt-20 bg-pattern-teacher-em bg-contain bg-no-repeat">
       <p>TEACHERS</p>
       <h2 className="text-3xl sm:text-4xl py-2 max-w-lg">
         Berpengalaman{" "}
@@ -33,7 +33,7 @@ export default function Teachers() {
       </p>
       <Swiper
         loop={true}
-        slidesPerView={4}
+        slidesPerView={"auto"}
         modules={[Navigation]}
         onBeforeInit={(swiper: any) => {
           swiperRef.current = swiper;
@@ -63,7 +63,7 @@ export default function Teachers() {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="flex gap-4 justify-center lg:justify-start lg:pt-[48px]">
+      <div className="flex gap-4 sm:justify-center lg:justify-start pt-4 lg:pt-[48px]">
         <button
           aria-label="btn-navigation"
           onClick={() => (swiperRef.current as any).slidePrev()}

@@ -57,14 +57,16 @@ export default function Banner() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <div className="flex items-center justify-center my-20 rounded-xl shadow-xl bg-pattern-banner bg-no-repeat bg-cover">
-      <div>
-        <h2 className="text-4xl font-bold text-white">
+    <div className="flex sm:items-center justify-center my-20 sm:rounded-xl shadow-xl bg-pattern-banner bg-no-repeat bg-cover">
+      <div className="p-4 sm:p-0">
+        <h2 className="text-2xl first-letter:sm:text-4xl font-bold text-white">
           Mau Tanya Lebih Lanjut?
         </h2>
-        <p className="text-2xl pt-2 text-white">Hubungi Kami</p>
+        <p className="hidden sm:block text-xl sm:text-2xl pt-2 text-white">
+          Hubungi Kami
+        </p>
         <Button
-          className="text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-green-600"
+          className="text-lg sm:text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-green-600"
           endContent={<ArrorLeft />}
           onPress={() =>
             (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
@@ -86,7 +88,7 @@ export default function Banner() {
           src="/icon-banner-1.png"
           width={100}
           height={100}
-          className="absolute bottom-64 right-0 drop-shadow-2xl animate-infinite-floating"
+          className="absolute bottom-0 lg:bottom-64 right-0 drop-shadow-2xl animate-infinite-floating"
         />
       </div>
     </div>

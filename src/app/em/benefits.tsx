@@ -1,6 +1,7 @@
 import React from "react";
 import Image from "next/image";
 import HTMLReactParser from "html-react-parser/lib/index";
+
 function CardBenefit(props: any) {
   return (
     <div className="p-4 rounded-xl shadow-2xl w-[300px] animate-infinite-floating">
@@ -48,24 +49,26 @@ export default function Benefits() {
     },
   ];
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center p-4 sm:p-0 w-full">
       <p>KARENA ITULAH</p>
       <h2 className="text-3xl sm:text-4xl text-center max-w-lg">
         LC Hadir dengan{" "}
         <span className="font-bold text-primaryLC">Membawa Konsep</span>
       </h2>
-      <div className="relative max-w-7xl mx-auto py-20">
-        <div className="absolute w-full h-[400px] bg-pattern-benefits-em bg- bg-no-repeat bottom-20"></div>
-        <div className="flex flex-wrap gap-4">
-          {content.map((item) => (
-            <div key={item.title}>
-              <CardBenefit
-                icon={item.icon}
-                title={item.title}
-                desc={item.desc}
-              />
-            </div>
-          ))}
+      <div className="relative w-full sm:max-w-7xl mx-auto sm:py-20">
+        <div className="hidden sm:absolute w-full h-[400px] bg-pattern-benefits-em bg- bg-no-repeat bottom-20"></div>
+        <div className="w-full h-full overflow-x-scroll">
+          <div className="flex sm:flex-wrap gap-4">
+            {content.map((item) => (
+              <div key={item.title}>
+                <CardBenefit
+                  icon={item.icon}
+                  title={item.title}
+                  desc={item.desc}
+                />
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -5,11 +5,11 @@ import Link from "next/link";
 export default function HeroSection() {
   return (
     <section className="flex flex-col sm:flex-row items-center justify-evenly sm:pt-20 bg-gradient-to-r from-yellow-300 to-amber-400">
-      <div className="flex flex-col gap-4">
+      <div className="flex flex-col gap-4 p-4 sm:p-0">
         <p className="hidden sm:block bg-gradient-to-r from-slate-400 via-red-300 to-amber-200 bg-clip-text text-transparent">
           #DrivesYourSuccess
         </p>
-        <h1 className="text-4xl sm:text-5xl max-w-xl font-semibold leading-[1.2em] sm:leading-[1.3em]">
+        <h1 className="text-3xl sm:text-5xl max-w-xl font-semibold leading-[1.2em] sm:leading-[1.3em]">
           Belajar Bahasa Inggris dari{" "}
           <span className="text-white bg-red-600 px-2">Basic</span> hingga{" "}
           <span className="text-white bg-red-600 px-2">Mahir</span> di
@@ -21,13 +21,13 @@ export default function HeroSection() {
         </p>
         <div className="flex gap-4 w-full">
           <Link href="#paket">
-            <Button className="text-white font-medium bg-red-600 text-2xl px-16 py-6">
+            <Button className="text-white font-medium bg-red-600 text-2xl sm:px-16 sm:py-6">
               Join Now
             </Button>
           </Link>
           <Link href="#overview">
             <Button
-              className="bg-transparent border-[1px] border-black text-2xl font-medium px-16 py-6"
+              className="bg-transparent border-[1px] border-black text-2xl font-medium sm:px-16 sm:py-6"
               endContent
             >
               Learn More
@@ -35,7 +35,7 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="drop-shadow-2xl animate-appearance-in">
+      <div className="hidden sm:block drop-shadow-2xl animate-appearance-in">
         <Image
           alt="hero image program english master kampung inggris lc"
           src="/hero/hero-em-gapyear.webp"

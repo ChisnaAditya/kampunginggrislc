@@ -102,7 +102,7 @@ export default function FAQ() {
     },
   ];
   return (
-    <div id="faq" className="">
+    <div id="faq" className="p-4">
       <h2 className="text-3xl sm:text-4xl text-center pt-20 pb-10">
         Frequently Asked Questions <br />
         (FAQ)

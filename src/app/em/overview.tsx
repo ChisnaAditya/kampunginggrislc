@@ -46,7 +46,7 @@ export default function Overview() {
       id="overview"
       className="flex flex-col sm:flex-row items-center justify-between gap-4"
     >
-      <div className="flex items-center justify-center gap-10 p-10 bg-white shadow-xl rounded-2xl">
+      <div className="flex items-center justify-center gap-10 p-4 sm:p-10 bg-white shadow-xl rounded-2xl">
         <div className="">
           <p className="text-3xl sm:text-4xl max-w-lg">
             Apakah kamu termasuk kriteria dibawah ini?
@@ -58,7 +58,6 @@ export default function Overview() {
                 src="/icon/emoticon-sad-1.svg"
                 width={50}
                 height={50}
-                className="animate-spinner-ease-spin"
               />
               Udah belajar bahasa Inggris bertahun tahun tapi masih belum bisa!
             </div>
@@ -84,10 +83,9 @@ export default function Overview() {
               lagi dah!
             </div>
           </div>
-          {/* <Button className="text-left max-w-lg">Join Now</Button> */}
         </div>
       </div>
-      <div className="w-[100px]">
+      <div className="w-[80px] sm:w-[100px]">
         <svg
           viewBox="0 0 24 24"
           fill="none"
@@ -115,7 +113,7 @@ export default function Overview() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="sm:hidden"
+          className="sm:hidden animate-bounce"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -135,7 +133,7 @@ export default function Overview() {
           </g>
         </svg>
       </div>
-      <div className="flex items-center justify-center gap-10 p-10 bg-white shadow-xl rounded-2xl">
+      <div className="flex items-center justify-center gap-10 p-4 sm:p-10 bg-white shadow-xl rounded-2xl">
         <div className="">
           <p className="text-3xl sm:text-4xl max-w-lg ">Berarti kamu harus!</p>
           <div className="flex flex-col gap-2 max-w-lg py-5">

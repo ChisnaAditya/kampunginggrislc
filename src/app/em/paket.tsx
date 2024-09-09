@@ -85,14 +85,6 @@ export default function TabelHarga() {
       program: "Alumni English Master",
     },
     {
-      avatar: "/alumni/bagus-alumni-kampung-inggris-lc.webp",
-      testi:
-        "Melangkah tanpa persiapan matang buat aku harus lapang dada. Aku ga nyerah dan akhirnya ambil kursus di LC buat persiapan pendaftaran tahun depannya. Ternyata worth it banget, I’ve got much experience. Finally, I got what I dreamed of!",
-      name: "Bagus",
-      job: "Polisi",
-      program: "Alumni English Master",
-    },
-    {
       avatar: "/alumni/rizka-windi-alumni-kampung-inggris-lc.webp",
       testi:
         "Awal masuk aku cupu ga bisa apa-apa. Dari LC aku dapet banyak ilmu, pengalaman, vocab baru, dan temen dari Sabang sampai Merauke. Alhamdulillah, sekarang aku bisa jadi bagian dari Best Crew in The World.",
@@ -122,6 +114,14 @@ export default function TabelHarga() {
         "Weekly meeting, gathering, yasinan, table manner, outbound, jalan-jalan ke Bali, best camp competition, dan banyak lagi kegiatan asik lainnya. Bikin pertemanan naik level jadi keluarga yang berjuang bareng buat bisa bahasa Inggris.",
       name: "Elvira R",
       job: "English Teacher & Penulis Buku",
+      program: "Alumni English Master",
+    },
+    {
+      avatar: "/alumni/bagus-alumni-kampung-inggris-lc.webp",
+      testi:
+        "Melangkah tanpa persiapan matang buat aku harus lapang dada. Aku ga nyerah dan akhirnya ambil kursus di LC buat persiapan pendaftaran tahun depannya. Ternyata worth it banget, I’ve got much experience. Finally, I got what I dreamed of!",
+      name: "Bagus",
+      job: "Polisi",
       program: "Alumni English Master",
     },
   ];
@@ -182,7 +182,7 @@ export default function TabelHarga() {
       id="paket"
       className="flex flex-col sm:flex-row justify-between gap-4 mt-10"
     >
-      <div className="sm:w-[60%] p-10 shadow-xl rounded-xl bg-white">
+      <div className="sm:w-[60%] p-4 sm:p-10 shadow-xl rounded-xl bg-white">
         <h2 className="text-2xl sm:text-3xl max-w-xs pb-5">
           Program <span className="font-bold">English Master</span>
         </h2>
@@ -191,9 +191,9 @@ export default function TabelHarga() {
           <i>Pronunciation</i>,<i>Vocabulary</i>, gratis praktik ke Bali, dan
           Real Test TOEFL ITP untuk program 6 bulan.
         </p>
-        <div className="flex gap-4 pt-5">
+        <div className="flex gap-4 pt-5 overflow-scroll">
           <div className="shadow-xl rounded-xl p-4">
-            <div className="flex justify-between border-[1px] border-red-200 p-2 mb-5">
+            <div className="flex justify-between border-[1px] border-red-200 p-2 mb-5 w-[280px] sm:w-full">
               <div>
                 <h3 className="text-2xl font-bold">EM</h3>
                 <Divider />
@@ -241,7 +241,7 @@ export default function TabelHarga() {
             </div>
           </div>
           <div className="shadow-xl rounded-xl p-4">
-            <div className="flex justify-between border-[1px] border-green-200 p-2 mb-5">
+            <div className="flex justify-between border-[1px] border-green-200 p-2 mb-5 w-[280px] sm:w-full">
               <div>
                 <h3 className="text-2xl font-bold">EMP</h3>
                 <Divider />
@@ -297,7 +297,7 @@ export default function TabelHarga() {
               viewBox="0 0 24 24"
               fill="none"
               xmlns="http://www.w3.org/2000/svg"
-              className="w-[70px] animate-infinite-slide-left"
+              className="hidden sm:block w-[70px] animate-infinite-slide-left"
             >
               <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
               <g
@@ -311,6 +311,29 @@ export default function TabelHarga() {
                   d="M4 12L10 6M4 12L10 18M4 12H14.5M20 12H17.5"
                   stroke="#1C274C"
                   strokeWidth="2.4"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                ></path>{" "}
+              </g>
+            </svg>
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              className="sm:hidden w-[70px] animate-bounce"
+            >
+              <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+              <g
+                id="SVGRepo_tracerCarrier"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              ></g>
+              <g id="SVGRepo_iconCarrier">
+                {" "}
+                <path
+                  d="M12 20L18 14M12 20L6 14M12 20L12 9.5M12 4V6.5"
+                  stroke="#1C274C"
+                  strokeWidth="1.5"
                   strokeLinecap="round"
                   strokeLinejoin="round"
                 ></path>{" "}
@@ -330,8 +353,8 @@ export default function TabelHarga() {
             </p>
           </div>
         </div>
-        <div className="max-h-[50vh] flex gap-4 overflow-hidden [mask-image:_linear-gradient(to_top,transparent_0,_black_100px,_black_calc(100%-200px),transparent_100%)]">
-          <div className="space-y-4 animate-infinite-scroll-y ">
+        <div className="sm:max-h-[60vh] flex gap-4 overflow-scroll sm:overflow-hidden sm:[mask-image:_linear-gradient(to_top,transparent_0,_black_100px,_black_calc(100%-200px),transparent_100%)]">
+          <div className="flex sm:flex-col gap-4 p-4 sm:space-y-4 sm:animate-infinite-scroll-y ">
             {testiEM.map((item, index) => (
               <div key={index}>
                 <CardTestimoni
@@ -344,7 +367,7 @@ export default function TabelHarga() {
               </div>
             ))}
           </div>
-          <div className="space-y-4 animate-infinite-scroll-y-reverse">
+          <div className="flex sm:flex-col gap-4 p-4 sm:space-y-4 sm:animate-infinite-scroll-y-reverse">
             {testiIntensive.map((item, index) => (
               <div key={item.name}>
                 <CardTestimoni

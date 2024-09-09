@@ -8,7 +8,12 @@ import { useSearchParams } from "next/navigation";
 const ArrorLeft = () => {
   return (
     <div className="w-[30px] bg-white p-1 rounded-full">
-      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <svg
+        viewBox="0 0 24 24"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="animate-infinite-slide-left"
+      >
         <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
         <g
           id="SVGRepo_tracerCarrier"
@@ -57,7 +62,7 @@ export default function Profile() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <section className="flex items-center justify-center gap-10 pb-32 my-20 bg-pattern-profile-em [mask-image:_linear-gradient(to_bottom,transparent_0,_black_10px,_black_calc(100%-100px),transparent_100%)]">
+    <section className="flex flex-col sm:flex-row items-center justify-center gap-10 p-4 sm:pb-32 sm:my-20 bg-pattern-profile-em [mask-image:_linear-gradient(to_bottom,transparent_0,_black_10px,_black_calc(100%-100px),transparent_100%)]">
       <div className="flex flex-col">
         <p className="pt-5">KENALIN NIH</p>
         <h2 className="text-3xl sm:text-4xl font-bold max-w-lg">
@@ -81,11 +86,8 @@ export default function Profile() {
           mendukung.
         </p>
         <div className="flex gap-4 w-full mt-10">
-          {/* <Button className="text-white font-medium bg-red-600 text-2xl px-16 py-6">
-            Daftar Sekarang
-          </Button> */}
           <Button
-            className="bg-transparent border-[1px] border-black text-xl font-medium px-10 py-3"
+            className="bg-transparent border-[1px] border-black text-xl font-medium sm:px-10 sm:py-3"
             endContent={<ArrorLeft />}
             onPress={() =>
               (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)

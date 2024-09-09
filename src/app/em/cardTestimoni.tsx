@@ -11,7 +11,7 @@ import {
 
 export default function CardTestimoni(props: any) {
   return (
-    <Card className="mx-auto max-w-md hover:scale-105">
+    <Card className="mx-auto w-[300px] sm:w-full hover:scale-105">
       <CardHeader className="flex gap-4">
         <Avatar isBordered radius="full" size="lg" src={props.avatar} />
         <div className="flex flex-col gap-1 items-start justify-center">

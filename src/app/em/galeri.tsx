@@ -4,53 +4,53 @@ import { useState } from "react";
 
 function CardPhoto(props: any) {
   return (
-    <div key={props.keyy} className="w-full" aria-hidden={props.isHidden}>
+    <div className="" aria-hidden={props.isHidden}>
       <div className="w-[300px]">
         <Image
           alt="fasilitas kampung inggris lc pare"
           src={props.src}
           width={720}
           height={450}
-          className="rounded-xl w-[720px]"
+          className="rounded-xl"
           loading="lazy"
         />
+        <p className="text-center text-slate-500 mt-2">{props.desc}</p>
       </div>
-      <p className="text-center text-slate-500 mt-2">{props.desc}</p>
     </div>
   );
 }
 const suasana = [
   {
     src: "/suasana/em/1.png",
-    desc: "Hall Gedung Utama",
-  },
-  {
-    src: "/suasana/em/2.png",
-    desc: "Frontliner Kampung Inggris LC",
-  },
-  {
-    src: "/suasana/em/3.png",
-    desc: "Lorong asrama",
+    desc: "Test TOEFL ITP",
   },
   {
     src: "/suasana/em/4.png",
-    desc: "Gedung belajar Southern Point",
+    desc: "Grammar Class",
+  },
+  {
+    src: "/suasana/em/2.png",
+    desc: "Speaking Class",
+  },
+  {
+    src: "/suasana/em/3.png",
+    desc: "Pronunciation Class",
   },
   {
     src: "/suasana/em/5.png",
-    desc: "Lorong Southern Point",
+    desc: "Study Club",
   },
   {
     src: "/suasana/em/6.png",
-    desc: "Lorong gedung belajar Eastern Point",
+    desc: "Belajar di Eastern Point",
   },
   {
     src: "/suasana/em/7.png",
-    desc: "Taman Kampung Inggris LC",
+    desc: "Belajar di Hall",
   },
   {
     src: "/suasana/em/8.png",
-    desc: "Monumen Kampung Inggris LC",
+    desc: "Game Asik",
   },
 ];
 const fasilitas = [
@@ -90,35 +90,35 @@ const fasilitas = [
 const keseruan = [
   {
     src: "/keseruan/em/1.png",
-    desc: "Hall Gedung Utama",
+    desc: "Game",
   },
   {
     src: "/keseruan/em/2.png",
-    desc: "Frontliner Kampung Inggris LC",
+    desc: "After Weekly Exam",
   },
   {
     src: "/keseruan/em/3.png",
-    desc: "Lorong asrama",
+    desc: "Yel-Yel Competition",
   },
   {
     src: "/keseruan/em/4.png",
-    desc: "Gedung belajar Southern Point",
+    desc: "Konser Agustusan",
   },
   {
     src: "/keseruan/em/5.png",
-    desc: "Lorong Southern Point",
+    desc: "Class Meeting",
   },
   {
     src: "/keseruan/em/6.png",
-    desc: "Lorong gedung belajar Eastern Point",
+    desc: "LC Goes to Bali",
   },
   {
     src: "/keseruan/em/7.png",
-    desc: "Taman Kampung Inggris LC",
+    desc: "Praktik Speaking di Bali",
   },
   {
     src: "/keseruan/em/8.png",
-    desc: "Monumen Kampung Inggris LC",
+    desc: "LC Goes to Bali",
   },
 ];
 
@@ -126,7 +126,7 @@ export default function Galeri() {
   const [activePhoto, setActivePhoto] = useState(suasana);
 
   return (
-    <section className="flex flex-col items-center justify-center">
+    <section className="flex flex-col items-center justify-center p-4 w-full">
       <p>SEPERTI INI KAN</p>
       <h2 className="text-3xl sm:text-4xl text-center max-w-lg">
         Suasana <span className="font-bold text-primaryLC">Pembelajaran</span>{" "}
@@ -139,7 +139,7 @@ export default function Galeri() {
             activePhoto === suasana ? "bg-slate-300" : ""
           }`}
         >
-          Suasana Belajar
+          Suasana
         </p>
         <p
           onClick={() => setActivePhoto(fasilitas)}
@@ -158,8 +158,8 @@ export default function Galeri() {
           Keseruan
         </p>
       </div>
-      <div className="space-y-10 overflow-hidden max-w-7xl [mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)]">
-        <div className="flex gap-10 animate-infinite-scroll-x">
+      <div className="space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)]">
+        <div className="flex gap-4 sm:animate-infinite-scroll-x">
           {activePhoto.slice(0, 4).map((item, index) => (
             <div key={index + 1}>
               <CardPhoto src={item.src} desc={item.desc} />
@@ -171,7 +171,7 @@ export default function Galeri() {
             </div>
           ))}
         </div>
-        <div className="flex gap-10 animate-infinite-scroll-x-reverse">
+        <div className="flex gap-4 sm:animate-infinite-scroll-x-reverse">
           {activePhoto.slice(4, 8).map((item, index) => (
             <div key={index + 5}>
               <CardPhoto src={item.src} desc={item.desc} />
