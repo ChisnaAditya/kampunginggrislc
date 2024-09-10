@@ -86,7 +86,7 @@ const YoutubePlayer: React.FC<IProps> = (props) => {
           className="rounded-xl"
         />
       ) : (
-        <div>Loading ...</div>
+        <div>Kampung Inggris LC</div>
       )}
     </div>
   );

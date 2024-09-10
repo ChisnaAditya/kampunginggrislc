@@ -1,4 +1,3 @@
-import React from "react";
 import Image from "next/image";
 import HTMLReactParser from "html-react-parser/lib/index";
 

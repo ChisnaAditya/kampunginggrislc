@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Button } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function HeroSection() {
@@ -21,17 +20,14 @@ export default function HeroSection() {
         </p>
         <div className="flex gap-4 w-full">
           <Link href="#paket">
-            <Button className="text-white font-medium bg-red-600 text-2xl sm:px-16 sm:py-6">
+            <button className="rounded-full text-white font-medium bg-red-600 text-2xl px-5 py-2 sm:px-10 sm:py-3">
               Join Now
-            </Button>
+            </button>
           </Link>
           <Link href="#overview">
-            <Button
-              className="bg-transparent border-[1px] border-black text-2xl font-medium sm:px-16 sm:py-6"
-              endContent
-            >
+            <button className="rounded-full bg-transparent border-[1px] border-black text-2xl font-medium px-5 py-2 sm:px-10 sm:py-3">
               Learn More
-            </Button>
+            </button>
           </Link>
         </div>
       </div>

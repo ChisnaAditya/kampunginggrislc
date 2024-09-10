@@ -1,6 +1,19 @@
-import CardTestimoni from "./cardTestimoni";
-export default function Testimoni() {
-  const testimoni = [
+"use client";
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/navigation";
+
+import Image from "next/image";
+import { useRef } from "react";
+
+import CardTestimoni from "@/components/Programs/CardTestimoni";
+
+export default function Alumni() {
+  const swiperRef = useRef(null);
+  const alumni = [
     {
       avatar: "/alumni/monica-alumni-kampung-inggris-lc.webp",
       testi:
@@ -98,26 +111,29 @@ export default function Testimoni() {
       program: "Alumni Intensive Program",
     },
   ];
+
   return (
-    <section className="flex flex-col items-center justify-center">
-      <h2 className="text-3xl sm:text-4xl text-center max-w-lg">
-        Ini nih kata alumni yang sudah belajar di LC!
+    <div className="py-10 w-full">
+      <p>ALUMNI</p>
+      <h2 className="text-3xl sm:text-4xl py-2 max-w-lg">
+        Pernah Belajar di{" "}
+        <span className="font-bold text-primaryLC">Kampung Inggris</span> LC
       </h2>
-      <div className="overflow-hidden [mask-image:_linear-gradient(to_bottom,transparent_0,_black_128px,_black_calc(100%-200px),transparent_100%)]">
-        <div className="column-1 sm:columns-2 space-y-4 animate-infinite-scroll-y">
-          {testimoni.map((item, index) => (
-            <div key={item.name}>
-              <CardTestimoni
-                avatar={item.avatar}
-                nama={item.name}
-                program={item.program}
-                testimoni={item.testi}
-                job={item.job}
-              />
-            </div>
-          ))}
-        </div>
+      <p className="">
+        dan <i>dapetin</i> inspirasi dari sini{" "}
+      </p>
+      <div className="scrollbar flex gap-[20px] overflow-x-auto w-full py-6">
+        {alumni.map((item, index) => (
+          <CardTestimoni
+            key={index}
+            avatar={item.avatar}
+            name={item.name}
+            job={item.job}
+            program={item.program}
+            testi={item.testi}
+          />
+        ))}
       </div>
-    </section>
+    </div>
   );
 }

@@ -1,14 +1,14 @@
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import FAQ from "./faq";
-import Banner from "./banner";
 
 const HeroSection = dynamic(() => import("./hero"), {});
 const Paket = dynamic(() => import("./paket"), {});
+const Banner = dynamic(() => import("./banner"), { ssr: false });
 const Overview = dynamic(() => import("./overview"), {});
 const Profile = dynamic(() => import("./profile"), {});
 const Benefits = dynamic(() => import("./benefits"), {});
-const Galeri = dynamic(() => import("./galeri"), {});
+const Galeri = dynamic(() => import("./galeri"), { ssr: false });
 const Teachers = dynamic(() => import("./teachers"), {});
 
 export const metadata: Metadata = {

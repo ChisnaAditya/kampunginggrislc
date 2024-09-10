@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { Button } from "@nextui-org/react";
+import { Button } from "@nextui-org/button";
 import { useEffect, useState } from "react";
 import { useSearchParams } from "next/navigation";
 

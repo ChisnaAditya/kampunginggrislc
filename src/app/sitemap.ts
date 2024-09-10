@@ -18,5 +18,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: "https://program.kampunginggrislc.com/english-master",
       lastModified: new Date(),
     },
+    {
+      url: "https://program.kampunginggrislc.com/em",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://program.kampunginggrislc.com/vip",
+      lastModified: new Date(),
+    },
   ];
 }

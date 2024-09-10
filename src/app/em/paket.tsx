@@ -1,10 +1,11 @@
 "use client";
 
-import { Button, Divider } from "@nextui-org/react";
-import HTMLReactParser from "html-react-parser/lib/index";
+import { Divider } from "@nextui-org/divider";
+import dynamic from "next/dynamic";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
-import CardTestimoni from "./cardTestimoni";
+
+const CardTestimoni = dynamic(() => import("./cardTestimoni"), {});
 
 export default function TabelHarga() {
   const [urlParam, setUrlParam] = useState("");
@@ -229,15 +230,14 @@ export default function TabelHarga() {
             </div>
 
             <div className="pt-10">
-              <Button
-                variant="bordered"
-                className="w-full bg-red-00 text-primaryLC font-bold text-lg"
-                onPress={() =>
+              <button
+                className="w-full text-primaryLC font-bold text-lg rounded-xl py-2 border-[1px] border-primaryLC"
+                onClick={() =>
                   (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
                 }
               >
                 Daftar Program
-              </Button>
+              </button>
             </div>
           </div>
           <div className="shadow-xl rounded-xl p-4">
@@ -277,15 +277,14 @@ export default function TabelHarga() {
             </div>
 
             <div className="pt-10">
-              <Button
-                variant="bordered"
-                className="w-full bg-red-00 text-primaryLC font-bold text-lg"
-                onPress={() =>
+              <button
+                className="w-full text-primaryLC font-bold text-lg rounded-xl py-2 border-[1px] border-primaryLC"
+                onClick={() =>
                   (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
                 }
               >
                 Daftar Program
-              </Button>
+              </button>
             </div>
           </div>
         </div>
