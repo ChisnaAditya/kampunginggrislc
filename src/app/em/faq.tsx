@@ -18,7 +18,7 @@ function Card(props: any) {
           isOpen ? "max-h-80" : "max-h-0"
         } transition-all duration-500 overflow-hidden`}
       >
-        <p className="pt-4">{props.desc}</p>
+        <p className="pt-4 max-w-lg">{props.desc}</p>
       </div>
     </div>
   );
@@ -35,7 +35,7 @@ export default function FAQ() {
         "Real test toefl hanya bisa kamu dapatin jika kamu ambil program English Master Plus 6 Bulan",
     },
     {
-      title: "Fasilitas apa saja yang didapat?",
+      title: "Fasilitas apa saja yang didapat program ini?",
       content:
         "Selain fasilitas belajar yang lengkap, program ini juga menyediakan asrama, toolkit belajar, akomodasi selama di Bali dan REAL TEST TOEFL untuk program english master plus.",
     },
@@ -45,7 +45,7 @@ export default function FAQ() {
         "Setiap bulan dibuka 2 gelombang yaitu di hari Senin yang terdekat dengan tanggal 10 atau 25 setiap bulannya. (Kecuali di program english master plus hanya buka di periode 10)",
     },
     {
-      title: "Apa saja materi yang diajarkan?",
+      title: "Apa saja materi yang diajarkan di program ini?",
       content:
         "Materi yang diajarkan meliputi grammar, speaking, pronunciation, vocabulary, dan TOEFL untuk program 6 bulan.",
     },
@@ -66,12 +66,12 @@ export default function FAQ() {
             Di hari Sabtu digunakan untuk kegiatan extra program sedangkan Minggu libur. Sehingga dalam 1 minggu akan ada 24 kali pembelajaran dan ujian dengan materi yang berbeda`,
     },
     {
-      title: "Fasilitas campnya apa saja?",
+      title: "Fasilitas campnya apa saja di program ini?",
       content:
         "Fasilitas campnya semua sama yaitu kasur, bantal, lemari, kipas angin, dan kamar mandi. per kamar akan di isi 3-4 orang tergantung luas kamar.",
     },
     {
-      title: "Apakah ada fasilitas penjemputan?",
+      title: "Apakah ada fasilitas penjemputan di program ini?",
       content:
         "Kami menyediakan fasilitas penjemputan di beberapa lokasi dengan ada tambahan biaya.",
     },
@@ -86,12 +86,12 @@ export default function FAQ() {
         "Tentu semakin lama durasi maka materinya semakin detail dan levelnya akan semakin naik. Untuk EM 4 bulan & EMP 6 bulan ada benefit tambahan study tour ke Bali selama 5 hari. Sedangkan,  program EMP 6 Bulan mendapat Materi TOEFL ITP sekaligus real Test TOEFL ITP",
     },
     {
-      title: "Bagaimana transportasi selama disini?",
+      title: "Bagaimana transportasi selama kursus di Kampung Inggris LC?",
       content:
         "Peserta bisa menyewa sepeda atau bisa berjalan kaki bersama peserta lainnya.",
     },
     {
-      title: "Apakah bisa dapat sertifikat?",
+      title: "Apakah bisa dapat sertifikat di program ini?",
       content:
         "Bisa. Peserta akan dapat sertifikat program dan tambahan sertifikat TOEFL ITP khusus EMP 6 bulan.",
     },
@@ -102,7 +102,7 @@ export default function FAQ() {
     },
   ];
   return (
-    <div id="faq" className="p-4">
+    <div id="faq" className="p-4 pb-20">
       <h2 className="text-3xl sm:text-4xl text-center pt-20 pb-10">
         Frequently Asked Questions <br />
         (FAQ)
@@ -110,7 +110,7 @@ export default function FAQ() {
       <div>
         <Image alt="" src="" />
       </div>
-      <div className="grid grid-cols-1 gap-4">
+      <div className="grid grid-cols-3 gap-4">
         {content.map((item, index) => (
           <div key={index} className="">
             <Card title={item.title} desc={item.content} />

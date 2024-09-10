@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import { redirect } from "next/navigation";
 import Image from "next/image";
 import { subtitle, text } from "@/components/primitives";
 import dynamic from "next/dynamic";
@@ -287,6 +288,7 @@ const iconCheck = () => {
 };
 
 export default function EnglishMaster() {
+  redirect("/em");
   return (
     <section>
       <HeroSection />
