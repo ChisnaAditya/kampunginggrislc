@@ -113,7 +113,7 @@ export default function Alumni() {
   ];
 
   return (
-    <div className="py-10 w-full">
+    <div className="py-10 w-full px-4">
       <p>ALUMNI</p>
       <h2 className="text-3xl sm:text-4xl py-2 max-w-lg">
         Pernah Belajar di{" "}

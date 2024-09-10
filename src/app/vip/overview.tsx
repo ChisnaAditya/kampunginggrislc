@@ -3,7 +3,7 @@ import Bonus from "./bonus";
 
 export default function Overview() {
   return (
-    <section className="flex flex-col items-center">
+    <section className="flex flex-col items-center px-4">
       <div className="text-center py-10">
         <p className="uppercase text-lg">Ingin meningkatkan</p>
         <h2 className="capitalize text-3xl sm:text-4xl max-w-xl">
@@ -44,7 +44,7 @@ export default function Overview() {
       <div className="flex flex-col items-center pt-10">
         <p className="uppercase">Perbedaan</p>
         <h2 className="text-3xl sm:text-4xl py-2 max-w-xl">
-          Program <span className="font-bold text-primaryLC">VIP </span>vs
+          Program <span className="font-bold text-primaryLC">VIP </span>dan
           Reguler
         </h2>
         <Image
