@@ -1,8 +1,10 @@
-import { Metadata } from "next";
+"use client";
+// import { Metadata } from "next";
 import { redirect } from "next/navigation";
 import Image from "next/image";
 import { subtitle, text } from "@/components/primitives";
 import dynamic from "next/dynamic";
+import { useSearchParams } from "next/navigation";
 
 import tutor_1 from "../../assets/teachers/1.png";
 import tutor_2 from "../../assets/teachers/2.png";
@@ -33,14 +35,14 @@ const TabelHarga = dynamic(
 );
 const FAQ = dynamic(() => import("./faq"), { ssr: false });
 
-export const metadata: Metadata = {
-  title: "English Master Program - Kampung Inggris LC",
-  description:
-    "Paket terbaik dan favorit di Kampung Inggris LC buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
-  verification: {
-    google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA",
-  },
-};
+// export const metadata: Metadata = {
+//   title: "English Master Program - Kampung Inggris LC",
+//   description:
+//     "Paket terbaik dan favorit di Kampung Inggris LC buat kamu yang mempunyai banyak waktu luang dan ingin belajar bahasa Inggris dari dasar secara lengkap. Diakhir program akan ada ujian praktik speaking yang dilakukan langsung ke Bali.",
+//   verification: {
+//     google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA",
+//   },
+// };
 
 const keseruan = [
   {
@@ -288,7 +290,14 @@ const iconCheck = () => {
 };
 
 export default function EnglishMaster() {
-  redirect("/em");
+  const searchParams = useSearchParams();
+  const utm_source = searchParams.get("utm_source") || ("" as string);
+  const utm_medium = searchParams.get("utm_medium") || ("" as string);
+  const utm_campaign = searchParams.get("utm_campaign") || ("" as string);
+
+  redirect(
+    `/em?${`utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`}`
+  );
   return (
     <section>
       <HeroSection />
