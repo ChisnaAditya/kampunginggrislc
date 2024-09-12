@@ -21,104 +21,104 @@ function CardPhoto(props: any) {
 }
 const suasana = [
   {
-    src: "/suasana/em/1.png",
-    desc: "Test TOEFL ITP",
+    src: "/suasana/vip/1.png",
+    desc: "Suasana Belajar VIP",
   },
   {
     src: "/suasana/em/4.png",
-    desc: "Grammar Class",
+    desc: "Weekly Exam",
   },
   {
-    src: "/suasana/em/2.png",
+    src: "/suasana/vip/2.png",
     desc: "Speaking Class",
   },
   {
-    src: "/suasana/em/3.png",
+    src: "/suasana/vip/3.png",
     desc: "Pronunciation Class",
   },
   {
-    src: "/suasana/em/5.png",
-    desc: "Study Club",
+    src: "/suasana/vip/4.png",
+    desc: "Listening Class",
   },
   {
-    src: "/suasana/em/6.png",
-    desc: "Belajar di Eastern Point",
+    src: "/suasana/vip/5.png",
+    desc: "Grammar Class",
   },
   {
     src: "/suasana/em/7.png",
     desc: "Belajar di Hall",
   },
   {
-    src: "/suasana/em/8.png",
-    desc: "Game Asik",
+    src: "/suasana/em/5.png",
+    desc: "Study Club",
   },
 ];
 const fasilitas = [
   {
-    src: "/fasilitas/em/1.png",
-    desc: "Hall Gedung Utama",
+    src: "/fasilitas/vip/1.png",
+    desc: "Asrama program VIP",
   },
   {
-    src: "/fasilitas/em/2.png",
-    desc: "Frontliner Kampung Inggris LC",
+    src: "/fasilitas/vip/2.png",
+    desc: "Back Drawer",
   },
   {
-    src: "/fasilitas/em/3.png",
-    desc: "Lorong asrama",
+    src: "/fasilitas/vip/3.png",
+    desc: "Spring Bed nyaman",
   },
   {
-    src: "/fasilitas/em/4.png",
-    desc: "Gedung belajar Southern Point",
+    src: "/fasilitas/vip/4.png",
+    desc: "Meja belajar",
   },
   {
-    src: "/fasilitas/em/5.png",
-    desc: "Lorong Southern Point",
+    src: "/fasilitas/vip/5.png",
+    desc: "Terdapat meja belajar",
   },
   {
-    src: "/fasilitas/em/6.png",
-    desc: "Lorong gedung belajar Eastern Point",
+    src: "/fasilitas/vip/6.png",
+    desc: "Asrama AC",
   },
   {
-    src: "/fasilitas/em/7.png",
-    desc: "Taman Kampung Inggris LC",
+    src: "/fasilitas/vip/7.png",
+    desc: "Kamar mandi shower",
   },
   {
-    src: "/fasilitas/em/8.png",
-    desc: "Monumen Kampung Inggris LC",
+    src: "/fasilitas/vip/8.png",
+    desc: "Gambaran kamar mandi",
   },
 ];
 const keseruan = [
   {
-    src: "/keseruan/em/1.png",
+    src: "/keseruan/vip/1.png",
     desc: "Game",
   },
   {
-    src: "/keseruan/em/2.png",
-    desc: "After Weekly Exam",
+    src: "/keseruan/vip/2.png",
+    desc: "Outing ke SLG",
   },
   {
-    src: "/keseruan/em/3.png",
-    desc: "Yel-Yel Competition",
-  },
-  {
-    src: "/keseruan/em/4.png",
-    desc: "Konser Agustusan",
-  },
-  {
-    src: "/keseruan/em/5.png",
+    src: "/keseruan/vip/3.png",
     desc: "Class Meeting",
   },
   {
-    src: "/keseruan/em/6.png",
-    desc: "LC Goes to Bali",
+    src: "/keseruan/vip/4.png",
+    desc: "Game asik di SLG",
   },
   {
-    src: "/keseruan/em/7.png",
-    desc: "Praktik Speaking di Bali",
+    src: "/keseruan/vip/5.png",
+    desc: "Extra Program",
   },
   {
-    src: "/keseruan/em/8.png",
-    desc: "LC Goes to Bali",
+    src: "/keseruan/vip/6.png",
+    desc: "LC Goes to SLG",
+  },
+  {
+    src: "/keseruan/vip/7.png",
+    desc: "Praktik Speaking di SLG",
+  },
+  {
+    src: "/keseruan/vip/8.png",
+    desc: "Keseruan di SLG",
   },
 ];
 
