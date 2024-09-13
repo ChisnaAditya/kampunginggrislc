@@ -57,7 +57,7 @@ export default function Benefits() {
       <div className="relative w-full sm:max-w-7xl mx-auto sm:py-20">
         <div className="hidden sm:absolute w-full h-[400px] bg-pattern-benefits-em bg- bg-no-repeat bottom-20"></div>
         <div className="w-full h-full overflow-x-scroll">
-          <div className="flex sm:flex-wrap gap-4">
+          <div className="flex sm:flex-wrap gap-4 sm:items-center sm:justify-center">
             {content.map((item) => (
               <div key={item.title}>
                 <CardBenefit

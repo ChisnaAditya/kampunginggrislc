@@ -62,7 +62,7 @@ export default function Profile() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <section className="flex flex-col sm:flex-row items-center justify-center gap-10 p-4 sm:pb-32 sm:my-20 bg-pattern-profile-em [mask-image:_linear-gradient(to_bottom,transparent_0,_black_10px,_black_calc(100%-100px),transparent_100%)]">
+    <section className="flex flex-col md:flex-row items-center justify-center gap-10 p-4 sm:pb-10 sm:my-20 md:px-20 bg-pattern-profile-em [mask-image:_linear-gradient(to_bottom,transparent_0,_black_10px,_black_calc(100%-100px),transparent_100%)]">
       <div className="flex flex-col">
         <p className="pt-5">KENALIN NIH</p>
         <h2 className="text-3xl sm:text-4xl font-bold max-w-lg">

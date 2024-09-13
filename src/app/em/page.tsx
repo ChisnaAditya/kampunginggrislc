@@ -5,6 +5,7 @@ import FAQ from "./faq";
 const HeroSection = dynamic(() => import("./hero"), {});
 const Paket = dynamic(() => import("./paket"), {});
 const Banner = dynamic(() => import("./banner"), { ssr: false });
+const Banner2 = dynamic(() => import("./banner2"), { ssr: false });
 const Overview = dynamic(() => import("./overview"), {});
 const Profile = dynamic(() => import("./profile"), {});
 const Benefits = dynamic(() => import("./benefits"), {});
@@ -24,16 +25,17 @@ export default function EnglishMaster() {
   return (
     <div className="bg-slate-50">
       <HeroSection />
-      <section className="max-w-7xl mx-auto">
+      <section className=" md:px-20">
         <Paket />
         <Banner />
         <Overview />
       </section>
       <Profile />
-      <section className="max-w-7xl mx-auto">
+      <section className=" md:px-20">
         <Benefits />
         <Galeri />
         <Teachers />
+        <Banner2 />
         <FAQ />
       </section>
     </div>

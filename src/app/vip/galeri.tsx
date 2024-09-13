@@ -126,9 +126,9 @@ export default function Galeri() {
   const [activePhoto, setActivePhoto] = useState(suasana);
 
   return (
-    <section className="flex flex-col items-center justify-center p-4 w-full">
+    <section className="flex flex-col items-start lg:items-center justify-center p-4 w-full">
       <p>SEPERTI INI KAN</p>
-      <h2 className="text-3xl sm:text-4xl text-center max-w-lg">
+      <h2 className="text-3xl sm:text-4xl lg:text-center max-w-lg">
         Suasana <span className="font-bold text-primaryLC">Pembelajaran</span>{" "}
         yang Kamu Inginkan?
       </h2>
@@ -149,14 +149,14 @@ export default function Galeri() {
         >
           Fasilitas
         </p>
-        <p
+        {/* <p
           onClick={() => setActivePhoto(keseruan)}
           className={`cursor-pointer hover:bg-slate-200 transition-all ease-in-out duration-200 px-4 py-2 rounded-2xl border-[1px] ${
             activePhoto === keseruan ? "bg-slate-300" : ""
           }`}
         >
           Keseruan
-        </p>
+        </p> */}
       </div>
       <div className="space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)]">
         <div className="flex gap-4 sm:animate-infinite-scroll-x">

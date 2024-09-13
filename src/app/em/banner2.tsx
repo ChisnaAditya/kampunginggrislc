@@ -30,7 +30,7 @@ const ArrorLeft = () => {
   );
 };
 
-export default function Banner() {
+export default function Banner2() {
   const [urlParam, setUrlParam] = useState("");
   const searchParams = useSearchParams();
   const utm_source = searchParams.get("utm_source") || ("" as string);
@@ -57,22 +57,22 @@ export default function Banner() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <div className="flex flex-col sm:flex-row sm:items-center justify-center my-20 sm:rounded-xl shadow-xl bg-pattern-banner bg-no-repeat bg-cover">
+    <div className="flex flex-col sm:items-center justify-center sm:rounded-xl shadow-xl bg-pattern-banner2 bg-no-repeat bg-cover">
       <div className="p-4 sm:p-0 flex flex-col items-center">
-        <h2 className="text-2xl text-center sm:text-left first-letter:sm:text-4xl font-bold text-white">
-          Mau Tanya Lebih Lanjut?
+        <h2 className="text-2xl text-center first-letter:sm:text-4xl font-bold text-white">
+          Siap mahir berbahasa Inggris?
         </h2>
-        <p className="hidden sm:block text-xl sm:text-2xl pt-2 text-white">
-          Hubungi Kami
+        <p className=" text-lg sm:text-xl pt-2 text-white text-center text-sm">
+          Yuk, daftar sekarang dengan menghubungi CS
         </p>
         <Button
-          className="text-lg sm:text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-green-600"
+          className="text-lg sm:text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-primaryLC"
           endContent={<ArrorLeft />}
           onPress={() =>
             (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`)
           }
         >
-          Konsultasi Gratis
+          Daftar Sekarang
         </Button>
       </div>
       <div className="relative w-[200px] sm:w-fit mx-auto sm:mx-0">

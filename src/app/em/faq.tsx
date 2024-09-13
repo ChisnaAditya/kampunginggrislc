@@ -6,7 +6,7 @@ function Card(props: any) {
   const [isOpen, setIsOpen] = useState(false);
   return (
     <div
-      className="max-w-2xl p-5 rounded-xl shadow-lg bg-white mx-auto"
+      className="max-w-3xl p-5 rounded-xl shadow-lg bg-white mx-auto"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex gap-4 items-center justify-between cursor-pointer">
@@ -110,7 +110,7 @@ export default function FAQ() {
       <div>
         <Image alt="" src="" />
       </div>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 gap-4">
         {content.map((item, index) => (
           <div key={index} className="">
             <Card title={item.title} desc={item.content} />

@@ -43,9 +43,9 @@ export default function Overview() {
   return (
     <section
       id="overview"
-      className="flex flex-col sm:flex-row items-center justify-between gap-4"
+      className="flex flex-col md:flex-row items-center justify-between gap-4"
     >
-      <div className="flex items-center justify-center gap-10 p-4 sm:p-10 bg-white shadow-xl rounded-2xl">
+      <div className="flex items-center justify-center gap-10 p-4 md:p-10 bg-white shadow-xl rounded-2xl">
         <div className="">
           <p className="text-3xl sm:text-4xl max-w-lg">
             Apakah kamu termasuk kriteria dibawah ini?
@@ -89,7 +89,7 @@ export default function Overview() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="hidden sm:block animate-infinite-slide-left"
+          className="hidden md:block animate-infinite-slide-left"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g
@@ -112,7 +112,7 @@ export default function Overview() {
           viewBox="0 0 24 24"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="sm:hidden animate-bounce"
+          className="md:hidden animate-bounce"
         >
           <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
           <g

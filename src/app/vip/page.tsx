@@ -1,6 +1,7 @@
 import { Metadata } from "next";
 import dynamic from "next/dynamic";
 import Alumni from "./alumni";
+import Banner2 from "./banner2";
 
 const HeroSection = dynamic(() => import("./hero"), {});
 const Overview = dynamic(() => import("./overview"), {});
@@ -22,15 +23,16 @@ export const metadata: Metadata = {
 export default function page() {
   return (
     <div>
-      <div className="bg-gradient-to-r from-neutral-800 to-neutral-900">
+      <div className="bg-gradient-to-r from-neutral-800 to-neutral-900 md:px-20">
         <HeroSection />
       </div>
-      <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto md:px-20">
         <Overview />
         <Banner />
         <Galeri />
         <Teacher />
         <Alumni />
+        <Banner2 />
         <FAQ />
       </div>
     </div>

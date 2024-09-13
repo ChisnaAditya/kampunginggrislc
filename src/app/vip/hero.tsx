@@ -32,13 +32,13 @@ export default function HeroSection() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <section className="flex flex-col gap-10 items-center justify-between sm:py-20 max-w-7xl mx-auto ">
-      <div className="flex flex-col sm:flex-row">
-        <div className="flex flex-col gap-4 p-4 sm:p-0">
-          <p className="hidden sm:block bg-gradient-to-r from-slate-400 via-red-300 to-amber-200 bg-clip-text text-transparent">
+    <section className="flex flex-col gap-10 items-center justify-between lg:py-20 max-w-7xl mx-auto ">
+      <div className="flex flex-col lg:flex-row">
+        <div className="flex flex-col gap-4 p-4">
+          <p className="hidden md:block bg-gradient-to-r from-slate-400 via-red-300 to-amber-200 bg-clip-text text-transparent">
             #DrivesYourSuccess
           </p>
-          <h1 className="text-slate-100 text-3xl sm:text-5xl max-w-2xl font-semibold leading-[1.2em] sm:leading-[1.3em]">
+          <h1 className="text-slate-100 text-3xl md:text-4xl lg:text-5xl max-w-2xl font-semibold leading-[1.2em] sm:leading-[1.3em]">
             {" "}
             <span className="bg-gradient-to-r from-rose-500 to-primaryLC bg-clip-text text-transparent">
               Kuasai {""}
@@ -52,10 +52,10 @@ export default function HeroSection() {
             </span>
             yang memberikan pengalaman belajar lebih kontekstual dan berkualitas
           </p>
-          <div className="flex gap-4 w-full mt-10">
+          <div className="flex gap-4 w-full">
             <div className="bg-gradient-to-r from-red-500 to-primaryLC rounded-full shadow-2xl">
               <button
-                className="font-bold bg-gradient-to-r from-slate-50 to-white bg-clip-text text-transparent text-xl sm:text-2xl p-2 sm:px-10 sm:py-3"
+                className="font-bold bg-gradient-to-r from-slate-50 to-white bg-clip-text text-transparent text-lg px-4 sm:text-xl p-2"
                 onClick={() =>
                   (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`)
                 }
@@ -65,7 +65,7 @@ export default function HeroSection() {
             </div>
           </div>
         </div>
-        <div className="sm:w-[720px] h-full animate-appearance-in p-4">
+        <div className="lg:w-[720px] h-full animate-appearance-in p-4">
           <YoutubePlayer videoId="rafCHr2W2bo?si=1IhSqDzYlyY2eTnS" />
         </div>
       </div>

@@ -181,10 +181,10 @@ export default function TabelHarga() {
   return (
     <div
       id="paket"
-      className="flex flex-col sm:flex-row justify-between gap-4 mt-10"
+      className="flex flex-col lg:flex-row justify-between gap-4 mt-10"
     >
-      <div className="sm:w-[60%] p-4 sm:p-10 shadow-xl rounded-xl bg-white">
-        <h2 className="text-2xl sm:text-3xl max-w-xs pb-5">
+      <div className="lg:w-[60%] p-4 shadow-xl rounded-xl bg-white">
+        <h2 className="text-2xl max-w-xs pb-5">
           Program <span className="font-bold">English Master</span>
         </h2>
         <p className="max-w-lg">
@@ -289,7 +289,7 @@ export default function TabelHarga() {
           </div>
         </div>
       </div>
-      <div className="sm:w-[50%] pt-10">
+      <div className="lg:w-[50%] pt-10">
         <div className="flex items-center justify-between w-full bg-gradient-to-r from-yellow-300 to-amber-400 p-4">
           <div className="">
             <svg
@@ -352,7 +352,7 @@ export default function TabelHarga() {
             </p>
           </div>
         </div>
-        <div className="sm:max-h-[60vh] flex gap-4 overflow-scroll sm:overflow-hidden sm:[mask-image:_linear-gradient(to_top,transparent_0,_black_100px,_black_calc(100%-200px),transparent_100%)]">
+        <div className="sm:max-h-[60vh] flex overflow-scroll sm:overflow-hidden sm:[mask-image:_linear-gradient(to_top,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)]">
           <div className="flex sm:flex-col gap-4 p-4 sm:space-y-4 sm:animate-infinite-scroll-y ">
             {testiEM.map((item, index) => (
               <div key={index}>

@@ -57,7 +57,7 @@ export default function Banner() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <div className="flex sm:items-center justify-center my-20 sm:rounded-xl shadow-xl bg-pattern-banner bg-no-repeat bg-cover">
+    <div className="flex flex-col sm:flex-row sm:items-center justify-center my-20 sm:rounded-xl shadow-xl bg-pattern-banner bg-no-repeat bg-cover">
       <div className="p-4 sm:p-0">
         <h2 className="text-2xl first-letter:sm:text-4xl font-bold text-white">
           Mau Tanya Lebih Lanjut?
@@ -79,9 +79,9 @@ export default function Banner() {
         <Image
           alt=""
           src="/Konsultasi Gratis.png"
-          width={400}
-          height={400}
-          className="drop-shadow-2xl"
+          width={300}
+          height={300}
+          className="drop-shadow-2xl mx-auto"
         />
         <Image
           alt=""
