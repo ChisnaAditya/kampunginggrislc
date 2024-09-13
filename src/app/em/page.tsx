@@ -24,14 +24,16 @@ export const metadata: Metadata = {
 export default function EnglishMaster() {
   return (
     <div className="bg-slate-50">
-      <HeroSection />
-      <section className=" md:px-20">
+      <div className="bg-gradient-to-r from-yellow-300 to-amber-400">
+        <HeroSection />
+      </div>
+      <section className="max-w-7xl mx-auto md:px-20">
         <Paket />
         <Banner />
         <Overview />
       </section>
       <Profile />
-      <section className=" md:px-20">
+      <section className="max-w-7xl mx-auto md:px-20">
         <Benefits />
         <Galeri />
         <Teachers />

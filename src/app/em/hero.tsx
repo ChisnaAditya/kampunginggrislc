@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function HeroSection() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row lg:px-10 items-center justify-center bg-gradient-to-r from-yellow-300 to-amber-400">
+    <section className="flex flex-col-reverse lg:flex-row lg:px-10 items-center justify-center max-w-7xl mx-auto">
       <div className="lg:w-full flex flex-col gap-4 p-4 max-w-xl md:max-w-2xl">
         <p className="bg-gradient-to-r from-slate-400 via-red-300 to-amber-200 bg-clip-text text-transparent">
           #DrivesYourSuccess
