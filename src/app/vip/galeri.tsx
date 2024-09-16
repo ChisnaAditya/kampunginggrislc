@@ -56,19 +56,19 @@ const suasana = [
 const fasilitas = [
   {
     src: "/fasilitas/vip/9.png",
-    desc: "Gambaran kamar mandi",
+    desc: "Gambaran kelas VIP",
   },
   {
     src: "/fasilitas/vip/10.png",
-    desc: "Gambaran kamar mandi",
+    desc: "Gambaran kelas VIP",
   },
   {
     src: "/fasilitas/vip/11.png",
-    desc: "Gambaran kamar mandi",
+    desc: "Gambaran kelas VIP",
   },
   {
     src: "/fasilitas/vip/12.png",
-    desc: "Gambaran kamar mandi",
+    desc: "Gambaran kelas VIP",
   },
   {
     src: "/fasilitas/vip/1.png",
