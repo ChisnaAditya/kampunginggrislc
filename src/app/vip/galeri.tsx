@@ -55,32 +55,32 @@ const suasana = [
 ];
 const fasilitas = [
   {
+    src: "/fasilitas/vip/9.png",
+    desc: "Gambaran kamar mandi",
+  },
+  {
+    src: "/fasilitas/vip/10.png",
+    desc: "Gambaran kamar mandi",
+  },
+  {
+    src: "/fasilitas/vip/11.png",
+    desc: "Gambaran kamar mandi",
+  },
+  {
+    src: "/fasilitas/vip/12.png",
+    desc: "Gambaran kamar mandi",
+  },
+  {
     src: "/fasilitas/vip/1.png",
     desc: "Asrama program VIP",
   },
   {
     src: "/fasilitas/vip/2.png",
-    desc: "Back Drawer",
-  },
-  {
-    src: "/fasilitas/vip/3.png",
-    desc: "Spring Bed nyaman",
-  },
-  {
-    src: "/fasilitas/vip/4.png",
-    desc: "Meja belajar",
+    desc: "Bed Drawer",
   },
   {
     src: "/fasilitas/vip/5.png",
     desc: "Terdapat meja belajar",
-  },
-  {
-    src: "/fasilitas/vip/6.png",
-    desc: "Asrama AC",
-  },
-  {
-    src: "/fasilitas/vip/7.png",
-    desc: "Kamar mandi shower",
   },
   {
     src: "/fasilitas/vip/8.png",
