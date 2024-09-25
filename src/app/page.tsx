@@ -1,4 +1,5 @@
 import dynamic from "next/dynamic";
+import { redirect } from "next/navigation";
 
 // const Hero = dynamic(() => import("../components/Hero/index"), {
 //   loading: () => <p>Loading...</p>,
@@ -40,6 +41,7 @@ const Hero = dynamic(() => import("../components/Home/hero"), {});
 const Program = dynamic(() => import("../components/Home/program"), {});
 
 export default function Home() {
+  redirect(`https://kampunginggrislc.com`);
   return (
     <main>
       {/* <Hero />
