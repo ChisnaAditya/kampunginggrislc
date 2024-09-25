@@ -62,15 +62,21 @@ export default function Banner2() {
         <h2 className="text-2xl text-center first-letter:sm:text-4xl font-bold text-white">
           Siap mahir berbahasa Inggris?
         </h2>
-        <p className=" text-lg sm:text-xl pt-2 text-white text-center text-sm">
+        <p className=" text-lg sm:text-xl pt-2 text-white text-center">
           Yuk, daftar sekarang dengan menghubungi CS
         </p>
         <Button
           className="text-lg sm:text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-primaryLC"
           endContent={<ArrorLeft />}
-          onPress={() =>
-            (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`)
-          }
+          onPress={() => {
+            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`;
+            window.gtag("event", "Click_TanyaCS", {
+              event_category: "click",
+              event_label: "Click_TanyaCS",
+              value: 99,
+            });
+            console.log("clicked tanyacs");
+          }}
         >
           Daftar Sekarang
         </Button>

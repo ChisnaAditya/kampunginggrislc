@@ -232,9 +232,15 @@ export default function TabelHarga() {
             <div className="pt-10">
               <button
                 className="w-full text-primaryLC font-bold text-lg rounded-xl py-2 border-[1px] border-primaryLC"
-                onClick={() =>
-                  (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
-                }
+                onClick={() => {
+                  window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`;
+                  window.gtag("event", "Click_TanyaCS", {
+                    event_category: "click",
+                    event_label: "Click_TanyaCS",
+                    value: 99,
+                  });
+                  console.log("clicked tanyacs");
+                }}
               >
                 Daftar Program
               </button>
@@ -279,9 +285,15 @@ export default function TabelHarga() {
             <div className="pt-10">
               <button
                 className="w-full text-primaryLC font-bold text-lg rounded-xl py-2 border-[1px] border-primaryLC"
-                onClick={() =>
-                  (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
-                }
+                onClick={() => {
+                  window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`;
+                  window.gtag("event", "Click_TanyaCS", {
+                    event_category: "click",
+                    event_label: "Click_TanyaCS",
+                    value: 99,
+                  });
+                  console.log("clicked tanyacs");
+                }}
               >
                 Daftar Program
               </button>

@@ -89,9 +89,15 @@ export default function Profile() {
           <Button
             className="bg-transparent border-[1px] border-black text-xl font-medium sm:px-10 sm:py-3"
             endContent={<ArrorLeft />}
-            onPress={() =>
-              (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`)
-            }
+            onPress={() => {
+              window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=em&paket=em/emp`;
+              window.gtag("event", "Click_TanyaCS", {
+                event_category: "click",
+                event_label: "Click_TanyaCS",
+                value: 99,
+              });
+              console.log("clicked tanyacs");
+            }}
           >
             Konsultasi Gratis
           </Button>
