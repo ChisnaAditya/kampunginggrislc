@@ -56,9 +56,15 @@ export default function HeroSection() {
             <div className="bg-gradient-to-r from-red-500 to-primaryLC rounded-full shadow-2xl">
               <button
                 className="font-bold bg-gradient-to-r from-slate-50 to-white bg-clip-text text-transparent text-lg px-4 sm:text-xl p-2"
-                onClick={() =>
-                  (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`)
-                }
+                onClick={() => {
+                  window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`;
+                  window.gtag("event", "Click_TanyaCS", {
+                    event_category: "click",
+                    event_label: "Click_TanyaCS",
+                    value: 99,
+                  });
+                  console.log("clicked tanyacs");
+                }}
               >
                 DAFTAR SEKARANG
               </button>

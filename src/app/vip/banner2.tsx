@@ -68,9 +68,15 @@ export default function Banner2() {
         <Button
           className="text-lg sm:text-xl text-white rounded-full py-6 px-3 mt-5 font-medium bg-primaryLC"
           endContent={<ArrorLeft />}
-          onPress={() =>
-            (window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`)
-          }
+          onPress={() => {
+            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=vip&paket=vip`;
+            window.gtag("event", "Click_TanyaCS", {
+              event_category: "click",
+              event_label: "Click_TanyaCS",
+              value: 99,
+            });
+            console.log("clicked tanyacs");
+          }}
         >
           Daftar Sekarang
         </Button>
