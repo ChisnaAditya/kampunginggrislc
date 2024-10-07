@@ -1,5 +1,4 @@
-import ButtonConfetti from "@/components/Button/conffetiButton";
-import { Button } from "@nextui-org/button";
+import ButtonConfetti from "@/components/Button/ButtonConfetti";
 import Image from "next/image";
 
 export default function Hero() {

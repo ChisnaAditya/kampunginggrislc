@@ -1,5 +1,7 @@
+"use client";
 import { Button } from "@nextui-org/button";
 import Image from "next/image";
+
 export default function Banner() {
   return (
     <section className="p-5">
@@ -24,13 +26,18 @@ export default function Banner() {
         </div>
         <div className="basis-2/3 space-y-4 p-4">
           <p className="text-xs">
-            Daripada boring di rumah kan mending kamu gabung program liburan ke
-            LC aja
+            Daripada <i>boring</i> di rumah kan mending kamu gabung program
+            liburan ke LC aja
           </p>
           <h3 className="text-xs font-bold italic">
-            Selesai liburan, kamu bisa ngomong bahasa Inggris!
+            Selesai liburan, kamu bisa ngomong bahasa Inggris! 🤩
           </h3>
-          <Button className="bg-neutral-800 text-white">Yuk Daftar</Button>
+          <Button
+            className="bg-neutral-800 text-white"
+            onClick={() => (window.location.href = "#paket")}
+          >
+            Yuk Daftar
+          </Button>
         </div>
       </div>
     </section>
