@@ -54,6 +54,9 @@ const config: Config = {
           to: { transform: "translateY(0)" },
         },
       },
+      fontFamily: {
+        poppins: ["var(--font-poppins)"],
+      },
     },
   },
   plugins: [require("@tailwindcss/typography"), nextui()],

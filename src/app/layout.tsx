@@ -1,10 +1,18 @@
 import "./globals.css";
 import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import { Metadata } from "next";
 import Script from "next/script";
 import { Providers } from "./providers";
 
 const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  display: "swap",
+  variable: "--font-poppins",
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  // style: ["normal"],
+});
 
 export const metadata: Metadata = {
   title: "Kampung Inggris LC | Program Belajar",
@@ -22,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className={inter.className}>
+      <body className={`${inter.className} ${poppins.variable}`}>
         <Providers>
           <div className="flex flex-col justify-between h-screen">
             {children}
