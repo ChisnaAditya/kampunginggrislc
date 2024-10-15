@@ -32,12 +32,12 @@ export default function ButtonConfetti() {
         // <Confetti width={dimensions.width} height={dimensions.height}/>
         <Confetti
           numberOfPieces={500}
-          height={2000}
+          height={3000}
           gravity={0.1}
           recycle={false}
           confettiSource={{
             w: 2,
-            h: 300,
+            h: 500,
             x: dimensions.width,
             y: dimensions.height,
           }}

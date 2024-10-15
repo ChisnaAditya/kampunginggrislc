@@ -12,7 +12,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: url("/icon/dc/bg hero dc.png");
+  background-image: url("/hero/dc/bg hero dc.webp");
 }
 .bg-pare {
   background: linear-gradient(
@@ -80,12 +80,12 @@
   background-color: #ffffff;
   opacity: 1;
   background-image: linear-gradient(
-      #fafafa 1.7000000000000002px,
+      #f7f7f7 1.7000000000000002px,
       transparent 1.7000000000000002px
     ),
     linear-gradient(
       to right,
-      #fafafa 1.7000000000000002px,
+      #f7f7f7 1.7000000000000002px,
       #ffffff 1.7000000000000002px
     );
   background-size: 34px 34px;
