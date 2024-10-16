@@ -47,16 +47,16 @@ export default function Paket() {
 
         <div className="flex lg:justify-center gap-4 py-5 overflow-scroll mt-4">
           <div>
-            <div className="relative w-[250px] lg:w-[400px]">
+            <div className="relative w-[300px] lg:w-[400px]">
               <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl bg-white uppercase rounded-full border-black  border-[1px] w-fit px-8 py-1">
                 Program 1 Minggu
               </h3>
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
-                <p className="text-lg lg:text-xl">Harga Normal</p>
+                <p className="text-lg lg:text-xl pt-2">Harga Normal</p>
                 <p className="text-3xl lg:text-4xl font-bold line-through italic">
                   Rp1.050.000
                 </p>
-                <p className="text-lg lg:text-xl text-primaryLC font-bold mt-4">
+                <p className="text-lg lg:text-xl text-primaryLC font-bold">
                   Special Price
                 </p>
                 <p className="text-4xl lg:text-5xl text-yellow-400 text-stroke font-poppins font-bold">
@@ -69,16 +69,16 @@ export default function Paket() {
             </div>
           </div>
           <div>
-            <div className="relative w-[250px] lg:w-[400px]">
+            <div className="relative w-[300px] lg:w-[400px]">
               <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl bg-white uppercase rounded-full border-black  border-[1px] w-fit px-8 py-1">
                 Program 2 Minggu
               </h3>
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
-                <p className="text-lg lg:text-xl">Harga Normal</p>
+                <p className="text-lg lg:text-xl pt-2">Harga Normal</p>
                 <p className="text-3xl lg:text-4xl font-bold line-through italic">
                   Rp1.750.000
                 </p>
-                <p className="text-lg lg:text-xl text-primaryLC font-bold mt-4">
+                <p className="text-lg lg:text-xl text-primaryLC font-bold">
                   Special Price
                 </p>
                 <p className="text-4xl lg:text-5xl text-yellow-400 text-stroke font-poppins font-bold">
