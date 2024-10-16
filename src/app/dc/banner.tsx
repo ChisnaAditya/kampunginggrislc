@@ -57,12 +57,12 @@ export default function Banner() {
   return (
     <div className="lg:p-20 lg:mb-20 lg:[mask-image:_linear-gradient(to_top,transparent_0,_black_200px,_black_calc(100%-100px),transparent_100%)] bg-neutral-200">
       <section className="flex flex-col lg:flex-row items-center p-5 max-w-7xl mx-auto shadow-2xl rounded lg:p-20 lg:mb-20 bg-slate-100">
-        <div className="w-full space-y-2 lg:space-y-8">
+        <div className="w-full space-y-2 lg:space-y-6 xl:space-y-8">
           <h2 className="font-poppins text-black/50">Liburan Hampir Tiba!</h2>
-          <p className="text-2xl lg:text-4xl font-bold">
+          <p className="text-2xl lg:text-3xl xl:text-4xl font-bold">
             Gimana kalo liburan kali ini kamu coba hal yang Anti Mainstream?
           </p>
-          <p className="text-xs lg:text-xl text-black/70">
+          <p className="text-xs lg:text-lg xl:text-xl text-black/70">
             Daripada <i>boring</i> di rumah kan mending kamu gabung program
             liburan ke LC aja. Selesai liburan, kamu lancar ngomong bahasa
             Inggris! 🤩
@@ -74,7 +74,7 @@ export default function Banner() {
             Yuk Daftar
           </Button>
         </div>
-        <div className="w-full flex items-end justify-end">
+        <div className=" w-full flex items-end justify-end">
           <Image
             alt=""
             src="/hero/dc/zizi banner dc.png"

@@ -17,14 +17,14 @@ export default function Hero() {
           src="/hero/dc/bola dc.png"
           width={200}
           height={200}
-          className="hidden lg:block absolute right-0 w-[300px] animate-infinite-floating"
+          className="hidden lg:block absolute right-0 lg:top-[20%] xl:w-[300px] animate-infinite-floating"
         />
         <Image
           alt="desember ceria"
           src="/hero/dc/cacing dc.png"
           width={200}
           height={200}
-          className="hidden lg:block absolute right-[20%] bottom-[50%] w-[300px] animate-infinite-floating"
+          className="hidden lg:block absolute right-[20%] bottom-[50%] xl:w-[300px] animate-infinite-floating"
         />
         <Image
           alt="desember ceria"
@@ -33,8 +33,8 @@ export default function Hero() {
           height={200}
           className="hidden lg:block absolute right-[70%] bottom-[30%] w-[100px] animate-infinite-floating"
         />
-        <div className="p-5 space-y-4 lg:space-y-10 lg:pt-36">
-          <h1 className="text-4xl lg:text-5xl font-bold font-poppins text-center leading-[1.2] max-w-4xl mx-auto">
+        <div className="p-5 space-y-4 lg:space-y-6 xl:space-y-10 lg:pt-20 xl:pt-36">
+          <h1 className="text-4xl lg:text-4xl xl:text-5xl font-bold font-poppins text-center leading-[1.2] lg:max-w-3xl xl:max-w-4xl mx-auto">
             Liburan Asik: <span className="text-primaryLC">Belajar</span>,{" "}
             <span className="text-primaryLC">Berteman</span>, dan{" "}
             <span className="text-primaryLC">Bersenang-senang</span> Cuma di
