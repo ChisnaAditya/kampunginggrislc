@@ -48,7 +48,7 @@ export default function Paket() {
         <div className="flex lg:justify-center gap-4 py-5 overflow-scroll mt-4">
           <div>
             <div className="relative w-[250px] lg:w-[400px]">
-              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold lg:text-xl bg-white uppercase rounded-full border-black  border-[1px] w-fit px-2 py-1">
+              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl bg-white uppercase rounded-full border-black  border-[1px] w-fit px-2 py-1">
                 Program 1 Minggu
               </h3>
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
@@ -70,7 +70,7 @@ export default function Paket() {
           </div>
           <div>
             <div className="relative w-[250px] lg:w-[400px]">
-              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold lg:text-xl bg-white uppercase rounded-full border-black  border-[1px] w-fit px-2 py-1">
+              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl bg-white uppercase rounded-full border-black  border-[1px] w-fit px-2 py-1">
                 Program 2 Minggu
               </h3>
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
