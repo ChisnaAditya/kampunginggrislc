@@ -24,16 +24,16 @@ const keseruan = [
     desc: "Class Meeting",
   },
   {
-    src: "/keseruan/em/6.png",
-    desc: "LC Goes to Bali",
+    src: "/fasilitas/em/7.png",
+    desc: "Taman Kampung Inggris LC",
   },
   {
-    src: "/keseruan/em/7.png",
-    desc: "Praktik Speaking di Bali",
+    src: "/fasilitas/em/8.png",
+    desc: "Monumen Kampung Inggris LC",
   },
   {
-    src: "/keseruan/em/8.png",
-    desc: "LC Goes to Bali",
+    src: "/fasilitas/em/2.png",
+    desc: "Frontliner Kampung Inggris LC",
   },
 ];
 function CardPhoto(props: any) {
@@ -48,7 +48,6 @@ function CardPhoto(props: any) {
           className="rounded-xl"
           loading="lazy"
         />
-        {/* <p className="text-center text-slate-500 mt-2">{props.desc}</p> */}
       </div>
     </div>
   );
