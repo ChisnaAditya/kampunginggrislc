@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Button } from "@nextui-org/button";
 import { useSearchParams } from "next/navigation";
 import { useEffect, useState } from "react";
+import Countdown from "react-countdown";
 
 export default function Paket() {
   const [urlParam, setUrlParam] = useState("");
@@ -10,6 +11,8 @@ export default function Paket() {
   const utm_source = searchParams.get("utm_source") || ("" as string);
   const utm_medium = searchParams.get("utm_medium") || ("" as string);
   const utm_campaign = searchParams.get("utm_campaign") || ("" as string);
+
+  const targetDate = "2024–10–10T00:00:00";
 
   const setToLocalStorage = () => {
     if (localStorage.getItem("utm_source") !== null) {
@@ -48,7 +51,7 @@ export default function Paket() {
         <div className="flex lg:justify-center gap-4 py-5 overflow-scroll mt-4">
           <div>
             <div className="relative w-[300px] lg:w-[400px]">
-              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center bg-white uppercase rounded-full border-black  border-[1px] w-[250px] px-8 py-1">
+              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center text-primaryLC bg-white uppercase rounded-full border-black  border-[1px] w-[250px] lg:w-3/4 px-8 py-1">
                 Program 1 Minggu
               </h3>
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
@@ -56,8 +59,8 @@ export default function Paket() {
                 <p className="text-3xl lg:text-4xl font-bold line-through italic">
                   Rp1.050.000
                 </p>
-                <p className="text-lg lg:text-xl text-primaryLC font-bold">
-                  Special Price
+                <p className="text-lg lg:text-2xl text-emerald-700 font-bold">
+                  Early Bird
                 </p>
                 <p className="text-4xl lg:text-5xl text-yellow-400 text-stroke font-poppins font-bold">
                   Rp990.000
@@ -70,7 +73,7 @@ export default function Paket() {
           </div>
           <div>
             <div className="relative w-[300px] lg:w-[400px]">
-              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center bg-white uppercase rounded-full border-black  border-[1px] w-[250px] px-8 py-1">
+              <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center text-primaryLC bg-white uppercase rounded-full border-black  border-[1px] w-[250px] lg:w-3/4 px-8 py-1">
                 Program 2 Minggu
               </h3>
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
@@ -78,8 +81,8 @@ export default function Paket() {
                 <p className="text-3xl lg:text-4xl font-bold line-through italic">
                   Rp1.750.000
                 </p>
-                <p className="text-lg lg:text-xl text-primaryLC font-bold">
-                  Special Price
+                <p className="text-lg lg:text-2xl text-emerald-600 font-bold">
+                  Early Bird
                 </p>
                 <p className="text-4xl lg:text-5xl text-yellow-400 text-stroke font-poppins font-bold">
                   Rp1.700.000
@@ -96,8 +99,19 @@ export default function Paket() {
           <b>Tanggal Mulai:</b> 16, 23, 30 Desember 2024
         </p>
         <p className="text-xs lg:text-xl">Min. Kelas 5 SD - Umum</p>
+        <div className="text-center py-10">
+          <div className="font-bold text-xl">PENAWARAN TERBATAS</div>
+          <div className="pb-3">Waktu Tersisa</div>
+          <Countdown date={1730348790000} className="text-5xl text-primaryLC" />
+          <div className="flex items-center justify-center gap-4">
+            <p>Hari</p>
+            <p>Jam</p>
+            <p>Menit</p>
+            <p>Detik</p>
+          </div>
+        </div>
         <Button
-          className="bg-primaryLC text-white lg:text-xl font-bold mt-5"
+          className="bg-primaryLC text-white lg:text-xl font-bold"
           onClick={() => {
             window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
             window.gtag("event", "Click_TanyaCS", {

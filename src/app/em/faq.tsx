@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 function Card(props: any) {
   const [isOpen, setIsOpen] = useState(false);
+
   return (
     <div
       className="max-w-3xl p-5 rounded-xl shadow-lg bg-white mx-auto"
