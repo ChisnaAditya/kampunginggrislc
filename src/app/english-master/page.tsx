@@ -295,9 +295,9 @@ export default function EnglishMaster() {
   const utm_medium = searchParams.get("utm_medium") || ("" as string);
   const utm_campaign = searchParams.get("utm_campaign") || ("" as string);
 
-  redirect(
-    `/em?${`utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`}`
-  );
+  // redirect(
+  //   `/em?${`utm_source=${utm_source}&utm_medium=${utm_medium}&utm_campaign=${utm_campaign}`}`
+  // );
   return (
     <section>
       <HeroSection />
