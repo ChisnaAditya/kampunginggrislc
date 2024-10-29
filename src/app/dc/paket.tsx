@@ -34,8 +34,8 @@ export default function Paket() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <section id="paket" className="relative max-w-7xl mx-auto mt-10">
-      <hr className="my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
+    <section id="paket" className="relative max-w-7xl mx-auto mt-10 ">
+      <hr className="lg:my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
       <div className="p-5 lg:p-0 lg:text-center">
         <h2 className="text-2xl lg:text-4xl font-bold font-poppins">
           Program {"  "}

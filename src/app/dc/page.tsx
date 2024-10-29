@@ -4,6 +4,8 @@ import Banner from "./banner";
 // import Paket from "./paket";
 import Fasilitas from "./fasilitas";
 import Teacher from "./teachers";
+import CTA from "./cta";
+import FooterDC from "./footer";
 
 const Hero = dynamic(() => import("./hero"));
 const Paket = dynamic(() => import("./paket"), { ssr: false });
@@ -14,8 +16,10 @@ export default function DesemberCeria() {
       <Hero />
       <Banner />
       <Paket />
+      <CTA />
       <Fasilitas />
       <Teacher />
+      <FooterDC />
     </div>
   );
 }

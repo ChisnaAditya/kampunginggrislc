@@ -24,7 +24,7 @@ export default function Hero() {
           src="/hero/dc/cacing dc.png"
           width={200}
           height={200}
-          className="hidden lg:block absolute right-[20%] bottom-[50%] xl:w-[300px] animate-infinite-floating"
+          className="hidden lg:block absolute right-[10%] bottom-[50%] xl:w-[300px] animate-infinite-floating"
         />
         <Image
           alt="desember ceria"

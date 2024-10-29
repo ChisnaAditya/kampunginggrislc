@@ -49,7 +49,7 @@ export default function Fasilitas() {
         </p>
       </div>
       <div className="bg-pattern-fasilitas-dc lg:[mask-image:_linear-gradient(to_left,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 p-5 max-w-7xl mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 p-5 max-w-7xl mx-auto lg:px-20">
           {content.map((item, index) => (
             <div
               key={index}

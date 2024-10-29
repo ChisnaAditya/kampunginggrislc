@@ -39,7 +39,7 @@ const keseruan = [
 function CardPhoto(props: any) {
   return (
     <div className="" aria-hidden={props.isHidden}>
-      <div className="w-[300px]">
+      <div className="w-[200px] lg:w-[300px]">
         <Image
           alt="fasilitas kampung inggris lc pare"
           src={props.src}
@@ -54,17 +54,28 @@ function CardPhoto(props: any) {
 }
 export default function Banner() {
   return (
-    <div className="lg:p-20 lg:mb-20 lg:[mask-image:_linear-gradient(to_top,transparent_0,_black_200px,_black_calc(100%-100px),transparent_100%)] bg-neutral-200">
-      <section className="flex flex-col lg:flex-row items-center p-5 max-w-7xl mx-auto shadow-2xl rounded lg:p-20 lg:mb-20 bg-slate-100">
-        <div className="w-full space-y-2 lg:space-y-6 xl:space-y-8">
-          <h2 className="font-poppins text-black/50">Liburan Hampir Tiba!</h2>
-          <p className="text-2xl lg:text-3xl xl:text-4xl font-bold">
-            Gimana kalo liburan kali ini kamu coba hal yang Anti Mainstream?
+    <div className="relative overflow-hidden lg:p-20 lg:mb-20 lg:[mask-image:_linear-gradient(to_top,transparent_0,_black_200px,_black_calc(100%-100px),transparent_100%)] bg-neutral-200">
+      <iframe
+        src="https://lottie.host/embed/8cce7197-7d42-4f34-b332-582ca760e1c1/s4fLLFLI40.json"
+        className="absolute left-0 scale-[2]"
+      ></iframe>
+      <iframe
+        src="https://lottie.host/embed/8cce7197-7d42-4f34-b332-582ca760e1c1/s4fLLFLI40.json"
+        className="absolute right-0 scale-[2]"
+      ></iframe>
+      <section className="flex flex-col lg:flex-row items-center p-5 max-w-7xl mx-auto shadow-2xl rounded-lg lg:p-20 lg:mb-20 bg-neutral-100">
+        <div className="lg:w-1/2 space-y-2 lg:space-y-6 xl:space-y-8">
+          <h2 className="w-fit font-poppins text-black/80 px-2 bg-secondaryLC">
+            Liburan Hampir Tiba!
+          </h2>
+          <p className="text-2xl lg:text-3xl xl:text-4xl font-bold font-poppins text-black">
+            Gimana kalo <span className="text-primaryLC">liburan kali ini</span>{" "}
+            kamu coba hal yang Anti Mainstream?
           </p>
-          <p className="text-xs lg:text-lg xl:text-xl text-black/70">
-            Daripada <i>boring</i> di rumah kan mending kamu gabung program
-            liburan ke LC aja. Selesai liburan, kamu lancar ngomong bahasa
-            Inggris! 🤩
+          <p className="text-xs lg:text-lg xl:text-xl text-black/50">
+            Daripada <i>boring</i> di rumah kan mending kamu gabung{" "}
+            <b className="text-primaryLC">program liburan</b> ke LC aja. Selesai
+            liburan, kamu lancar ngomong bahasa Inggris! 🤩
           </p>
           <Button
             className="bg-primaryLC text-white lg:text-xl font-bold mt-5"
@@ -73,7 +84,7 @@ export default function Banner() {
             Yuk Daftar
           </Button>
         </div>
-        <div className=" w-full flex items-end justify-end">
+        <div className="lg:w-1/2 flex items-end justify-end">
           <Image
             alt=""
             src="/hero/dc/zizi banner dc.png"
@@ -83,8 +94,7 @@ export default function Banner() {
           />
         </div>
       </section>
-
-      <div className="hidden lg:block space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)]">
+      <div className="p-5 space-y-5 lg:space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)]">
         <div className="flex gap-4 sm:animate-infinite-scroll-x">
           {keseruan.slice(0, 4).map((item, index) => (
             <div key={index + 1}>
