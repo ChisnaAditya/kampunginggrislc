@@ -57,16 +57,16 @@ export default function Paket() {
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
                 <p className="text-lg lg:text-xl pt-2">Harga Normal</p>
                 <p className="text-3xl lg:text-4xl font-bold line-through italic">
-                  Rp1.050.000
+                  Rp1.150.000
                 </p>
                 <p className="text-lg lg:text-2xl text-emerald-700 font-bold">
-                  Early Bird
+                  Special Price
                 </p>
                 <p className="text-4xl lg:text-5xl text-yellow-400 text-stroke font-poppins font-bold">
-                  Rp990.000
+                  Rp1.050.000
                 </p>
                 <p className="text-lg lg:text-2xl font-bold border-black border-[1px] bg-green-400 w-fit mx-auto rounded-[10px] px-4 py-1 mt-2">
-                  DP: Rp198.000
+                  DP: 210.000
                 </p>
               </div>
             </div>
@@ -79,16 +79,16 @@ export default function Paket() {
               <div className="rounded-[10px] border-black  border-[1px] text-center py-5 lg:py-10 lg:space-y-4">
                 <p className="text-lg lg:text-xl pt-2">Harga Normal</p>
                 <p className="text-3xl lg:text-4xl font-bold line-through italic">
-                  Rp1.750.000
+                  Rp1.850.000
                 </p>
                 <p className="text-lg lg:text-2xl text-emerald-600 font-bold">
-                  Early Bird
+                  Special Price
                 </p>
                 <p className="text-4xl lg:text-5xl text-yellow-400 text-stroke font-poppins font-bold">
-                  Rp1.700.000
+                  Rp1.750.000
                 </p>
                 <p className="text-lg lg:text-2xl font-bold border-black border-[1px] bg-green-400 w-fit mx-auto rounded-[10px] px-4 py-1 mt-2">
-                  DP: Rp340.000
+                  DP: Rp350.000
                 </p>
               </div>
             </div>
@@ -100,15 +100,15 @@ export default function Paket() {
         </p>
         <p className="text-xs lg:text-xl">Min. Kelas 5 SD - Umum</p>
         <div className="text-center py-10">
-          <div className="font-bold text-xl">PENAWARAN TERBATAS</div>
-          <div className="pb-3">Waktu Tersisa</div>
-          <Countdown date={1730348790000} className="text-5xl text-primaryLC" />
-          <div className="flex items-center justify-center gap-4">
+          {/* <div className="font-bold text-xl">PENAWARAN TERBATAS</div> */}
+          {/* <div className="pb-3">Waktu Tersisa</div> */}
+          {/* <Countdown date={1730348790000} className="text-5xl text-primaryLC" /> */}
+          {/* <div className="flex items-center justify-center gap-4">
             <p>Hari</p>
             <p>Jam</p>
             <p>Menit</p>
             <p>Detik</p>
-          </div>
+          </div> */}
         </div>
         <Button
           className="bg-primaryLC text-white lg:text-xl font-bold"
@@ -124,7 +124,7 @@ export default function Paket() {
         >
           Daftar Program di Sini
         </Button>
-        <p className="text-xs p-1">*Berlaku sampai 31 Oktober 2024</p>
+        <p className="text-xs p-1">*Buruan, daftar sekarang</p>
       </div>
       <Image
         alt="desember ceria"
