@@ -44,7 +44,7 @@ export default function Hero() {
             Nikmati momen liburan tak terlupakan bersama teacher asik, teman
             baru dari seluruh Indonesia,{" "}
             <b>
-              bonus <i>outbound super fun!</i>
+              bonus <i>outbound ke Simpang Lima Gumul!</i>
             </b>
           </p>
           <div className="flex flex-col items-center">
