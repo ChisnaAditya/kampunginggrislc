@@ -48,9 +48,9 @@ export default function Paket() {
           </p>
         </div>
 
-        <div className="flex lg:justify-center gap-4 py-5 overflow-scroll mt-4 no-scrollbar">
-          <div>
-            <div className="relative w-[300px] lg:w-[400px]">
+        <div className="flex flex-wrap lg:justify-center gap-10 py-5 mt-4 no-scrollbar">
+          <div className="w-full lg:w-fit">
+            <div className="relative w-full lg:w-[400px]">
               <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center text-primaryLC bg-white uppercase rounded-full border-black  border-[1px] w-[250px] lg:w-3/4 px-8 py-1">
                 Program 1 Minggu
               </h3>
@@ -71,8 +71,8 @@ export default function Paket() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="relative w-[300px] lg:w-[400px]">
+          <div className="w-full lg:w-fit">
+            <div className="relative w-full lg:w-[400px]">
               <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center text-primaryLC bg-white uppercase rounded-full border-black  border-[1px] w-[250px] lg:w-3/4 px-8 py-1">
                 Program 2 Minggu
               </h3>
@@ -100,30 +100,7 @@ export default function Paket() {
         </p>
         <p className="text-xs lg:text-xl">Min. Kelas 5 SD - Umum</p>
       </div>
-      <div className="p-5">
-        <div className="flex">
-          {/* <Image
-            alt="arning"
-            src="/icon/dc/arrow.png"
-            width={100}
-            height={100}
-            className="mx-auto animate-bounce"
-          /> */}
-          {/* <Image
-            alt="arning"
-            src="/icon/dc/down-arrow.png"
-            width={100}
-            height={100}
-            className="mx-auto animate-bounce"
-          />
-          <Image
-            alt="arning"
-            src="/icon/dc/arrow.png"
-            width={100}
-            height={100}
-            className="mx-auto animate-bounce"
-          /> */}
-        </div>
+      <div className="p-5 flex flex-col items-center">
         <Button
           size="lg"
           className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"

@@ -35,19 +35,19 @@ export default function Fasilitas() {
     },
   ];
   return (
-    <section className="lg:p-20 lg:mb-10">
-      <div className="p-5 max-w-7xl mx-auto">
+    <section className="lg:p-20">
+      <div className="p-5 max-w-6xl mx-auto">
         <div className="">Gak Hanya Itu!</div>
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
           Semua Fasilitas
         </h2>
-        <p className="text-black/80 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+        <p className="text-black/80 lg:pt-2 text-sm lg:text-lg xl:text-xl max-w-lg">
           Ini sudah kami sediakan loh, jadi kamu <b>bisa fokus belajar</b> dan{" "}
           <b>menikmati liburan</b> dengan nyaman
         </p>
       </div>
-      <div className="lg:p-5 max-w-7xl mx-auto bg-pattern-fasilitas-dc lg:[mask-image:_linear-gradient(to_left,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 max-w-7xl mx-auto">
+      <div className="max-w-6xl mx-auto bg-pattern-fasilitas-dc lg:[mask-image:_linear-gradient(to_left,transparent_0,_black_20px,_black_calc(100%-10px),transparent_100%)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 max-w-6xl mx-auto">
           {content.map((item, index) => (
             <div
               key={index}

@@ -91,7 +91,7 @@ export default function Banner() {
         className="absolute right-0 scale-[2]"
       ></iframe>
 
-      <section className="flex flex-col lg:flex-row items-center p-5 max-w-7xl mx-auto shadow-2xl rounded-lg lg:p-20 lg:mb-20">
+      <section className="flex flex-col lg:flex-row items-center p-5 max-w-6xl mx-auto shadow-2xl rounded-lg lg:p-20 lg:mb-20">
         <div className="lg:w-1/2 space-y-2 lg:space-y-6 xl:space-y-8">
           <h2 className="w-fit font-poppins text-black/80 px-2 bg-secondaryLC">
             Liburan Hampir Tiba!
@@ -123,18 +123,18 @@ export default function Banner() {
         </div>
       </section>
 
-      <div className="p-5 max-w-7xl">
+      <div className="p-5 max-w-6xl mx-auto">
         <div className="lg:text-xl">Coba Lihat!</div>
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
           Betapa Asyiknya
         </h2>
-        <p className="text-black/70 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+        <p className="text-black/70 lg:pt-2 text-sm lg:text-lg xl:text-xl max-w-lg">
           Liburan sambil belajar di <b>Kampung Inggris LC</b> bareng 1.000 siswa
           lainnya🤩
         </p>
       </div>
 
-      <div className="p-5 max-w-7xl mx-auto space-y-5 lg:space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)] no-scrollbar">
+      <div className="p-5 max-w-6xl mx-auto space-y-5 lg:space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)] no-scrollbar">
         <div className="flex gap-4 sm:animate-infinite-scroll-x">
           {keseruan.slice(0, 6).map((item, index) => (
             <div key={index + 1}>
@@ -160,6 +160,9 @@ export default function Banner() {
           ))}
         </div>
       </div>
+      <p className="px-5 max-w-6xl mx-auto mt-4 text-primaryLC font-bold">
+        Swipe &#10158;
+      </p>
     </div>
   );
 }
