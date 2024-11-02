@@ -26,7 +26,7 @@ export default function Fasilitas() {
     {
       icon: "/icon/dc/1.png",
       title: "Experienced Teacher",
-      desc: "Pengajar <b className='text-primaryLC'>terbaik dan berpengalaman</b> untuk memastikan kamu dapet pembelajaran yang top-notch.",
+      desc: "Pengajar <b className='text-primaryLC'>terbaik dan berpengalaman</b> siap menemani liburan dan membimbingmu sampai mahir.",
     },
     {
       icon: "/icon/dc/2.png",
@@ -35,21 +35,19 @@ export default function Fasilitas() {
     },
   ];
   return (
-    <section className="lg:py-10">
-      <div className="max-w-7xl mx-auto px-5 lg:p-0 lg:text-center">
-        <h2 className="text-2xl lg:text-4xl font-bold font-poppins">
-          <span className="px-2  bg-gradient-to-b from-[#fcce00b5] to-[#fca800d6]">
-            Fasilitas
-          </span>{" "}
-          yang Kamu Dapat
+    <section className="lg:p-20 lg:mb-10">
+      <div className="p-5 max-w-7xl mx-auto">
+        <div className="">Gak Hanya Itu!</div>
+        <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
+          Semua Fasilitas
         </h2>
-        <p className="text-md lg:text-xl text-slate-700 max-w-lg lg:mx-auto lg:mt-4">
-          Semua kebutuhanmu sudah kami sediakan jadi kamu{" "}
-          <b>bisa fokus belajar</b> dan <b>menikmati liburan</b> dengan nyaman
+        <p className="text-black/80 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+          Ini sudah kami sediakan loh, jadi kamu <b>bisa fokus belajar</b> dan{" "}
+          <b>menikmati liburan</b> dengan nyaman
         </p>
       </div>
-      <div className="bg-pattern-fasilitas-dc lg:[mask-image:_linear-gradient(to_left,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)]">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-5 p-5 max-w-7xl mx-auto lg:px-20">
+      <div className="lg:p-5 max-w-7xl mx-auto bg-pattern-fasilitas-dc lg:[mask-image:_linear-gradient(to_left,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)]">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 p-5 max-w-7xl mx-auto">
           {content.map((item, index) => (
             <div
               key={index}

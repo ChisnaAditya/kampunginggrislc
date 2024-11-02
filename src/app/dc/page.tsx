@@ -15,10 +15,10 @@ export default function DesemberCeria() {
     <div>
       <Hero />
       <Banner />
-      <Paket />
-      <CTA />
       <Fasilitas />
+      <CTA />
       <Teacher />
+      <Paket />
       <FooterDC />
     </div>
   );

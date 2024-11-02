@@ -37,18 +37,18 @@ export default function Paket() {
     <section id="paket" className="relative max-w-7xl mx-auto mt-10 ">
       <hr className="lg:my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
       <div className="p-5 lg:p-0 lg:text-center">
-        <h2 className="text-2xl lg:text-4xl font-bold font-poppins">
-          Program {"  "}
-          <span className="px-2 bg-gradient-to-b from-amber-200 to-yellow-400">
+        <div className="">
+          <div className="">Program</div>
+          <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
             Desember Ceria
-          </span>{" "}
-        </h2>
-        <p className="text-md lg:text-xl max-w-lg lg:mx-auto lg:mt-4 text-slate-600">
-          Liburan sambil belajar bahasa Inggris di Kampung Inggris LC{" "}
-          <b>bareng 1.000 siswa lainnya</b>
-        </p>
+          </h2>
+          <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+            Liburan sambil belajar di Kampung Inggris LC{" "}
+            <b>bareng 1.000 siswa lainnya</b>
+          </p>
+        </div>
 
-        <div className="flex lg:justify-center gap-4 py-5 overflow-scroll mt-4">
+        <div className="flex lg:justify-center gap-4 py-5 overflow-scroll mt-4 no-scrollbar">
           <div>
             <div className="relative w-[300px] lg:w-[400px]">
               <h3 className="absolute -top-4 left-[50%] translate-x-[-50%] font-bold text-sm lg:text-xl text-center text-primaryLC bg-white uppercase rounded-full border-black  border-[1px] w-[250px] lg:w-3/4 px-8 py-1">
@@ -99,19 +99,34 @@ export default function Paket() {
           <b>Tanggal Mulai:</b> 16, 23, 30 Desember 2024
         </p>
         <p className="text-xs lg:text-xl">Min. Kelas 5 SD - Umum</p>
-        <div className="text-center py-10">
-          {/* <div className="font-bold text-xl">PENAWARAN TERBATAS</div> */}
-          {/* <div className="pb-3">Waktu Tersisa</div> */}
-          {/* <Countdown date={1730348790000} className="text-5xl text-primaryLC" /> */}
-          {/* <div className="flex items-center justify-center gap-4">
-            <p>Hari</p>
-            <p>Jam</p>
-            <p>Menit</p>
-            <p>Detik</p>
-          </div> */}
+      </div>
+      <div className="p-5">
+        <div className="flex">
+          {/* <Image
+            alt="arning"
+            src="/icon/dc/arrow.png"
+            width={100}
+            height={100}
+            className="mx-auto animate-bounce"
+          /> */}
+          {/* <Image
+            alt="arning"
+            src="/icon/dc/down-arrow.png"
+            width={100}
+            height={100}
+            className="mx-auto animate-bounce"
+          />
+          <Image
+            alt="arning"
+            src="/icon/dc/arrow.png"
+            width={100}
+            height={100}
+            className="mx-auto animate-bounce"
+          /> */}
         </div>
         <Button
-          className="bg-primaryLC text-white lg:text-xl font-bold"
+          size="lg"
+          className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
           onClick={() => {
             window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
             window.gtag("event", "Click_TanyaCS", {
@@ -124,7 +139,30 @@ export default function Paket() {
         >
           Daftar Program di Sini
         </Button>
-        <p className="text-xs p-1">*Buruan, daftar sekarang</p>
+        <div className="text-center shadow-inner rounded-2xl bg-gradient-to-b from-[#fcce00b5] to-[#fca800d6] mt-5 lg:w-[350px] mx-auto">
+          <div>
+            <Image
+              alt="arning"
+              src="/icon/dc/warning.png"
+              width={150}
+              height={150}
+              className="mx-auto"
+            />
+            <p className="text-primaryLC text-4xl font-poppins font-bold animate-pulse">
+              WARNING!
+            </p>
+            <p className="text- text-black text-center p-4">
+              Untuk menjaga kualitas belajar, kami{" "}
+              <b className="text-seconaryLC">MEMBATASI KUOTA</b> dan akan{" "}
+              <b className="text-primaryLC">MENUTUP PENDAFTARAN</b>{" "}
+              sewaktu-waktu jika kuota sudah terpenuhi.
+            </p>
+          </div>
+        </div>
+        <p className="text-center mt-5">
+          Saran kami, yuk amankan kuotamu sekarang juga dengan cara mendaftar
+          dan membayar DP 20%.
+        </p>
       </div>
       <Image
         alt="desember ceria"
