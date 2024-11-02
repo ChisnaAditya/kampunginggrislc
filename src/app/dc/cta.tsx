@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function CTA() {
   return (
     <div
-      className="lg:relative lg:bg-slate-100 min-h-[150px] lg:min-h-[300px] lg:mt-40 px-5"
+      className="lg:relative min-h-[150px] lg:min-h-[300px]"
       onClick={() => (window.location.href = "#paket")}
     >
       <Image

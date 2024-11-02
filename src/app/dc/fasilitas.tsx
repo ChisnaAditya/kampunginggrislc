@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HTMLReactParser from "html-react-parser/lib/index";
+import CTA from "./cta";
 
 export default function Fasilitas() {
   const content = [
@@ -35,7 +36,7 @@ export default function Fasilitas() {
     },
   ];
   return (
-    <section className="lg:p-20">
+    <section className="lg:px-20">
       <div className="p-5 max-w-6xl mx-auto">
         <div className="">Gak Hanya Itu!</div>
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
@@ -70,6 +71,7 @@ export default function Fasilitas() {
           ))}
         </div>
       </div>
+      <CTA />
     </section>
   );
 }

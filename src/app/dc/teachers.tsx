@@ -16,15 +16,15 @@ export default function Teacher() {
   ];
 
   return (
-    <section className="p-5 max-w-7xl mx-auto">
+    <section className="p-5 lg:py-20 max-w-6xl mx-auto">
       <div className="">
         <div className="">Jangan Ragu!</div>
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
           Teachers Kami
         </h2>
-        <p className="text-black/70 pb-2 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+        <p className="text-black/70 pb-2 lg:pt-2 text-sm lg:text-lg xl:text-xl max-w-lg">
           Adalah pengajar <b>terbaik dan berpengalaman</b> yang memastikanmu
-          dapet pembelajaran yang top-notch.
+          dapet pembelajaran yang top-notch
         </p>
       </div>
 
@@ -40,7 +40,7 @@ export default function Teacher() {
       <p className="mt-4 text-primaryLC font-bold">Swipe &#10158;</p>
 
       <div className="relative min-h-[300px]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full lg:w-full min-h-[200px] py-5 lg:py-10 rounded-[20px] shadow-lg px-5 lg:px-20 max-w-5xl bg-neutral-800">
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full lg:w-full min-h-[200px] py-5 lg:py-10 rounded-[20px] shadow-lg bg-neutral-800">
           <div className="hidden lg:block">
             <div>
               <Image
@@ -48,11 +48,11 @@ export default function Teacher() {
                 src="/icon/dc/zizi cta.png"
                 width={250}
                 height={250}
-                className="absolute bottom-0 left-20"
+                className="absolute bottom-0 left-48"
               />
             </div>
           </div>
-          <div className="z-10 lg:mr-20 mx-auto">
+          <div className="z-10 lg:mr-32 mx-auto p-5 lg:p-0">
             <h2 className="text-2xl lg:text-3xl font-bold font-poppins text-yellow-400">
               Saatnya bikin liburanmu luar biasa!
             </h2>
@@ -75,7 +75,7 @@ export default function Teacher() {
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
           Nih, ada nih
         </h2>
-        <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+        <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl max-w-xl">
           Cerita inspiratif dari members LC yang mutusin buat{" "}
           <b>upgrade English skills</b> mereka saat liburan. Meet our
           inspirational students!
