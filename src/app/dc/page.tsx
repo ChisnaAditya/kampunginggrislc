@@ -10,6 +10,7 @@ const Paket = dynamic(() => import("./paket"), { ssr: false });
 
 export const metadata: Metadata = {
   title: "Program Desember Ceria Kampung Inggris LC",
+
   description:
     "Nikmati momen liburan tak terlupakan di Kampung Inggris LC bersama teacher asik, teman baru dari seluruh Indonesia, bonus outbound ke SLG!",
   verification: {
