@@ -13,6 +13,7 @@ export const metadata: Metadata = {
 
   description:
     "Nikmati momen liburan tak terlupakan di Kampung Inggris LC bersama teacher asik, teman baru dari seluruh Indonesia, bonus outbound ke SLG!",
+
   verification: {
     google: "twVlJo9pXVv3uqBNwTDAY9Zn6o-zvL3U-npaG5mLeAA",
   },
