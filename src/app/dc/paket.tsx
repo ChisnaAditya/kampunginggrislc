@@ -116,6 +116,28 @@ export default function Paket() {
         >
           Daftar Program di Sini
         </Button>
+        <Image
+          alt="promo 3in1 desember ceria"
+          src={"/icon/dc/promo3in1.webp"}
+          width={500}
+          height={500}
+          className="my-10"
+        />
+        <Button
+          size="lg"
+          className="bg-emerald-600 text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
+          onClick={() => {
+            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
+            window.gtag("event", "Click_TanyaCS", {
+              event_category: "click",
+              event_label: "Click_TanyaCS",
+              value: 99,
+            });
+            console.log("clicked tanyacs");
+          }}
+        >
+          Chat CS Sekarang!
+        </Button>
         <div className="text-center shadow-inner rounded-2xl bg-gradient-to-b from-[#fcce00b5] to-[#fca800d6] mt-5 lg:w-[350px] mx-auto">
           <div>
             <Image
@@ -136,7 +158,7 @@ export default function Paket() {
             </p>
           </div>
         </div>
-        <p className="text-center mt-5">
+        <p className="text-center mt-5 max-w-lg">
           Saran kami, yuk amankan kuotamu sekarang juga dengan cara mendaftar
           dan membayar DP 20%.
         </p>
