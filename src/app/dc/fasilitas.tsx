@@ -62,7 +62,7 @@ export default function Fasilitas() {
                 className="w-[50px] lg:w-[100px]"
               />
               <div>
-                <h3 className="text-lg lg:text-xl font-medium">{item.title}</h3>
+                <h3 className="text-lg lg:text-xl font-bold">{item.title}</h3>
                 <p className="text-xs lg:text-lg mt-1 text-slate-600">
                   {HTMLReactParser(item.desc)}
                 </p>
