@@ -3,7 +3,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <div className="bg-[#FACD01]">
+    <div className="bg-[#F5D062]">
       <section className="relative bg-dc min-h-[720px] lg:min-h-screen">
         <Image
           alt="desember ceria"

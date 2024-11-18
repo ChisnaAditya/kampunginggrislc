@@ -6,13 +6,13 @@ export default function Fasilitas() {
   const content = [
     {
       icon: "/icon/dc/4.png",
-      title: "Makan dan Laundry",
+      title: "Gratis Makan, Laundry, dan Asrama",
       desc: "Program ini sudah include <b className='text-primaryLC'>makan 3x</b> sehari dan sudah <i><b className='text-primaryLC'>free laundry</b></i> capek lewat, semangat belajarmu terus meningkat.",
     },
     {
-      icon: "/icon/dc/6.png",
-      title: "Modul Belajar & Kaos LC",
-      desc: "LC nyediain modul buat panduan belajarmu. <b className='text-primaryLC'>Free kaos LC</b>, bisa kamu pakai selama proses belajar bahkan setelah lulus.",
+      icon: "/icon/dc/2.png",
+      title: "Asrama English Area",
+      desc: "Kampung Inggris LC, tempat nyaman untuk bersantai sekaligus <b className='text-primaryLC'>praktik</b> bahasa Inggris dengan <b className='text-primaryLC'>asyik!</b>",
     },
     {
       icon: "/icon/dc/5.png",
@@ -30,9 +30,9 @@ export default function Fasilitas() {
       desc: "Pengajar <b className='text-primaryLC'>terbaik dan berpengalaman</b> siap menemani liburan dan membimbingmu sampai mahir.",
     },
     {
-      icon: "/icon/dc/2.png",
-      title: "Asrama English Area",
-      desc: "Kampung Inggris LC, tempat nyaman untuk bersantai sekaligus <b className='text-primaryLC'>praktik</b> bahasa Inggris dengan <b className='text-primaryLC'>asyik!</b>",
+      icon: "/icon/dc/6.png",
+      title: "Modul Belajar & Kaos LC",
+      desc: "LC nyediain modul buat panduan belajarmu. <b className='text-primaryLC'>Free kaos LC</b>, bisa kamu pakai selama proses belajar bahkan setelah lulus.",
     },
   ];
   return (
