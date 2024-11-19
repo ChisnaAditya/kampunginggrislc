@@ -4,6 +4,50 @@ import Image from "next/image";
 
 const keseruan = [
   {
+    src: "/keseruan/dc/keasyikan 1.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 2.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 3.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 4.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 5.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 6.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 7.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 8.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 9.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 10.webp",
+    desc: "Game Asyik",
+  },
+  {
+    src: "/keseruan/dc/keasyikan 11.webp",
+    desc: "Game Asyik",
+  },
+  {
     src: "/keseruan/em/1.png",
     desc: "Game Asyik",
   },
@@ -136,24 +180,24 @@ export default function Banner() {
 
       <div className="p-5 max-w-6xl mx-auto space-y-5 lg:space-y-10 overflow-scroll sm:overflow-hidden w-full sm:first-letter:max-w-7xl sm:[mask-image:_linear-gradient(to_left,transparent_0,_black_80px,_black_calc(100%-80px),transparent_100%)] no-scrollbar">
         <div className="flex gap-4 sm:animate-infinite-scroll-x">
-          {keseruan.slice(0, 6).map((item, index) => (
+          {keseruan.slice(0, 12).map((item, index) => (
             <div key={index + 1}>
               <CardPhoto src={item.src} desc={item.desc} />
             </div>
           ))}
-          {keseruan.slice(0, 6).map((item, index) => (
+          {keseruan.slice(0, 12).map((item, index) => (
             <div key={index + 3}>
               <CardPhoto src={item.src} desc={item.desc} isHidden={"true"} />
             </div>
           ))}
         </div>
         <div className="flex gap-4 sm:animate-infinite-scroll-x-reverse lg:mb-20">
-          {keseruan.slice(6, 12).map((item, index) => (
+          {keseruan.slice(12, 25).map((item, index) => (
             <div key={index + 5}>
               <CardPhoto src={item.src} desc={item.desc} />
             </div>
           ))}
-          {keseruan.slice(6, 12).map((item, index) => (
+          {keseruan.slice(12, 25).map((item, index) => (
             <div key={index + 7}>
               <CardPhoto src={item.src} desc={item.desc} isHidden={"true"} />
             </div>
