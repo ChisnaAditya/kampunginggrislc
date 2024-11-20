@@ -105,7 +105,7 @@ export default function Paket() {
           size="lg"
           className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
           onClick={() => {
-            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
+            window.location.href = `https://registrasi.kampunginggris.id/?${urlParam}&utm_content=dc2024&br_code=pare`;
             window.gtag("event", "Click_TanyaCS", {
               event_category: "click",
               event_label: "Click_TanyaCS",
