@@ -37,7 +37,9 @@ export default function Teacher() {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-primaryLC font-bold">Swipe &#10158;</p>
+      <p className="mt-4 text-primaryLC font-bold">
+        Geser ke kanan yaa &#10158;
+      </p>
 
       <div className="relative min-h-[300px]">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full lg:w-full min-h-[200px] py-5 lg:py-10 rounded-[20px] shadow-lg bg-neutral-800">

@@ -205,7 +205,7 @@ export default function Banner() {
         </div>
       </div>
       <p className="px-5 max-w-6xl mx-auto mt-4 text-primaryLC font-bold">
-        Swipe &#10158;
+        Geser ke kanan yaa &#10158;
       </p>
     </div>
   );

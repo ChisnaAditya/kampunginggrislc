@@ -106,23 +106,20 @@ export default function Paket() {
           className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
           onClick={() => {
             window.location.href = `https://registrasi.kampunginggris.id/?${urlParam}&utm_content=dc2024&br_code=pare`;
-            window.gtag("event", "Click_TanyaCS", {
+            window.gtag("event", "Click_Register", {
               event_category: "click",
-              event_label: "Click_TanyaCS",
+              event_label: "Click_Register",
               value: 99,
             });
-            console.log("clicked tanyacs");
+            console.log("clicked register");
           }}
         >
           Daftar Program di Sini
         </Button>
-        <Image
-          alt="promo 3in1 desember ceria"
-          src={"/icon/dc/promo3in1.webp"}
-          width={500}
-          height={500}
-          className="my-10"
-        />
+        <p className="py-5 text-center">
+          Jika kamu masih bingung menentukan pilihan program, Yuk konsultasi
+          program dulu!
+        </p>
         <Button
           size="lg"
           className="bg-emerald-600 text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
@@ -136,7 +133,42 @@ export default function Paket() {
             console.log("clicked tanyacs");
           }}
         >
-          Chat CS Sekarang!
+          Konsultasi via Whatsapp
+        </Button>
+        <div className="mt-10">
+          <div className="">Khusus buat kamu</div>
+          <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
+            Extra Diskon
+          </h2>
+          <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl">
+            yang mau <b>ngajak bestie-nya</b> untuk daftar program liburan
+            Desember Ceria bareng
+          </p>
+        </div>
+        <Image
+          alt="promo 3in1 desember ceria"
+          src={"/icon/dc/promo3in1.webp"}
+          width={500}
+          height={500}
+          className="my-1"
+        />
+        <p className="py-5 text-center">
+          Info lebih lanjut tanyakan ke CS kami yaaa
+        </p>
+        <Button
+          size="lg"
+          className="bg-emerald-600 text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
+          onClick={() => {
+            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
+            window.gtag("event", "Click_TanyaCS", {
+              event_category: "click",
+              event_label: "Click_TanyaCS",
+              value: 99,
+            });
+            console.log("clicked tanyacs");
+          }}
+        >
+          Tanya Promo Diskon
         </Button>
         <div className="text-center shadow-inner rounded-2xl bg-gradient-to-b from-[#fcce00b5] to-[#fca800d6] mt-5 lg:w-[350px] mx-auto">
           <div>
