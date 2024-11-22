@@ -16,19 +16,19 @@ export default function Teacher() {
   ];
 
   return (
-    <section className="p-5 lg:py-20 max-w-6xl mx-auto">
-      <div className="">
+    <section className="p-5 py-20 max-w-6xl mx-auto">
+      <div className="text-center space-y-2">
         <div className="">Jangan Ragu!</div>
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
-          Teachers Kami
+          Teachers yang akan Mendampingimu
         </h2>
-        <p className="text-black/70 pb-2 lg:pt-2 text-sm lg:text-lg xl:text-xl max-w-lg">
+        <p className="text-black/70 pb-2 lg:pt-2 lg:text-lg xl:text-xl max-w-lg mx-auto">
           Adalah pengajar <b>terbaik dan berpengalaman</b> yang memastikanmu
           dapet pembelajaran yang top-notch
         </p>
       </div>
 
-      <div className="flex overflow-scroll gap-4 lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)] no-scrollbar">
+      <div className="my-10 flex overflow-scroll gap-4 lg:[mask-image:_linear-gradient(to_right,transparent_0,_black_20px,_black_calc(100%-100px),transparent_100%)] no-scrollbar">
         {tutor.map((item, index) => (
           <div key={index}>
             <div className="w-[250px] lg:w-[350px]">
@@ -37,48 +37,44 @@ export default function Teacher() {
           </div>
         ))}
       </div>
-      <p className="mt-4 text-primaryLC font-bold">
+      <p className="my-4 text-primaryLC font-bold">
         Geser ke kanan yaa &#10158;
       </p>
 
-      <div className="relative min-h-[300px]">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center w-full lg:w-full min-h-[200px] py-5 lg:py-10 rounded-[20px] shadow-lg bg-neutral-800">
-          <div className="hidden lg:block">
-            <div>
-              <Image
-                alt="logo lc"
-                src="/icon/dc/zizi cta.png"
-                width={250}
-                height={250}
-                className="absolute bottom-0 left-48"
-              />
-            </div>
-          </div>
-          <div className="z-10 lg:mr-32 mx-auto p-5 lg:p-0">
+      <div className="min-h-[300px]">
+        <div className="flex flex-col justify-center items-center gap-4 w-full lg:w-full min-h-[200px] pt-5 lg:pt-10 rounded-[20px] shadow-lg bg-neutral-800">
+          <div className="mx-auto space-y-4 p-5 lg:p-0 text-center">
             <h2 className="text-2xl lg:text-3xl font-bold font-poppins text-yellow-400">
               Saatnya bikin liburanmu luar biasa!
             </h2>
-            <p className="text-md lg:text-lg text-white lg:max-w-lg">
-              Jangan sia-siakan liburanmu cuma buat rebahan. Daftar sekarang,
-              lancar English kemudian!
+            <p className="text-sm lg:text-lg text-white lg:max-w-lg">
+              Daftar sekarang, lancar English kemudian!
             </p>
             <Button
-              className="bg-primaryLC text-white lg:text-xl font-bold mt-5 w-full lg:w-fit"
+              className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit"
               onClick={() => (window.location.href = "#paket")}
             >
               Yuk Daftar
             </Button>
           </div>
+          <div>
+            <Image
+              alt="logo lc"
+              src="/icon/dc/zizi cta.png"
+              width={250}
+              height={250}
+            />
+          </div>
         </div>
       </div>
 
-      <div className="">
-        <div className="">Biar Makin Yakin!</div>
+      <div className="text-center space-y-2 pt-20">
+        <div className="mt-10">Biar Makin Yakin!</div>
         <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
-          Nih, ada nih
+          Ini dia, Kata Almuni
         </h2>
-        <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl max-w-xl">
-          Cerita inspiratif dari members LC yang mutusin buat{" "}
+        <p className="mb-10 text-black/70 pb-4 lg:pt-2 lg:text-lg xl:text-xl max-w-xl mx-auto">
+          yang sudah merasakan asyiknya liburan di LC buat{" "}
           <b>upgrade English skills</b> mereka saat liburan. Meet our
           inspirational students!
         </p>

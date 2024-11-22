@@ -36,15 +36,54 @@ export default function Paket() {
   return (
     <section id="paket" className="relative max-w-7xl mx-auto mt-10 ">
       <hr className="lg:my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
-      <div className="p-5 lg:p-0 lg:text-center">
-        <div className="">
-          <div className="">Program</div>
-          <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
+
+      <div className="flex flex-col items-center justify-center p-5">
+        <div className="mt-10 text-center space-y-2">
+          <div className="">Khusus buat kamu</div>
+          <h2 className="text-3xl lg:text-4xl font-bold font-poppins">
+            Dapatkan Extra Diskon
+          </h2>
+          <p className="text-black/70 pb-4 lg:pt-2 lg:text-lg xl:text-xl max-w-xl mx-auto">
+            buat kamu yang <b>daftar bertiga</b> yang mau{" "}
+            <b>ngajak bestie-nya</b> untuk daftar program liburan Desember Ceria
+            bareng
+          </p>
+        </div>
+        <Image
+          alt="promo 3in1 desember ceria"
+          src={"/icon/dc/promo3in1.webp"}
+          width={500}
+          height={500}
+          className="my-1 mx-auto"
+        />
+        <p className="py-5 text-center">
+          Info lebih lanjut tanyakan ke CS kami yaaa
+        </p>
+        <Button
+          size="lg"
+          className="bg-emerald-600 text-white lg:text-xl font-bold w-fit"
+          onClick={() => {
+            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
+            window.gtag("event", "Click_TanyaCS", {
+              event_category: "click",
+              event_label: "Click_TanyaCS",
+              value: 99,
+            });
+            console.log("clicked tanyacs");
+          }}
+        >
+          Tanya Promo Diskon
+        </Button>
+      </div>
+
+      <div className="px-5 pt-20 lg:text-center">
+        <div className="text-center">
+          <div className="">Harga Program</div>
+          <h2 className="text-3xl lg:text-4xl font-bold font-poppins">
             Desember Ceria
           </h2>
-          <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl">
-            Liburan sambil belajar di Kampung Inggris LC{" "}
-            <b>bareng 1.000 siswa lainnya</b>
+          <p className="text-black/70 pb-4 lg:pt-2 lg:text-lg xl:text-xl">
+            Yang bisa kamu pilih sesuai kebutuhanmu
           </p>
         </div>
 
@@ -99,8 +138,26 @@ export default function Paket() {
           <b>Tanggal Mulai:</b> 16, 23, 30 Desember 2024
         </p>
         <p className="text-xs lg:text-xl">Min. Kelas 5 SD - Umum</p>
+        <p className="text-3xl italic text-center my-5 text-primaryLC max-w-lg mx-auto">
+          "FYI: Tahun kemaren banyak siswa yang kehabisan kuota liburan di LC
+          loh. Sayang bangettt kan 🥹"
+        </p>
+        <p className="text-center lg:text-xl max-w-lg mx-auto">
+          Daripada kamu bernasib sama, mending daftar program sekarang deh!{" "}
+        </p>
       </div>
+
       <div className="p-5 flex flex-col items-center">
+        <svg
+          className=" fill-primaryLC w-[100px] lg:w-[70px] animate-bounce"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <g data-name="Double down">
+            <path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" />
+            <path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" />
+          </g>
+        </svg>
         <Button
           size="lg"
           className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
@@ -116,10 +173,20 @@ export default function Paket() {
         >
           Daftar Program di Sini
         </Button>
-        <p className="py-5 text-center">
-          Jika kamu masih bingung menentukan pilihan program, Yuk konsultasi
-          program dulu!
+        <p className="py-10 text-center lg:text-xl max-w-lg mx-auto">
+          Kalau kamu masih bingung <i>nentuin</i> pilihan program, Yuk
+          konsultasi program dulu!
         </p>
+        <svg
+          className=" fill-emerald-500 w-[100px] lg:w-[70px] animate-bounce"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+        >
+          <g data-name="Double down">
+            <path d="M12 17a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 14.586l3.293-3.293a1 1 0 0 1 1.414 1.414l-4 4A1 1 0 0 1 12 17z" />
+            <path d="M12 13a1 1 0 0 1-.707-.293l-4-4a1 1 0 1 1 1.414-1.414L12 10.586l3.293-3.293a1 1 0 1 1 1.414 1.414l-4 4A1 1 0 0 1 12 13z" />
+          </g>
+        </svg>
         <Button
           size="lg"
           className="bg-emerald-600 text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
@@ -135,64 +202,28 @@ export default function Paket() {
         >
           Konsultasi via Whatsapp
         </Button>
-        <div className="mt-10">
-          <div className="">Khusus buat kamu</div>
-          <h2 className="text-3xl lg:text-4xl font-semibold font-poppins">
-            Extra Diskon
-          </h2>
-          <p className="text-black/70 pb-4 lg:pt-2 text-sm lg:text-lg xl:text-xl">
-            yang mau <b>ngajak bestie-nya</b> untuk daftar program liburan
-            Desember Ceria bareng
+
+        <div className="text-center shadow-inner rounded-2xl bg-gradient-to-b from-[#fcce00b5] to-[#fca800d6] mt-20 lg:w-[350px] mx-auto">
+          <Image
+            alt="arning"
+            src="/icon/dc/warning.png"
+            width={150}
+            height={150}
+            className="mx-auto"
+          />
+          <p className="text-primaryLC text-4xl font-poppins font-bold animate-pulse">
+            WARNING!
+          </p>
+          <p className="text- text-black text-center p-4">
+            Untuk menjaga kualitas belajar, kami{" "}
+            <b className="text-seconaryLC">MEMBATASI KUOTA</b> dan akan{" "}
+            <b className="text-primaryLC">MENUTUP PENDAFTARAN</b> sewaktu-waktu
+            jika kuota sudah terpenuhi.
           </p>
         </div>
-        <Image
-          alt="promo 3in1 desember ceria"
-          src={"/icon/dc/promo3in1.webp"}
-          width={500}
-          height={500}
-          className="my-1"
-        />
-        <p className="py-5 text-center">
-          Info lebih lanjut tanyakan ke CS kami yaaa
-        </p>
-        <Button
-          size="lg"
-          className="bg-emerald-600 text-white lg:text-xl font-bold w-full lg:w-fit lg:mx-auto"
-          onClick={() => {
-            window.location.href = `https://cs.kampunginggrislc.com/?${urlParam}&utm_content=dc2024&paket=desember ceria`;
-            window.gtag("event", "Click_TanyaCS", {
-              event_category: "click",
-              event_label: "Click_TanyaCS",
-              value: 99,
-            });
-            console.log("clicked tanyacs");
-          }}
-        >
-          Tanya Promo Diskon
-        </Button>
-        <div className="text-center shadow-inner rounded-2xl bg-gradient-to-b from-[#fcce00b5] to-[#fca800d6] mt-5 lg:w-[350px] mx-auto">
-          <div>
-            <Image
-              alt="arning"
-              src="/icon/dc/warning.png"
-              width={150}
-              height={150}
-              className="mx-auto"
-            />
-            <p className="text-primaryLC text-4xl font-poppins font-bold animate-pulse">
-              WARNING!
-            </p>
-            <p className="text- text-black text-center p-4">
-              Untuk menjaga kualitas belajar, kami{" "}
-              <b className="text-seconaryLC">MEMBATASI KUOTA</b> dan akan{" "}
-              <b className="text-primaryLC">MENUTUP PENDAFTARAN</b>{" "}
-              sewaktu-waktu jika kuota sudah terpenuhi.
-            </p>
-          </div>
-        </div>
-        <p className="text-center mt-5 max-w-lg">
+        <p className="text-center mt-5 mb-20 max-w-lg">
           Saran kami, yuk amankan kuotamu sekarang juga dengan cara mendaftar
-          dan membayar DP 20%.
+          dan membayar <b>DP 20%</b>.
         </p>
       </div>
       <Image
