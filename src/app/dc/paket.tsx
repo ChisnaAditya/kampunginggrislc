@@ -139,8 +139,8 @@ export default function Paket() {
         </p>
         <p className="text-xs lg:text-xl">Min. Kelas 5 SD - Umum</p>
         <p className="text-3xl italic text-center my-5 text-primaryLC max-w-lg mx-auto">
-          "FYI: Tahun kemaren banyak siswa yang kehabisan kuota liburan di LC
-          loh. Sayang bangettt kan 🥹"
+          &quot;FYI: Tahun kemaren banyak siswa yang kehabisan kuota liburan di
+          LC loh. Sayang bangettt kan 🥹&quot;
         </p>
         <p className="text-center lg:text-xl max-w-lg mx-auto">
           Daripada kamu bernasib sama, mending daftar program sekarang deh!{" "}
