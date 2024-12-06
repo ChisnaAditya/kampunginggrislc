@@ -44,6 +44,7 @@ export default function FooterDC() {
               event_label: "Click_Register",
               value: 99,
             });
+            window.gtag("event", "CTA_AfterWarning");
             console.log("clicked register");
           }}
         >

@@ -189,7 +189,10 @@ export default function Banner() {
           ></iframe>
           <Button
             className="bg-primaryLC text-white lg:text-xl font-bold w-full"
-            onClick={() => (window.location.href = "#paket")}
+            onClick={() => {
+              window.location.href = "#paket";
+              window.gtag("event", "CTA_AfterVideo");
+            }}
           >
             Yuk Daftar
           </Button>

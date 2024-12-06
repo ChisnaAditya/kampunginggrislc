@@ -25,7 +25,10 @@ export default function DesemberCeria() {
     <div>
       <Hero />
       <Banner />
-      <CTA message="Nah, sekarang giliran kamu ngerasain asyiknya liburan di LC!" />
+      <CTA
+        message="Nah, sekarang giliran kamu ngerasain asyiknya liburan di LC!"
+        eventName="CTA_AfterGallery"
+      />
       <Fasilitas />
       <Teacher />
       <Paket />

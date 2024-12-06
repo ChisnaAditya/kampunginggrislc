@@ -52,7 +52,10 @@ export default function Teacher() {
             </p>
             <Button
               className="bg-primaryLC text-white lg:text-xl font-bold w-full lg:w-fit"
-              onClick={() => (window.location.href = "#paket")}
+              onClick={() => {
+                window.location.href = "#paket";
+                window.gtag("event", "CTA_MsZizi");
+              }}
             >
               Yuk Daftar
             </Button>

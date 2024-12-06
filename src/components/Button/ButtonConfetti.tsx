@@ -23,7 +23,10 @@ export default function ButtonConfetti() {
       <Link href="#paket">
         <Button
           className="bg-primaryLC text-xl text-white font-bold"
-          onClick={() => setClient(true)}
+          onClick={() => {
+            setClient(true);
+            window.gtag("event", "CTA_Hero");
+          }}
         >
           Daftar Sekarang!
         </Button>

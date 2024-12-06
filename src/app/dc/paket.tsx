@@ -34,7 +34,7 @@ export default function Paket() {
   }, [utm_source, utm_medium, utm_campaign]);
 
   return (
-    <section id="paket" className="relative max-w-7xl mx-auto mt-10 ">
+    <section className="relative max-w-7xl mx-auto mt-10 ">
       <hr className="lg:my-12 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-500 to-transparent opacity-25 dark:via-neutral-400" />
 
       <div className="flex flex-col items-center justify-center p-5">
@@ -69,6 +69,7 @@ export default function Paket() {
               event_label: "Click_TanyaCS",
               value: 99,
             });
+            window.gtag("event", "CTA_Promo");
             console.log("clicked tanyacs");
           }}
         >
@@ -76,7 +77,7 @@ export default function Paket() {
         </Button>
       </div>
 
-      <div className="px-5 pt-20 lg:text-center">
+      <div id="paket" className="px-5 pt-20 lg:text-center">
         <div className="text-center">
           <div className="">Harga Program</div>
           <h2 className="text-3xl lg:text-4xl font-bold font-poppins">
@@ -168,6 +169,7 @@ export default function Paket() {
               event_label: "Click_Register",
               value: 99,
             });
+            window.gtag("event", "CTA_DaftarAfterHarga");
             console.log("clicked register");
           }}
         >
@@ -197,6 +199,7 @@ export default function Paket() {
               event_label: "Click_TanyaCS",
               value: 99,
             });
+            window.gtag("event", "CTA_TanyaAfterHarga");
             console.log("clicked tanyacs");
           }}
         >

@@ -5,6 +5,7 @@ import { useEffect, useState } from "react";
 
 type CTAMessage = {
   message: string;
+  eventName: string;
 };
 
 export default function CTA(props: CTAMessage) {
@@ -48,6 +49,7 @@ export default function CTA(props: CTAMessage) {
               event_label: "Click_Register",
               value: 99,
             });
+            window.gtag("event", `${props.eventName}`);
             console.log("clicked register");
           }}
         >
